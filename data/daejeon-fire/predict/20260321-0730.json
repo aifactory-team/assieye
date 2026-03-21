@@ -1,0 +1,26 @@
+{
+  "generatedAt": "2026-03-21T07:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 17,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "18시간 13분",
+    "deceased": 10, "missing": 4,
+    "dataChanged": false
+  },
+  "statusAlert": {
+    "level": "GREEN",
+    "message": "사망 10명, 실종 4명. 밤샘 수색 계속. 오전 정부 발표 1~2시간 내 예상."
+  },
+  "predictions": {
+    "shortTerm": "08~09시 소방 조간 브리핑 + 추가 발견 발표 가능. 정부 공식 발표 09~10시.",
+    "midTerm": "15세대 타임라인 유지. 오후까지 수색 90%+ 예상.",
+    "longTerm": "최종 사망 12~14명. 보상 80~100억원+. 법개정 대폭 개정 60%+."
+  },
+  "confidence": { "overall": "78%", "note": "변동 없음. 정부 발표 시 83%+ 예상." },
+  "evolution": {
+    "generation": 17,
+    "mode": "NORMAL — 대기",
+    "note": "데이터 미변동 3턴째(15~17). 정상 모드에서도 불필요한 확장 자제. 15세대 프레임이 현 상황을 충분히 설명.",
+    "nextTask": "18세대: 정부 발표 또는 추가 사망자 확인 시 전면 갱신."
+  }
+}

@@ -1,0 +1,20 @@
+/* Topic transition animation */
+.topic-transitioning {
+  animation: topicSwitch 0.5s ease;
+}
+
+@keyframes topicSwitch {
+  0%   { opacity: 1; filter: brightness(1); }
+  40%  { opacity: 0.3; filter: brightness(0.5); }
+  100% { opacity: 1; filter: brightness(1); }
+}
+
+/* Coming Soon panel placeholder */
+.coming-soon-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  color: var(--text-muted);
+  font-style: italic;
+}

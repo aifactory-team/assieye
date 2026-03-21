@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774002187846-daejeon25injuredauthorities",
+  "title": "At least 50 injured in fire at Daejeon car parts plant",
+  "link": "https://www.koreatimes.co.kr/southkorea/society/20260320/fire-breaks-out-at-car-parts-plant-in-daejeon-25-injured-authorities",
+  "pubDate": "2026-03-20T15:30:00+09:00",
+  "source": "Korea Times",
+  "description": "At least 50 people injured in fire at auto parts factory in Daejeon. National firefighting mobilization order issued.",
+  "category": "international",
+  "lang": "en",
+  "severity": "high",
+  "tags": [
+    "Daejeon",
+    "Korea Times",
+    "injuries",
+    "factory fire"
+  ],
+  "agentNote": "Korea Times 영문 보도 — 50명 부상, 국가동원령 발령",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://newsimg.koreatimes.co.kr/2026/03/20/8ae99133-e151-406c-ac15-6f1144752866.jpg",
+  "platform": "news"
+}

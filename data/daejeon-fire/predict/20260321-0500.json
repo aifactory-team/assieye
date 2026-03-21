@@ -1,0 +1,62 @@
+{
+  "generatedAt": "2026-03-21T05:00:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 12,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "15시간 43분",
+    "informationBlackout": "10시간",
+    "consecutiveNoDataGenerations": 10
+  },
+  "statusAlert": {
+    "level": "AMBER",
+    "mode": "INFORMATION_DEFICIT → 정상 복귀 카운트다운",
+    "message": "역전층 해소·일출까지 1시간. 소방 새벽 브리핑 임박. 10시간 정보 공백 종료 예상."
+  },
+  "timeBasedVerification": {
+    "allNightPredictions": {
+      "열수축 피크(04시)": "✅ 무사 통과",
+      "습도 피크(02~04시)": "✅ 무사 통과",
+      "잔불 소거(03~04시)": "✅ 소극적 부합 (보도 없음)",
+      "역전층 해소(06시)": "⏳ 1시간 후",
+      "안전진단(06~08시)": "⏳ 1~3시간 후"
+    },
+    "nightSummary": "야간 4개 주요 예측 중 3개 소극적 통과. 야간 위험 시나리오(열수축 붕괴, 나트륨 폭발) 미발생. 기본 시나리오 진행 중 추정."
+  },
+  "probabilityCurveUpdate": {
+    "survivalProbability": { "realistic": "<1%", "elapsed": "15시간 43분", "note": "변동 없음. 수렴 완료." },
+    "scenarioUpdate": {
+      "S1_기본": "37% (유지)",
+      "S2_나트륨성공": "20% → 21% (야간 습도 피크 무사 통과 반영)",
+      "S3_전면해체": "13% (유지)",
+      "expectedSearchDuration": "4.2일 (유지)"
+    }
+  },
+  "transitionReadiness": {
+    "title": "정상 모드 복귀 준비 상태",
+    "dataIngestionFramework": "7세대 프레임 준비 완료",
+    "decisionTree": "6세대 의사결정 트리 대기 중 — 안전진단 결과 입력 시 즉시 분기",
+    "crossAnalysis": "8세대 27조합 교차 분석 대기 — 데이터 1건으로 9개 조합으로 축소",
+    "confidenceRecovery": "소방 브리핑(+15%) + 안전진단(+12%) = 최대 77% 회복",
+    "readyStatus": "✅ 전면 갱신 즉시 실행 가능"
+  },
+  "confidence": {
+    "overall": "50%",
+    "outlook": "1시간 내 데이터 유입 가능성 높음. 정상 모드 복귀 임박."
+  },
+  "evolution": {
+    "generation": 12,
+    "mode": "INFORMATION_DEFICIT — 종료 임박",
+    "improvements": "야간 전체 예측 통합 검증: 4개 중 3개 통과 확인. S2(나트륨성공) 21%↑. 정상 모드 복귀 준비 상태 점검 완료.",
+    "strategicNote": "12세대는 '새벽을 맞이하는' 세대. 정보 부족 모드 5턴(8~12세대)간 시스템은 겸손하게 기다렸고, 야간 예측의 소극적 검증을 누적. 이제 데이터 유입과 함께 1~7세대에서 구축한 모든 분석 프레임을 동시 가동할 준비가 완료.",
+    "nextTask": "13세대: (1) 06시 역전층 해소 검증, (2) 새벽 브리핑 입수 시 → 전면 갱신·정상 복귀·신뢰도 회복, (3) 안전진단 결과 반영 시 → 의사결정 트리 확정",
+    "evolutionLog": [
+      "1~3세대: Foundation (기초)",
+      "4~5세대: Expansion & Quantification (확장·정량)",
+      "6세대: Decision & Meta (의사결정)",
+      "7세대: Self-correction (자기수정)",
+      "8세대: Self-limitation (자기제한)",
+      "9~12세대: Disciplined monitoring (절제된 야간 감시 — 예측 소극적 검증 누적)"
+    ],
+    "systemSummary": "12세대 도달. 총 히스토리 11건. 분석 차원 23+3, 시나리오 5개+교차 27조합, 의사결정 트리 4노드. 야간 정보 부족 모드에서 5턴간 자기 제한 실천. 새벽 전환기 준비 완료."
+  }
+}

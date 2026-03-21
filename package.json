@@ -1,0 +1,38 @@
+{
+  "name": "foresteye",
+  "version": "1.6.7",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "globe.gl": "^2.45.0",
+    "deck.gl": "^9.2.6",
+    "@deck.gl/core": "^9.2.6",
+    "@deck.gl/layers": "^9.2.6",
+    "@deck.gl/geo-layers": "^9.2.6",
+    "@deck.gl/aggregation-layers": "^9.2.6",
+    "@deck.gl/mapbox": "^9.2.6",
+    "maplibre-gl": "^5.16.0",
+    "fast-xml-parser": "^5.3.7",
+    "marked": "^17.0.3",
+    "dompurify": "^3.1.7",
+    "papaparse": "^5.5.3",
+    "i18next": "^25.8.10",
+    "i18next-browser-languagedetector": "^8.2.1",
+    "@upstash/ratelimit": "^2.0.8",
+    "@upstash/redis": "^1.36.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "@types/three": "^0.183.1",
+    "@types/geojson": "^7946.0.14",
+    "@types/dompurify": "^3.0.5",
+    "@types/papaparse": "^5.5.2"
+  }
+}

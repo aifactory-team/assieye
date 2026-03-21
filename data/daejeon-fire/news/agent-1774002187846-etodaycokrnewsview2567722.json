@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774002187846-etodaycokrnewsview2567722",
+  "title": "[속보] 소방당국: 대전 안전공업 화재 불길 80% 잡혀",
+  "link": "https://www.etoday.co.kr/news/view/2567722",
+  "pubDate": "2026-03-20T19:00:00+09:00",
+  "source": "이투데이",
+  "description": "소방당국이 대전 안전공업 공장 화재의 불길을 80% 진압했다고 발표. 잔불 정리 및 실종자 수색 준비 중.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "진화",
+    "80%진압",
+    "소방",
+    "실종자수색"
+  ],
+  "agentNote": "19시 기준 80% 진압 — 실종자 수색 단계 진입 임박",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://img.etoday.co.kr/pto_db/2024/02/20240222110710_1990411_400_250.jpg",
+  "platform": "news"
+}

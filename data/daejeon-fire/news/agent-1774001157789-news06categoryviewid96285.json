@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774001157789-news06categoryviewid96285",
+  "title": "소방청, 대전 공장 화재에 국가소방동원령 발령",
+  "link": "https://www.tjb.co.kr/news06/category/view/id/96285",
+  "pubDate": "2026-03-20T14:00:00+09:00",
+  "source": "TJB",
+  "description": "소방청은 13시 53분 국가소방동원령 1호 발령. 장비 46대, 인력 115명 투입. 15시 30분부터 중앙긴급구조통제단 가동.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "소방동원령",
+    "소방청",
+    "긴급구조",
+    "대전"
+  ],
+  "agentNote": "신고 36분만에 국가소방동원령 발령, 최고 수준 현장 지휘 통제",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "news"
+}

@@ -1,0 +1,243 @@
+:root {
+  --accent: #00cc66;
+  --accent-rgb: 0, 204, 102;
+  --header-tint: rgba(13, 32, 13, 0.8);
+  --panel-border: rgba(42, 74, 42, 0.7);
+  --panel-bg: rgba(26, 58, 26, 0.85);
+  --marker-primary: #ff3300;
+  --marker-secondary: #ff8800;
+  --badge-bg: rgba(0, 204, 102, 0.2);
+  --body-bg: #0a1a0a;
+  --text-primary: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --text-muted: #707070;
+  --border-subtle: rgba(42, 74, 42, 0.3);
+  --border-dark: rgba(42, 74, 42, 0.5);
+  --scrollbar-thumb: rgba(42, 74, 42, 0.5);
+  --scrollbar-thumb-hover: rgba(42, 74, 42, 0.8);
+  --status-bar-bg: rgba(13, 32, 13, 0.9);
+  --panel-header-bg: rgba(0, 0, 0, 0.2);
+  --map-bg: #050f05;
+  --toolbar-bg: rgba(13, 32, 13, 0.85);
+  --popup-bg: rgba(26, 58, 26, 0.95);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    Arial, sans-serif;
+  background: var(--body-bg);
+  color: #e0e8e0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.app-layout {
+  position: relative;
+  min-height: 100vh;
+}
+
+.overlay-ui {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.overlay-ui > * {
+  pointer-events: auto;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: var(--header-tint);
+  border-bottom: 1px solid rgba(26, 58, 26, 0.6);
+  backdrop-filter: blur(8px);
+  height: 32px;
+}
+
+.app-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.5px;
+}
+
+.app-domain-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(var(--accent-rgb), 0.15);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.app-subtitle {
+  font-size: 0.7rem;
+  color: #7a9a7a;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
+
+body {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+}
+
+.status-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 28px;
+  background: rgba(13, 31, 13, 0.8);
+  border-top: 1px solid rgba(26, 58, 26, 0.6);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 16px;
+  font-size: 0.7rem;
+  color: #507050;
+  z-index: 100;
+}
+
+.status-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.status-dot.offline {
+  background: #cc3333;
+}
+
+.status-bar-separator {
+  width: 1px;
+  height: 14px;
+  background: #1a3a1a;
+}
+
+/* ── Global Animations ──────────────────────────────────── */
+
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeSlideLeft {
+  from { opacity: 0; transform: translateX(16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeSlideRight {
+  from { opacity: 0; transform: translateX(-16px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes subtleGlow {
+  0%, 100% { box-shadow: 0 0 4px rgba(var(--accent-rgb), 0.15); }
+  50%      { box-shadow: 0 0 12px rgba(var(--accent-rgb), 0.35); }
+}
+
+@keyframes statusPulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.4; }
+}
+
+@keyframes badgePop {
+  0%   { transform: scale(0.6); opacity: 0; }
+  60%  { transform: scale(1.1); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.status-dot {
+  animation: statusPulse 2s ease-in-out infinite;
+}
+
+.status-dot.offline {
+  animation: statusPulse 1s ease-in-out infinite;
+}
+
+.app-header {
+  animation: fadeSlideUp 0.4s ease-out both;
+}
+
+.status-bar {
+  animation: fadeSlideUp 0.5s ease-out 0.2s both;
+}

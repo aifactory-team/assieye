@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774004275714-outubecomwatchvpQf4erfdBj0",
+  "title": "[속보] 대전 자동차 부품 공장 대형 화재 — 14명 연락 두절, 55명 부상",
+  "link": "https://www.youtube.com/watch?v=pQf4erfdBj0",
+  "pubDate": "2026-03-20T16:00:00+09:00",
+  "source": "KBS",
+  "description": "대전 자동차 부품 공장 대형 화재 속보. 소방: 14명 연락 두절, 실종자 수색 중. 55명 부상.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "KBS",
+    "속보",
+    "실종자",
+    "부상자"
+  ],
+  "agentNote": "KBS 속보 — 실종 14명, 부상 55명 집계",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "youtube"
+}

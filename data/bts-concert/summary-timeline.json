@@ -1,0 +1,34 @@
+[
+  {
+    "time": "D-7",
+    "situation": "BTS 광화문 콘서트 공식 발표. 티켓 예매 시작.",
+    "casualties": "해당 없음",
+    "response": "서울시 교통 대책 수립 시작. 경찰 배치 계획.",
+    "outlook": "팬 대기열 형성 예상. 온라인 화제성 급상승.",
+    "eventMetrics": { "attendees": 0, "snsMentions": 500000, "police": 0, "mediaArticles": 50 }
+  },
+  {
+    "time": "D-3",
+    "situation": "티켓 전량 매진. 광화문 인근 숙소 예약 폭주.",
+    "casualties": "해당 없음",
+    "response": "경찰 배치 계획 확정. 교통 통제 구간 고시.",
+    "outlook": "해외 팬 입국 시작. 공항 혼잡.",
+    "eventMetrics": { "attendees": 0, "snsMentions": 1200000, "police": 500, "mediaArticles": 120 }
+  },
+  {
+    "time": "D-1",
+    "situation": "광화문광장 무대 설치 완료. 리허설 진행.",
+    "casualties": "해당 없음",
+    "response": "세종대로 교통 통제 시작. 경찰 3,000명 배치.",
+    "outlook": "콘서트 당일 10만명 운집 예상. 지하철 혼잡 대비.",
+    "eventMetrics": { "attendees": 5000, "snsMentions": 1800000, "police": 3000, "mediaArticles": 200 }
+  },
+  {
+    "time": "D-Day",
+    "situation": "BTS 광화문 콘서트 준비 중. 무대 설치 완료.",
+    "casualties": "해당 없음",
+    "response": "서울시·종로구 교통 통제. 경찰 3,000명 배치. 응급의료팀 20개조.",
+    "outlook": "콘서트 당일 광화문 일대 대규모 인파.",
+    "eventMetrics": { "attendees": 15000, "snsMentions": 2450000, "police": 3000, "mediaArticles": 350 }
+  }
+]

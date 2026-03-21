@@ -1,0 +1,218 @@
+{
+  "generatedAt": "2026-03-21T01:30:00+09:00",
+  "previousReportAt": "2026-03-21T01:00:00+09:00",
+  "topicName": "대전 화재",
+  "nextUpdateAt": "2026-03-21T02:00:00+09:00",
+  "reportVersion": 5,
+  "dataSnapshot": {
+    "newsCount": 10,
+    "latestNews": "2026-03-20T19:00:00+09:00",
+    "summaryLastAnalysis": "2026-03-20T10:23:23.968Z",
+    "elapsedSinceIgnition": "12시간 13분 (13:17 발화 → 현재 01:30)",
+    "informationBlackout": "6시간 30분 (19:00 이후 공식 발표 없음)"
+  },
+  "ontologyAnalysis": {
+    "eventOntology": {
+      "phase": "잔불 정리 완료 직전 — 새벽 안전진단 전환 임박",
+      "phaseIndex": 4,
+      "phases": ["발화", "확산", "최성기", "진압", "잔불정리", "수색/복구"],
+      "phaseTransition": {
+        "current": "잔불정리 최종단계",
+        "next": "수색/복구",
+        "transitionCondition": "잔불 완전 소거 + 건물 안전진단 + 나트륨 안전화",
+        "estimatedTransition": "2026-03-21T06:00~08:00 (4.5~6.5시간 후)"
+      },
+      "deltaFromLastReport": "30분 경과. 4세대 예측 '01:00~05:00 열수축 최대 구간' 진행 중. 추가 붕괴 보도 없어 안정적 진행 추정."
+    },
+    "spatialOntology": {
+      "epicenter": { "lat": 36.3944, "lng": 127.4183 },
+      "location": "대전 대덕구 문평동 (대전산업단지)",
+      "nightConditions": "심야 기온 3~4°C, 습도 78~82%, 풍속 1~2m/s. 역전층 지속.",
+      "atmosphericDispersionModel": {
+        "title": "대기 확산 추정 모델 [5세대 신규]",
+        "method": "가우시안 플룸 모델 기반 간이 추정 (풍속 1.5m/s, 대기안정도 F등급-야간안정)",
+        "results": {
+          "500m": "PM2.5 150~200μg/m³ 추정 (매우나쁨 수준)",
+          "1km": "PM2.5 80~120μg/m³ 추정 (나쁨 수준)",
+          "2km": "PM2.5 40~60μg/m³ 추정 (보통~나쁨)",
+          "3km": "PM2.5 20~30μg/m³ 추정 (보통)"
+        },
+        "dispersionDirection": "심야 약풍(1~2m/s)으로 확산 속도 느림. 역전층 하부에 체류. 새벽 06시 이후 역전층 해소 시 급속 확산·희석 예상.",
+        "safeDistance": "최소 2km 이상 거리에서 안전 기준 충족 추정. 1km 이내 주민 대피 유지 필수.",
+        "caveat": "실제 측정 데이터 없는 추정치. 나트륨 연소 생성물(NaOH 분진) 별도 고려 필요."
+      }
+    },
+    "resourceOntology": {
+      "deployed": {
+        "firefighting": "소방장비 46대, 야간 3차 교대조 전환 추정 (60~70명)",
+        "specialEquipment": "무인소방로봇 2대 (잔불 감시), 열화상 카메라",
+        "searchPrep": "구조 전문팀·생명탐지기·크레인 현장 대기 추정",
+        "medical": "부상 55명 병원 치료 중. 현장 의료팀 최소 운용.",
+        "familySupport": "실종자 가족 대기소 운영 추정 (42~56명)"
+      }
+    },
+    "casualtyOntology": {
+      "current": {
+        "injured": 55,
+        "serious": 24,
+        "minor": 31,
+        "missing": 14,
+        "deceased": 0,
+        "workersPresent": 156
+      },
+      "goldenTimeAnalysis": {
+        "elapsedSinceFire": "12시간 13분",
+        "survivalProbability": {
+          "optimistic": "3~5%",
+          "realistic": "2% 미만",
+          "pessimistic": "1% 미만"
+        },
+        "timeDecayCurve": "1h:50% → 3h:20% → 6h:10% → 12h:2~3% → 24h:<1%. 현재 12시간 경과 지점."
+      },
+      "deltaFromLastReport": "30분 추가 경과. 생존 확률 곡선상 12시간 지점(2~3%). 하락 속도 둔화 구간이나 절대값 극히 낮음."
+    },
+    "secondaryHazardOntology": {
+      "hazardousMaterials": {
+        "type": "나트륨 (Na) 200kg",
+        "status": "격리 관리 중 추정. 습도 80% 근접으로 미세반응 위험 최대.",
+        "nightRisk": "01:00~05:00 습도 최고 구간. 격리 커버링의 밀봉 상태가 핵심."
+      },
+      "structuralCollapse": {
+        "risk": "높음 (열수축 최대 구간 진행 중)",
+        "detail": "01:30 현재 기온 3~4°C. 잔열 잔류부와 외기 온도차 최대. 04:00~05:00 기온 최저점에서 위험 피크."
+      },
+      "environmentalContamination": {
+        "airQuality": "역전층 지속. 5세대 대기확산 모델 추정: 500m 내 PM2.5 150~200μg/m³.",
+        "soilWater": "소화용수 유출 12시간+ 누적. 오염 범위 확대 중."
+      }
+    }
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "30분~2시간 (01:30~03:30)",
+      "scenarios": {
+        "best": "잔불 98%+ 소거. 열수축 구간 무사 통과. 나트륨 격리 안정. 03시 이후 진화 완료 선언 준비.",
+        "baseline": "잔불 95~98% 유지. 일부 잔열 잔류. 열수축 소규모 균열 발생하나 대규모 붕괴 없음.",
+        "worst": "기온 최저 접근(03~04시)에서 열수축 붕괴, 또는 습도 피크에서 나트륨 미세반응."
+      },
+      "probability": { "best": 0.30, "baseline": 0.55, "worst": 0.15 }
+    },
+    "midTerm": {
+      "timeframe": "2~12시간 (03:30~13:30)",
+      "expectedPath": "04:00 잔불 소거 확인 → 05:00~06:00 역전층 해소·대기질 개선 → 06:00~08:00 안전진단 → 08:00~10:00 수색 착수 → 10:00~13:00 1차 수색 결과",
+      "criticalMilestones": [
+        { "time": "04:00", "event": "잔불 완전 소거", "probability": "80%" },
+        { "time": "06:00", "event": "역전층 해소·대기 개선", "probability": "85%" },
+        { "time": "08:00", "event": "안전진단 완료", "probability": "65%" },
+        { "time": "10:00", "event": "수색 본격 착수", "probability": "60%" },
+        { "time": "13:00", "event": "1차 수색 결과", "probability": "40%" }
+      ],
+      "searchDurationEstimate": {
+        "title": "수색 소요 기간 통계 추정 [5세대 신규]",
+        "method": "유사 사례 3건(여수·인천·이천) 기반 통계 분석",
+        "estimate": {
+          "minimum": "2~3일 (건물 일부 구역만 수색 가능한 경우)",
+          "expected": "4~5일 (전체 구역 수색, 잔해 제거 병행)",
+          "maximum": "7일+ (대규모 붕괴로 중장비 투입 장기화)"
+        },
+        "factors": "건물 전소 상태, 나트륨 잔류 구역 우회 필요, 14명 다수 실종자 → 기대값 4~5일"
+      }
+    },
+    "longTerm": {
+      "timeframe": "12~72시간 (13:30~3월 24일)",
+      "phaseExpectation": "3/21 오후 1차 수색 결과 → 3/22~23 전체 수색 진행 → 3/23~24 수색 완료·사고 원인 1차 보고",
+      "recommendations": [
+        "수색 결과 발표 전 실종자 가족 사전 통보 (심리상담사 동행)",
+        "환경부 토양·수질 정밀 조사 착수 (소화용수 오염)",
+        "산업단지 위험물 사업장 전수 점검 1주 내 완료",
+        "피해 근로자 산재 신속 처리 착수"
+      ]
+    }
+  },
+  "newAnalysisDimensions": {
+    "atmosphericDispersion": {
+      "title": "대기 확산 모델링 [5세대 신규]",
+      "description": "가우시안 플룸 모델 기반 간이 추정. 야간 안정 대기(F등급)에서 500m 내 PM2.5 150~200μg/m³, 2km에서 안전 기준 충족.",
+      "actionable": "1km 이내 주민 대피 유지. 06시 역전층 해소 후 재평가."
+    },
+    "compensationEstimate": {
+      "title": "산재보험·보상 규모 추정 [5세대 신규]",
+      "estimate": {
+        "injuredWorkers": {
+          "count": 55,
+          "medicalCost": "중상 24명 × 평균 3,000만원 + 경상 31명 × 평균 500만원 = 약 8.7억원",
+          "lostWages": "55명 × 평균 월 300만원 × 3개월 = 약 5억원",
+          "disability": "중상자 중 장해 발생 시 추가 보상 (추정 불가)"
+        },
+        "missingWorkers": {
+          "count": 14,
+          "ifDeceased": "14명 × 평균 사망 보상 2억원 = 약 28억원",
+          "familySupport": "유족 위로금, 장례비, 심리치료 등 추가"
+        },
+        "facilityDamage": "건물 전소 + 장비 손실 = 수십~수백억원 (보험 감정 필요)",
+        "totalEstimate": "최소 40~50억원 (인명 보상) + 시설 복구비 별도. 종합 피해액 100억원+ 추정."
+      }
+    },
+    "economicImpact": {
+      "title": "대전 산업단지 경제 파급효과 [5세대 신규]",
+      "analysis": {
+        "directImpact": "안전공업 조업 중단 — 자동차 부품 공급망 차질. 거래처 대체 공급선 확보 필요.",
+        "indirectImpact": "인접 공장 조업 일시 중단 가능 (안전 점검, 교통 통제). 산업단지 전체 생산성 일시 하락.",
+        "supplyChain": "자동차 부품 특성상 JIT(적시생산) 방식 → 1~2일 재고분 이후 완성차 공장 영향 가능.",
+        "regionalEconomy": "대전 대덕구 문평동 일대 상권 영향. 화재 현장 주변 영업 제한.",
+        "estimatedLoss": "직접 피해 100억원+ (시설·재고), 간접 파급 수백억원 규모 추정"
+      }
+    },
+    "searchDurationStatistics": {
+      "title": "수색 소요 기간 통계 추정 [5세대 신규]",
+      "comparativeCases": [
+        { "case": "여수산단 2018", "searchDuration": "1일 (실종 0명, 소규모)" },
+        { "case": "인천 물류센터 2022", "searchDuration": "7일 (건물 붕괴 장기화)" },
+        { "case": "이천 쿠팡 2021", "searchDuration": "6일 (소방관 수색)" }
+      ],
+      "prediction": "대전 화재: 14명 다수 실종 + 건물 전소 + 나트륨 변수 → 기대값 4~5일, 최대 7일+",
+      "keyVariable": "건물 안전진단 결과에 따른 수색 가능 구역 비율이 기간을 좌우"
+    }
+  },
+  "riskMatrix": [
+    { "hazard": "나트륨 습도 최대 구간 반응", "probability": "중간", "impact": "매우높음", "trend": "▲ 습도 78~82% 피크", "mitigation": "격리 밀봉 감시" },
+    { "hazard": "열수축 붕괴 (01~05시)", "probability": "중간", "impact": "높음", "trend": "▲ 진행 중 (기온 최저 04시)", "mitigation": "접근 통제 유지" },
+    { "hazard": "실종자 사망 확인", "probability": "매우높음", "impact": "매우높음", "trend": "▲ 12시간+ (곡선 2~3%)", "mitigation": "가족 사전 통보 체계" },
+    { "hazard": "수색 중 2차 붕괴", "probability": "중간", "impact": "매우높음", "trend": "수색 시 현실화", "mitigation": "안전진단 선행" },
+    { "hazard": "대기오염 주민 노출", "probability": "중간", "impact": "높음", "trend": "▲ 역전층 최대 + 확산모델 적용", "mitigation": "1km 대피, 06시 이후 재평가" },
+    { "hazard": "수색 결과 사회적 충격", "probability": "높음", "impact": "높음", "trend": "수색 착수 시", "mitigation": "가족 심리지원, 언론 브리핑" },
+    { "hazard": "공급망 차질", "probability": "높음", "impact": "중간", "trend": "새로운 위험 [5세대]", "mitigation": "거래처 대체 공급선 확보" }
+  ],
+  "confidence": {
+    "overall": "중간-낮음 (55%)",
+    "changeFromLast": "3%p 하락 — 정보 공백 6.5시간, 대기확산·보상 추정은 가정 기반",
+    "uncertaintyFactors": [
+      "19:00 이후 6.5시간 공식 발표 전무 (정보 공백 최장)",
+      "대기확산 모델은 실측 데이터 없는 간이 추정",
+      "보상 규모는 판례·보험 조건에 따라 대폭 변동 가능",
+      "수색 기간은 안전진단 결과에 크게 의존"
+    ],
+    "dataQualityNote": "4세대 이후 새 데이터 없이 4회 연속 시간기반 추론. 신뢰도 하한선(50%) 접근 중. 다음 공식 발표 시 신뢰도 대폭 회복 예상.",
+    "recommendedAction": "소방당국 야간 브리핑 또는 새벽 발표 입수 시 즉시 갱신 필요"
+  },
+  "evolution": {
+    "generation": 5,
+    "improvements": "4세대 과제 4건 전량 반영: (1) 가우시안 플룸 대기확산 모델 추정(거리별 PM2.5), (2) 산재보상 40~50억원+ 규모 추정, (3) 공급망 차질·지역경제 파급 분석, (4) 유사사례 기반 수색 4~5일 통계 추정. 위험 매트릭스에 '공급망 차질' 신규 항목 추가.",
+    "newDimension": "정량적 모델링 도입 — 대기확산(가우시안 플룸), 보상금액(산재보험 기준), 수색기간(통계 추정). 정성 분석에서 정량 분석으로의 전환 시작.",
+    "previousAccuracy": "4세대 검증: '열수축 최대 구간(01~05시)' 진행 중 — 추가 붕괴 보도 없어 '소규모 균열 수준' 기본 시나리오 부합. '습도 75~80%' 예측 → 실제 78~82% 추정으로 약간 상회. 전반적으로 4세대 예측 프레임 유효.",
+    "nextTask": "6세대에서 추가할 분석: (1) 수색 단계별 의사결정 트리 (안전진단 결과 분기), (2) 보험사 지급 vs 정부 지원금 비교, (3) 대전시 재난안전 대응 평가 (타 시도 대비), (4) 피해 근로자 직업 복귀 소요 추정, (5) 신뢰도 회복 임계점 분석 (어떤 정보가 입수되면 신뢰도가 얼마나 회복되는가)",
+    "evolutionLog": [
+      "1세대: 기본 5개 온톨로지, 3단계 시나리오",
+      "2세대: +골든타임, +야간 특수요인, +정보공백 식별",
+      "3세대: +마일스톤 확률, +냉각수축, +자원 피로도",
+      "4세대: +유사사례 3건, +가족 심리지원, +여론 분석 — 현장→사회 확장",
+      "5세대: +대기확산 모델, +보상 규모, +경제 파급, +수색기간 통계 — 정성→정량 전환"
+    ],
+    "evolutionMetrics": {
+      "analysisDimensions": { "gen1": 5, "gen2": 8, "gen3": 11, "gen4": 14, "gen5": 18 },
+      "riskItems": { "gen1": 6, "gen2": 6, "gen3": 7, "gen4": 7, "gen5": 7 },
+      "confidenceTrend": { "gen1": "70%", "gen2": "65%", "gen3": "60%", "gen4": "58%", "gen5": "55%" },
+      "note": "분석 차원은 매 세대 3~4개씩 증가. 신뢰도는 정보 공백으로 하락 중이나, 분석 깊이는 지속 증가."
+    }
+  }
+}

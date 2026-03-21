@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774002187846-eraldcorpcomarticle10699356",
+  "title": "물 뿌리면 폭발… 대전 공장 화재, 나트륨 200kg 초비상",
+  "link": "https://biz.heraldcorp.com/article/10699356",
+  "pubDate": "2026-03-20T17:30:00+09:00",
+  "source": "헤럴드경제",
+  "description": "대전 공장 내 보관된 나트륨 200kg이 진화 작업의 최대 변수. 물과 접촉 시 폭발 위험으로 일반적인 진화 불가능.",
+  "category": "analysis",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "나트륨",
+    "폭발위험",
+    "진화난항",
+    "위험물질"
+  ],
+  "agentNote": "나트륨 위험성 심층 보도 — 물 진화 불가, 특수 대응 필요",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://wimg.heraldcorp.com/news/cms/2026/03/20/rcv.YNA.20260320.PYH2026032017110006300_T1.jpg",
+  "platform": "news"
+}

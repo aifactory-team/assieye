@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774002187846-armstatus2034868098181091488",
+  "title": "긴급정보 알리미: 대전 대덕구 문평동 43-5번지 화재사고 발생",
+  "link": "https://x.com/South_K_Alarm/status/2034868098181091488",
+  "pubDate": "2026-03-20T13:17:00+09:00",
+  "source": "@South_K_Alarm",
+  "description": "오늘 13:17 대전 대덕구 문평동 43-5번지 화재사고 발생. 인근 주민은 사고지점에서 먼 곳으로 이동하시고, 차량은 우회하시기 바랍니다.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "대전",
+    "속보",
+    "긴급정보",
+    "대피"
+  ],
+  "agentNote": "최초 트위터/X 속보 — 화재 발생 즉시 긴급 알림 게시",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "twitter"
+}

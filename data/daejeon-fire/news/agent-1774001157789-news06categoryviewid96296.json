@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774001157789-news06categoryviewid96296",
+  "title": "대전 문평동 공장 화재… 나트륨 폭발 우려로 진화 난항",
+  "link": "https://www.tjb.co.kr/news06/category/view/id/96296",
+  "pubDate": "2026-03-20T17:00:00+09:00",
+  "source": "TJB",
+  "description": "나트륨 200kg 보관으로 물 사용 진화에 제약. 건물 붕괴 위험으로 소방대원 일시 철수. 진화 작업 난항.",
+  "category": "news",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "나트륨",
+    "진화난항",
+    "건물붕괴",
+    "소방"
+  ],
+  "agentNote": "나트륨+건물 붕괴 이중 위험으로 진화 작업 지연",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "news"
+}

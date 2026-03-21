@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774004275714-outubecomwatchvnR9Y61k1aIo",
+  "title": "[LIVE] KBS뉴스특보 — 대전 대형 화재 국가소방동원령 발령",
+  "link": "https://www.youtube.com/watch?v=nR9Y61k1aIo",
+  "pubDate": "2026-03-20T14:00:00+09:00",
+  "source": "KBS",
+  "description": "KBS 뉴스특보 생중계: 대전 대덕구 문평동 자동차 부품 공장 대형 화재. 국가소방동원령 발령.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "KBS",
+    "생중계",
+    "뉴스특보",
+    "소방동원령"
+  ],
+  "agentNote": "KBS 뉴스특보 라이브 — 화재 현장 생중계",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "youtube"
+}

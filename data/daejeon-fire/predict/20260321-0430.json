@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-03-21T04:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 11,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "15시간 13분",
+    "informationBlackout": "9시간 30분",
+    "consecutiveNoDataGenerations": 9
+  },
+  "statusAlert": {
+    "level": "AMBER",
+    "mode": "INFORMATION_DEFICIT — 데이터 유입 임박 기대",
+    "message": "열수축 피크(04시) 무사 통과. 06시 역전층 해소·일출 접근. 소방 새벽 브리핑 1.5시간 내 가능성."
+  },
+  "timeBasedVerification": {
+    "checks": [
+      { "prediction": "04시 열수축 피크", "status": "✅ 통과. 추가 붕괴 보도 없음.", "result": "기본 시나리오 부합" },
+      { "prediction": "03~04시 잔불 소거", "status": "✅ 구간 종료. 소극적 부합.", "result": "진화 완료 추정" },
+      { "prediction": "06시 역전층 해소", "status": "⏳ 1.5시간 후 (일출 06:20)", "result": "미도래" },
+      { "prediction": "06~08시 안전진단", "status": "⏳ 1.5~3.5시간 후", "result": "미도래. 핵심 분기점." }
+    ],
+    "positiveSignals": "열수축 피크 + 습도 피크 모두 무사 통과 추정 → 건물 안정성 소폭 개선, 안전진단 여건 호전"
+  },
+  "probabilityCurveUpdate": {
+    "survivalProbability": { "realistic": "<1%", "elapsed": "15시간 13분" },
+    "scenarioShift": {
+      "S1_기본(부분안전)": "35% → 37% (열수축·습도 피크 통과로 부분안전 확률 상승)",
+      "S3_전면해체": "15% → 13% (피크 무사 통과 반영)",
+      "S5_최선(안전)": "4% → 5% (소폭 상승)",
+      "expectedSearchDuration": "4.3일 → 4.2일"
+    }
+  },
+  "lookAhead": {
+    "title": "06시 이후 상황 전개 프리뷰",
+    "timeline": [
+      { "time": "06:00", "event": "역전층 해소·일출", "impact": "대기질 개선, 시야 확보, 작업 여건 호전" },
+      { "time": "06:00~07:00", "event": "소방 새벽 브리핑 가능", "impact": "정보 공백 해소 → 신뢰도 +15% 즉시 회복" },
+      { "time": "07:00~08:00", "event": "안전진단 착수", "impact": "핵심 분기점 — 27개 시나리오 → 9개로 축소" },
+      { "time": "08:00~10:00", "event": "수색 착수 가능", "impact": "실종자 14명 운명 결정" }
+    ],
+    "note": "향후 3~6시간이 이 사건 전체에서 가장 중요한 전환기. 정보 유입과 함께 예측 시스템도 정상 모드 복귀 예정."
+  },
+  "confidence": {
+    "overall": "50%",
+    "outlook": "06시 이후 데이터 유입 가능성 높음. 1~2시간 내 정상 모드 복귀 기대.",
+    "potentialRecovery": "소방 브리핑(+15%) + 안전진단(+12%) → 77% 도달 가능"
+  },
+  "evolution": {
+    "generation": 11,
+    "mode": "INFORMATION_DEFICIT → 정상 복귀 임박",
+    "improvements": "열수축+습도 피크 통과 반영 → S1(부분안전) 37%↑, S3(전면해체) 13%↓, 수색 기대값 4.2일. 06시 이후 전개 프리뷰 작성.",
+    "strategicNote": "11세대는 '날이 밝기를 기다리는' 세대. 정보 부족 모드 4턴째이나, 06시 이후 상황 급전환 예상. 야간 위험 요소(열수축·습도) 무사 통과는 긍정적 신호.",
+    "nextTask": "12세대(05:00): 06시 역전층 해소 1시간 전. 데이터 유입 시 전면 갱신. / 미입수 시 06시 역전층 해소 예측 최종 확인.",
+    "evolutionLog": [
+      "1~3세대: Foundation",
+      "4~5세대: Expansion & Quantification",
+      "6세대: Decision & Meta",
+      "7세대: Self-correction",
+      "8세대: Self-limitation (정보 부족 모드 선언)",
+      "9~11세대: Disciplined monitoring (절제된 모니터링 — 야간 위험 통과 확인)"
+    ]
+  }
+}

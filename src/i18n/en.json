@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "AssiEye",
+    "subtitle": "Real-time OSINT Dashboard",
+    "domain": "korea-forest",
+    "domainLabel": "Korea Forest"
+  },
+  "common": {
+    "loading": "Loading data...",
+    "failedToLoad": "Failed to load data",
+    "retrying": "Retrying...",
+    "live": "Live",
+    "cached": "Cached",
+    "unavailable": "Unavailable",
+    "new": "New"
+  },
+  "panels": {
+    "fireHotspots": "Fire Hotspots",
+    "fireHotspots.tooltip": "Real-time wildfire detection based on NASA FIRMS satellite data",
+    "weather": "Weather Status",
+    "weather.tooltip": "Real-time weather data from KMA",
+    "feeds": "Forest News",
+    "feeds.tooltip": "Forest policy news from KFS, FAO and more",
+    "dwi": "Fire Danger Index",
+    "dwi.tooltip": "Daily Weather Index (DWI) heatmap based on weather data",
+    "alerts": "Alert History",
+    "alerts.tooltip": "Telegram wildfire alert dispatch history",
+    "alerts.testBtn": "Test Alert",
+    "aiBrief": "AI Briefing",
+    "aiBrief.tooltip": "Forest news summary powered by Claude AI",
+    "aiBrief.generate": "Generate Briefing",
+    "aiBrief.regenerate": "Regenerate",
+    "aiBrief.placeholder": "Generate a briefing after news feeds have loaded.",
+    "aiBrief.noItems": "No news items available to generate a briefing.",
+    "satellites": "Satellites",
+    "satellites.tooltip": "Real-time satellite tracking via CelesTrak",
+    "flights": "Flight Tracker",
+    "flights.tooltip": "Real-time aircraft tracking via OpenSky Network",
+    "youtube": "YouTube",
+    "youtube.tooltip": "Related YouTube live streams and news"
+  },
+  "status": {
+    "online": "Online",
+    "offline": "Offline",
+    "fires": "Fires",
+    "firms": "FIRMS",
+    "weather": "Weather",
+    "feeds": "News"
+  },
+  "map": {
+    "globe": "3D Globe",
+    "flat": "Flat Map",
+    "layers": "Layers",
+    "fires": "Fires",
+    "weather": "Weather",
+    "dwi": "Fire Danger Index",
+    "satellites": "Satellites",
+    "flights": "Flights"
+  },
+  "fireTable": {
+    "region": "Region",
+    "fires": "Fires",
+    "highConf": "High Conf",
+    "totalFrp": "Total FRP"
+  },
+  "components": {
+    "panel": {
+      "dragToResize": "Drag to resize"
+    }
+  }
+}

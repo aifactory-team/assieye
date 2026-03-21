@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774001157789-localdaejeonchungnam6108393",
+  "title": "대전 문평동 차 부품 공장 큰불, 중상 35명 경상 15명… 국가동원령 발령",
+  "link": "https://www.news1.kr/local/daejeon-chungnam/6108393",
+  "pubDate": "2026-03-20T14:45:00+09:00",
+  "source": "뉴스1",
+  "description": "대전 대덕구 문평동 자동차 부품 공장에서 대형 화재. 중상 35명, 경상 15명. 소방청 국가소방동원령 발령.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "대전",
+    "국가동원령",
+    "중상",
+    "경상"
+  ],
+  "agentNote": "중간 집계: 중상35+경상15=50명, 이후 55명으로 증가",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://i3n.news1.kr/system/photos/2026/3/20/7808023/high.jpg",
+  "platform": "news"
+}

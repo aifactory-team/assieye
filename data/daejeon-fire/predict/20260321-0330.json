@@ -1,0 +1,88 @@
+{
+  "generatedAt": "2026-03-21T03:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 9,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "14시간 13분",
+    "informationBlackout": "8시간 30분",
+    "consecutiveNoDataGenerations": 7
+  },
+  "statusAlert": {
+    "level": "RED",
+    "message": "정보 부족 모드 지속. 신규 분석 중단 상태. 데이터 유입 대기 중.",
+    "mode": "INFORMATION_DEFICIT"
+  },
+  "timeBasedVerification": {
+    "title": "이전 예측 시간 도래 검증 [9세대 핵심]",
+    "checks": [
+      {
+        "prediction": "03~04시 잔불 완전 소거",
+        "predictedBy": "4~8세대 공통",
+        "currentTime": "03:30 — 예측 구간 중앙",
+        "verification": "검증 불가 (정보 없음). 추가 화재·붕괴 보도 없으므로 소극적 부합 추정.",
+        "confidence": "소극적 추정"
+      },
+      {
+        "prediction": "04시 기온 최저점 열수축 피크",
+        "predictedBy": "4~7세대",
+        "currentTime": "03:30 — 30분 후 도달",
+        "verification": "미도래. 04:00~05:00 최대 경계 구간 임박.",
+        "confidence": "예측 유효"
+      },
+      {
+        "prediction": "06시 역전층 해소",
+        "predictedBy": "3~8세대",
+        "currentTime": "2.5시간 후",
+        "verification": "미도래. 일출 시간 기반 예측 유지.",
+        "confidence": "예측 유효"
+      }
+    ]
+  },
+  "probabilityCurveUpdate": {
+    "title": "시간 경과 확률 곡선 자동 업데이트",
+    "survivalProbability": {
+      "elapsed": "14시간 13분",
+      "realistic": "<1%",
+      "note": "곡선 하단 수렴 완료. 실질적 변화 없음."
+    },
+    "scenarioProbabilities": {
+      "S1_기본": "35% → 35% (변동 없음)",
+      "S2_나트륨성공": "20% → 20%",
+      "S3_전면해체": "15% → 16% (시간 경과로 구조 열화 소폭 반영)",
+      "S4_생존구조": "5% → 3% (14시간+ 생존 확률 하락 반영)",
+      "S5_최선": "5% → 4%",
+      "expectedSearchDuration": "4.3일 → 4.4일 (S3 상승, S4·S5 하락 반영)"
+    }
+  },
+  "coreVariableMonitoring": {
+    "건물안전진단": { "status": "대기 중. 06~08시 실시 예상. 변동 없음." },
+    "나트륨": { "status": "격리 관리 추정. 03:30 습도 78~80%. 피크 통과 중." },
+    "생명탐지": { "status": "수색 미착수. 안전진단 후 투입 예정." }
+  },
+  "actionItems": {
+    "immediate": "04:00 기온 최저점 모니터링 — 붕괴 발생 시 즉시 갱신",
+    "next2hours": "05:00~06:00 역전층 해소 확인 — 대기질 개선 시작",
+    "dataWaiting": "소방당국 새벽 브리핑 또는 뉴스 속보 입수 시 정상 모드 복귀"
+  },
+  "confidence": {
+    "overall": "50%",
+    "status": "RED — 정보 부족 모드",
+    "note": "하한선 유지. 정보 유입 없어 변동 없음. 시간 경과 반영만 수행."
+  },
+  "evolution": {
+    "generation": 9,
+    "mode": "INFORMATION_DEFICIT — 자기 제한 모드",
+    "improvements": "8세대 과제 반영: (1) 이전 예측 3건 시간 도래 검증 수행, (2) 8세대 시나리오 확률 시간 보정(S3↑, S4·S5↓), (3) 수색 기대값 4.3→4.4일 자동 갱신",
+    "newDimension": "없음 (정보 부족 모드 — 신규 추가 중단)",
+    "strategicNote": "9세대는 '절제된 갱신'을 실행한 세대. 데이터 없이 새 분석을 만들어내지 않고, 시간 경과에 따른 자동 보정만 수행. 이는 8세대에서 학습한 '자기 제한'의 실천.",
+    "nextTask": "10세대: (1) 04시 열수축 피크 통과 검증, (2) 06시 역전층 해소 검증, (3) 새 데이터 입수 시 전면 갱신 + 정상 모드 복귀",
+    "evolutionLog": [
+      "1~3세대: Foundation",
+      "4~5세대: Expansion & Quantification",
+      "6세대: Decision & Meta",
+      "7세대: Self-correction (넓이→깊이)",
+      "8세대: Self-limitation (정보 부족 모드 선언)",
+      "9세대: Disciplined update (절제된 갱신 — 시간 보정만)"
+    ]
+  }
+}

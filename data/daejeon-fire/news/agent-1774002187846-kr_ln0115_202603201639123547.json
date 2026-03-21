@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774002187846-kr_ln0115_202603201639123547",
+  "title": "대전 공장 화재로 53명 중경상, 14명 연락 두절",
+  "link": "https://www.ytn.co.kr/_ln/0115_202603201639123547",
+  "pubDate": "2026-03-20T16:39:00+09:00",
+  "source": "YTN",
+  "description": "YTN 속보: 대전 공장 화재로 53명 중경상 부상, 14명 연락 두절 상태. 국가소방동원령 발령.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "YTN",
+    "속보",
+    "연락두절",
+    "부상자"
+  ],
+  "agentNote": "방송사 속보 — 53명 부상+14명 연락두절 집계",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://image.ytn.co.kr/general/jpg/2026/0320/202603201639123547_t.jpg",
+  "platform": "news"
+}

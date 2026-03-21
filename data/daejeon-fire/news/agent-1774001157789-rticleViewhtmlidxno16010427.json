@@ -1,0 +1,23 @@
+{
+  "id": "agent-1774001157789-rticleViewhtmlidxno16010427",
+  "title": "[속보] 대전 대덕구 문평동 자동차 부품 공장 대형 화재 발생",
+  "link": "https://www.topstarnews.net/news/articleView.html?idxno=16010427",
+  "pubDate": "2026-03-20T13:20:00+09:00",
+  "source": "톱스타뉴스",
+  "description": "대전 대덕구 문평동 자동차 부품 제조 공장에서 오후 1시 17분경 대형 화재 발생. 주민 이동 및 차량 우회 요청.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "대전",
+    "대덕구",
+    "문평동",
+    "공장화재",
+    "속보"
+  ],
+  "agentNote": "최초 발화 시각 13:17, 자동차 부품 제조 공장에서 발생한 대형 화재",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://cdn.topstarnews.net/news/photo/202603/16010427_1882507_729.jpg",
+  "platform": "news"
+}

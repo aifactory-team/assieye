@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774001157789-1954a6300919c9854_storyhtml",
+  "title": "Fire at South Korean auto parts factory injures at least 53",
+  "link": "https://www.washingtonpost.com/world/2026/03/20/south-korea-fire-factory-daejeon/cfb3cb86-2422-11f1-954a-6300919c9854_story.html",
+  "pubDate": "2026-03-20T17:00:00+09:00",
+  "source": "Washington Post",
+  "description": "A fire at an auto parts factory in Daejeon injured at least 53 people. 200kg of sodium stored on site complicated firefighting efforts.",
+  "category": "international",
+  "lang": "en",
+  "severity": "high",
+  "tags": [
+    "Daejeon",
+    "Washington Post",
+    "sodium",
+    "factory fire"
+  ],
+  "agentNote": "글로벌 주요 매체 보도 — 나트륨 위험성 강조",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "news"
+}

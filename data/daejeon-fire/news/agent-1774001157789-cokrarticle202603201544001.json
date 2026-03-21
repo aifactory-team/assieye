@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774001157789-cokrarticle202603201544001",
+  "title": "14명 연락 안돼… 대전 자동차 부품공장 화재 중상 24명·경상 29명",
+  "link": "https://www.khan.co.kr/article/202603201544001",
+  "pubDate": "2026-03-20T15:44:00+09:00",
+  "source": "경향신문",
+  "description": "화재 현장에서 14명과 연락이 두절된 상태. 중상 24명, 경상 29명으로 집계. 실종자 수색 진행 중.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "실종자",
+    "부상자",
+    "대전",
+    "수색"
+  ],
+  "agentNote": "실종 14명 연락 두절, 건물 붕괴 위험으로 수색 난항",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://img.khan.co.kr/news/2026/03/20/news-p.v1.20260320.9a90028bfca84ce89333a3a4adfee730_P1.jpg",
+  "platform": "news"
+}

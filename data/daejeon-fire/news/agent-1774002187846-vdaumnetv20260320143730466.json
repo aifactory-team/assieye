@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774002187846-vdaumnetv20260320143730466",
+  "title": "[속보] 대전 공장 화재… 오후 2시 30분 중상 35명, 경상 15명",
+  "link": "https://v.daum.net/v/20260320143730466",
+  "pubDate": "2026-03-20T14:37:00+09:00",
+  "source": "다음뉴스",
+  "description": "대전 대덕구 문평동 자동차 부품 공장 화재 중간 집계. 중상 35명, 경상 15명으로 총 50명 인명피해.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "대전",
+    "중상",
+    "경상",
+    "중간집계"
+  ],
+  "agentNote": "14:37 시점 중간 집계 — 이후 55명으로 증가",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://img1.daumcdn.net/thumb/S1200x630/?fname=https://t1.daumcdn.net/news/202603/20/yonhap/20260320143740269agcp.jpg",
+  "platform": "news"
+}

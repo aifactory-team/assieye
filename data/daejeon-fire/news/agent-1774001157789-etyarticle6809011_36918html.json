@@ -1,0 +1,23 @@
+{
+  "id": "agent-1774001157789-etyarticle6809011_36918html",
+  "title": "대전 자동차 부품 공장 큰불… 55명 중경상, 14명 실종",
+  "link": "https://imnews.imbc.com/news/2026/society/article/6809011_36918.html",
+  "pubDate": "2026-03-20T15:30:00+09:00",
+  "source": "MBC",
+  "description": "대전 대덕구 문평동 자동차 부품 공장 화재로 24명 중상, 31명 경상 등 총 55명 부상. 14명 연락 두절로 실종 상태. 화재 당시 156명 근무 중.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "대전",
+    "문평동",
+    "부상자",
+    "실종자",
+    "공장화재"
+  ],
+  "agentNote": "부상 55명(중상24+경상31), 실종 14명. 156명 근무 중 사고 발생",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://image.imnews.imbc.com/news/2026/society/article/__icsFiles/afieldfile/2026/03/20/joo260320_21.jpg",
+  "platform": "news"
+}

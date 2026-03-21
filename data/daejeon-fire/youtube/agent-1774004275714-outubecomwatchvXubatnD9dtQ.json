@@ -1,0 +1,21 @@
+{
+  "id": "agent-1774004275714-outubecomwatchvXubatnD9dtQ",
+  "title": "[LIVE] 대전 문평동 자동차 부품 공장 화재 — 중경상 50명 현장 브리핑",
+  "link": "https://www.youtube.com/watch?v=XubatnD9dtQ",
+  "pubDate": "2026-03-20T15:30:00+09:00",
+  "source": "MBN",
+  "description": "MBN 라이브: 대전 문평동 자동차 부품 제조 공장 화재. 현재까지 중경상 50명. 화재 현장 브리핑.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "MBN",
+    "라이브",
+    "현장브리핑",
+    "중경상"
+  ],
+  "agentNote": "MBN 현장 브리핑 라이브 — 50명 부상 시점",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "platform": "youtube"
+}

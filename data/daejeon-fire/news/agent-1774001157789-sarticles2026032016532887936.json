@@ -1,0 +1,23 @@
+{
+  "id": "agent-1774001157789-sarticles2026032016532887936",
+  "title": "대전 문평동 공장 화재… 나트륨 200kg 사수 속 14명 행방불명",
+  "link": "https://www.pressian.com/pages/articles/2026032016532887936",
+  "pubDate": "2026-03-20T16:53:00+09:00",
+  "source": "프레시안",
+  "description": "화재 현장에 물과 반응 시 폭발하는 나트륨 약 200kg 보관. 나트륨 관리하며 진화 작업 진행 중. 건물 붕괴 위험으로 내부 수색 불가.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "critical",
+  "tags": [
+    "대전",
+    "나트륨",
+    "폭발위험",
+    "실종자",
+    "진화난항"
+  ],
+  "agentNote": "나트륨 200kg으로 물 진화 제약, 건물 붕괴 우려로 내부 수색 불가 상태",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://cdn.pressian.com/_resources/10/2026/03/20/2026032016495627117_l.jpg",
+  "platform": "news"
+}

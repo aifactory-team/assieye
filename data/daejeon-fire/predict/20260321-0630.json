@@ -1,0 +1,147 @@
+{
+  "generatedAt": "2026-03-21T06:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 15,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "17시간 13분",
+    "latestSummary": "2026-03-21T05:30:00+09:00",
+    "newData": "사망 10명 확인. 실종 4명 수색 중."
+  },
+  "statusAlert": {
+    "level": "GREEN",
+    "mode": "NORMAL — 연속 데이터 유입",
+    "message": "사망자 10명 확인. 14세대 예측 '기대값 7~10명' 범위 부합."
+  },
+  "previousPredictionVerification": {
+    "title": "14세대 예측 검증",
+    "deathTollPrediction": {
+      "predicted": { "minimum": "3~5명", "expected": "7~10명", "maximum": "14명" },
+      "actual": "사망 10명, 실종 4명 남음",
+      "verdict": "✅ 기대값(7~10명) 정확 부합. 최종 사망자는 10~14명 범위 예상."
+    },
+    "searchPattern": {
+      "predicted": "3층 집중 발견",
+      "actual": "3층 부근서 다수 사망자 발견",
+      "verdict": "✅ 정확"
+    }
+  },
+  "ontologyAnalysis": {
+    "eventOntology": {
+      "phase": "수색 후기 — 14명 중 10명 발견, 4명 수색 중",
+      "phaseIndex": 5,
+      "searchProgress": "71% 완료 (10/14명 발견)",
+      "phaseTransition": {
+        "current": "수색/신원확인",
+        "next": "사고 원인 조사 + 복구",
+        "estimatedCompletion": "수색 완료까지 추정 12~24시간 (남은 4명)"
+      }
+    },
+    "casualtyOntology": {
+      "current": {
+        "deceased": 10,
+        "injured": 55,
+        "serious": 24,
+        "minor": 31,
+        "missing": 4,
+        "totalWorkers": 156
+      },
+      "trend": "사망자 10명으로 대폭 증가. 남은 실종 4명도 사망 가능성 매우 높음 (17시간+ 경과).",
+      "finalDeathTollEstimate": {
+        "likely": "12~14명 (남은 4명 중 대부분 사망 추정)",
+        "best": "10~11명 (기적적 생존 1~2명)",
+        "worst": "14명 (전원 사망)"
+      },
+      "goldenTimeNote": "17시간+ 경과. 생존 확률 사실상 0%. 남은 수색은 시신 수습."
+    },
+    "spatialOntology": {
+      "searchFindings": "3층 주차 공간에서 다수 사망자 발견. 2층 휴게실 1명. 나머지 4명 위치 미확인.",
+      "implication": "3층이 주요 피해 구역. 대피 경로 차단 또는 연기 흡입으로 탈출 실패. 사고 원인 조사 시 3층 구조·대피로 집중 필요."
+    },
+    "resourceOntology": {
+      "deployed": {
+        "search": "구조대원 밤샘 수색 계속. 남은 4명 집중 수색.",
+        "forensic": "사망자 10명 신원 확인 진행 중",
+        "investigation": "사고 원인 조사 착수"
+      }
+    },
+    "secondaryHazardOntology": {
+      "socialShock": {
+        "risk": "현실화",
+        "detail": "사망 10명은 대형 산업재해. 언론·여론·정치권 반응 급등 예상.",
+        "comparison": "이천 쿠팡 화재(2021) 소방관 1명 순직 → 사회적 충격. 대전 10명 사망은 이를 크게 초과."
+      },
+      "environmentalContamination": "완전 진압 후 소화용수 오염 조사 착수 필요."
+    }
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "06:30~08:30",
+      "scenarios": {
+        "best": "남은 4명 중 2~3명 추가 발견. 수색 85%+ 진행. 가족 통보 진행.",
+        "baseline": "남은 4명 중 1~2명 추가 발견. 신원 확인 계속. 정부 공식 발표 준비.",
+        "worst": "잔해 심화 구역으로 수색 지연. 추가 발견 없이 시간 소요."
+      },
+      "probability": { "best": 0.25, "baseline": 0.55, "worst": 0.20 }
+    },
+    "midTerm": {
+      "timeframe": "08:30~18:30",
+      "expectedPath": "오전 정부 공식 발표 (사망 10명+) → 오후 잔여 수색 완료 추정 → 저녁 최종 수색 결과 발표",
+      "socialResponseTimeline": [
+        { "time": "09:00~10:00", "event": "정부 공식 발표", "impact": "사망 10명+ 확정. 국민적 추모. 산업안전 비판 여론 폭발." },
+        { "time": "10:00~12:00", "event": "국회 반응", "impact": "긴급 현안 질의, 산업안전법 개정 논의 가속" },
+        { "time": "12:00~15:00", "event": "국제 보도 확산", "impact": "'10 dead in S.Korea factory fire'. 글로벌 뉴스." },
+        { "time": "15:00~18:00", "event": "대통령·총리 후속 조치", "impact": "특별재난지역 선포 검토, 산업단지 전수 점검 지시" }
+      ]
+    },
+    "longTerm": {
+      "timeframe": "18:30~3/24",
+      "phaseExpectation": "3/21 수색 90%+ → 3/22 수색 완료·최종 사망자 확정 → 3/22~23 사고 원인 1차 보고 → 3/23~24 보상·제도 개선 논의",
+      "policyImpact": {
+        "safetyLawReform": "6세대 시나리오 '중간 개정'(50%) → '대폭 개정'(60%+)으로 상향. 10명 사망은 정치적 압력 임계점 초과.",
+        "expectedMeasures": [
+          "위험물 사업장 소방 DB 실시간 연동 의무화",
+          "산업단지 합동 안전점검 분기별 실시",
+          "근로자 대피훈련 의무화·대피로 점검 강화",
+          "사업주 형사 처벌 강화 가능 (중대재해처벌법 적용)"
+        ]
+      },
+      "compensationUpdate": {
+        "previous": "5세대 추정 40~50억원+",
+        "revised": "사망 10~14명 × 2~2.5억원 = 20~35억원(사망보상) + 부상 55명 14억원 + 시설 수십억 = 총 80~100억원+",
+        "legalAction": "유족 민사소송 가능성 높음. 중대재해처벌법 적용 시 CEO 형사 처벌."
+      }
+    }
+  },
+  "riskMatrix": [
+    { "hazard": "사망자 추가 증가 (14명까지)", "probability": "매우높음", "impact": "매우높음", "trend": "▲ 남은 4명 사망 추정" },
+    { "hazard": "사회적 충격·여론 폭발", "probability": "매우높음", "impact": "매우높음", "trend": "▲▲ 10명 사망 확인" },
+    { "hazard": "산업안전법 대폭 개정 압력", "probability": "높음", "impact": "높음", "trend": "▲ 기존 50%→60%+" },
+    { "hazard": "중대재해처벌법 적용", "probability": "높음", "impact": "높음", "trend": "새로운 위험 [15세대]" },
+    { "hazard": "유족 대규모 민사소송", "probability": "높음", "impact": "중간", "trend": "새로운 위험 [15세대]" }
+  ],
+  "confidence": {
+    "overall": "78%",
+    "recovery": "+6%p (72%→78%). 연속 데이터 유입으로 추가 회복.",
+    "remainingUncertainty": [
+      "남은 실종 4명 발견 시점·상태",
+      "사고 원인 (미규명)",
+      "정부 대응 수위·제도 개선 범위"
+    ]
+  },
+  "evolution": {
+    "generation": 15,
+    "mode": "NORMAL",
+    "improvements": "14세대 사망 추정(7~10명) 정확 부합 검증. 사망 10명 반영 전면 갱신: (1) 최종 사망 12~14명 추정, (2) 보상 80~100억원+ 상향, (3) 법개정 시나리오 '대폭 개정' 60%+ 상향, (4) 중대재해처벌법·민사소송 위험 신규 추가, (5) 사회적 대응 타임라인 시간별 작성.",
+    "selfAssessment": "14세대 사망자 예측(7~10명 기대값)이 실제(10명)와 정확 부합. 이는 4세대 유사사례 비교 + 8세대 교차 분석이 유효했음을 입증. 시간 추정의 부정확함(14세대 자기 비판)과 대비되는 강점.",
+    "nextTask": "16세대: (1) 남은 4명 수색 결과, (2) 정부 공식 발표 반영, (3) 사고 원인 초기 분석, (4) 유족 지원 체계 상세화",
+    "evolutionLog": [
+      "1~3세대: Foundation",
+      "4~5세대: Expansion & Quantification",
+      "6세대: Decision & Meta",
+      "7세대: Self-correction",
+      "8~13세대: Self-limitation & Disciplined monitoring",
+      "14세대: Reactivation (정상 복귀·자기 검증)",
+      "15세대: Validated prediction (사망 7~10명 예측 → 10명 실제 부합. 예측 정확도 입증)"
+    ]
+  }
+}

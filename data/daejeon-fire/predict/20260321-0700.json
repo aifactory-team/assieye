@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-03-21T07:00:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 16,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "17시간 43분",
+    "deceased": 10,
+    "missing": 4,
+    "dataChanged": false
+  },
+  "statusAlert": {
+    "level": "GREEN",
+    "mode": "NORMAL — 오전 전환기",
+    "message": "사망 10명, 실종 4명 수색 중. 오전 정부 공식 발표 임박."
+  },
+  "timeBasedUpdate": {
+    "searchProgress": "밤샘 수색 계속. 남은 4명 수색 중. 일출 후 시야 확보로 수색 효율 향상.",
+    "finalDeathToll": {
+      "likely": "12~14명 (변동 없음)",
+      "note": "17시간+ 경과. 남은 4명 생존 확률 사실상 0%."
+    }
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "07:00~09:00",
+      "expected": "밤샘 수색에서 추가 1~2명 발견 가능. 07~08시 소방 조간 브리핑 가능성. 정부 공식 발표 준비.",
+      "probability": { "additionalFound": 0.60, "govAnnouncement": 0.40 }
+    },
+    "midTerm": {
+      "timeframe": "09:00~19:00",
+      "socialResponseTimeline": [
+        { "time": "09:00~10:00", "event": "정부 공식 발표 (사망 10명+)", "status": "임박" },
+        { "time": "10:00~12:00", "event": "국회 반응·긴급 현안질의", "status": "예상" },
+        { "time": "12:00~15:00", "event": "국제 보도 확산", "status": "예상" },
+        { "time": "15:00~19:00", "event": "수색 90%+ 완료·최종 발표 접근", "status": "예상" }
+      ]
+    },
+    "longTerm": { "note": "15세대 분석 유지. 법개정·보상·원인조사 프레임 변동 없음." }
+  },
+  "confidence": {
+    "overall": "78%",
+    "note": "데이터 변동 없어 유지. 정부 발표 시 +5~8% 추가 회복 예상."
+  },
+  "evolution": {
+    "generation": 16,
+    "mode": "NORMAL — 안정적 모니터링",
+    "improvements": "15세대 분석 프레임 유지. 오전 전환기 타임라인 갱신. 정보 부족 모드 규칙 적용하지 않음 — 78% 신뢰도에서는 시간 경과 반영이 유효.",
+    "nextTask": "17세대: 정부 공식 발표 반영, 추가 사망자 확인, 사고 원인 초기 정보"
+  }
+}

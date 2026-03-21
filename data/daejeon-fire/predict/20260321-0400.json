@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-03-21T04:00:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 10,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "14시간 43분",
+    "informationBlackout": "9시간",
+    "consecutiveNoDataGenerations": 8
+  },
+  "statusAlert": {
+    "level": "RED",
+    "mode": "INFORMATION_DEFICIT",
+    "message": "정보 부족 모드 지속. 04:00 열수축 피크 시점 도달."
+  },
+  "timeBasedVerification": {
+    "title": "예측 시간 도래 검증",
+    "checks": [
+      {
+        "prediction": "03~04시 잔불 완전 소거",
+        "status": "시간 구간 종료. 추가 화재·붕괴 보도 없음 → 소극적 부합 추정.",
+        "result": "미검증 (추정 부합)"
+      },
+      {
+        "prediction": "04시 기온 최저점 열수축 피크",
+        "status": "✅ 시점 도달. 04:00 기온 최저(2~3°C) 도달 추정.",
+        "result": "추가 붕괴 보도 없음 → 기본 시나리오(소규모 균열만) 부합 추정.",
+        "note": "4~7세대 공통 예측이 8시간 후 시간 도래. 소극적 검증 통과."
+      },
+      {
+        "prediction": "06시 역전층 해소",
+        "status": "2시간 후. 일출(06:20경) 기반 예측 유지.",
+        "result": "미도래"
+      }
+    ]
+  },
+  "probabilityCurveUpdate": {
+    "survivalProbability": { "realistic": "<1%", "elapsed": "14시간 43분" },
+    "scenarioUpdate": {
+      "S1_기본": "35%",
+      "S3_전면해체": "16% → 15% (열수축 피크 무사 통과 추정으로 소폭 하향)",
+      "expectedSearchDuration": "4.4일 → 4.3일 (S3 하향 반영)"
+    }
+  },
+  "coreVariableMonitoring": {
+    "건물안전진단": "대기 중. 06~08시 실시 예상. 열수축 피크 통과로 진단 환경 개선.",
+    "나트륨": "습도 피크(80%+) 통과 중. 새벽 이후 습도 하강 예상.",
+    "생명탐지": "수색 미착수. 안전진단 후 투입."
+  },
+  "nextCriticalEvent": {
+    "time": "06:00~06:30",
+    "event": "역전층 해소 + 일출. 대기질 개선 시작. 안전진단 착수 여건 형성.",
+    "significance": "이 시점부터 상황이 빠르게 전개될 수 있음. 소방 새벽 브리핑 가능성."
+  },
+  "confidence": {
+    "overall": "50%",
+    "note": "열수축 피크 무사 통과 추정으로 S3(전면해체) 확률 소폭 하향. 전체 신뢰도는 변동 없음. 06시 이후 데이터 유입 시 회복 기대."
+  },
+  "evolution": {
+    "generation": 10,
+    "mode": "INFORMATION_DEFICIT",
+    "improvements": "04시 열수축 피크 도래 검증 수행. 소극적 통과 판정 → S3(전면해체) 확률 16%→15% 하향, 수색 기대값 4.4→4.3일 보정. 최소한의 시간 기반 갱신.",
+    "strategicNote": "10세대 연속 가동. 정보 부족 모드에서 3세대 연속 절제된 갱신만 수행. 시스템이 '기다릴 줄 아는 지능'을 3턴 연속 실천.",
+    "nextTask": "11세대(04:30): 습도 하강 추이 확인. 06시 역전층 해소 2시간 전. / 12세대(05:00~): 새벽 동틀 무렵 — 소방 브리핑 가능성 높아짐. 데이터 유입 가능성 상승.",
+    "milestone": "🏁 10세대 도달. 1세대(20:00)부터 8시간 30분간 10회 진화. 분석 차원 5→23+핵심3, 4단계 진화 위상 거침."
+  }
+}

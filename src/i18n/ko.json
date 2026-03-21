@@ -1,0 +1,71 @@
+{
+  "app": {
+    "title": "AssiEye",
+    "subtitle": "실시간 OSINT 대시보드",
+    "domain": "korea-forest",
+    "domainLabel": "Korea Forest"
+  },
+  "common": {
+    "loading": "데이터 로딩 중...",
+    "failedToLoad": "데이터를 불러오지 못했습니다",
+    "retrying": "재시도 중...",
+    "live": "실시간",
+    "cached": "캐시됨",
+    "unavailable": "사용 불가",
+    "new": "새로운"
+  },
+  "panels": {
+    "fireHotspots": "열점 감지",
+    "fireHotspots.tooltip": "NASA FIRMS 위성 데이터 기반 실시간 열점 감지 현황",
+    "weather": "기상 현황",
+    "weather.tooltip": "기상청 실시간 기상 데이터",
+    "feeds": "뉴스 피드",
+    "feeds.tooltip": "주제 관련 뉴스 피드",
+    "dwi": "위험지수",
+    "dwi.tooltip": "기상 데이터 기반 위험지수(DWI) 히트맵",
+    "alerts": "경보 이력",
+    "alerts.tooltip": "텔레그램 경보 발송 이력",
+    "alerts.testBtn": "테스트 알림",
+    "aiBrief": "AI 브리핑",
+    "aiBrief.tooltip": "Claude AI 기반 뉴스 요약",
+    "aiBrief.generate": "브리핑 생성",
+    "aiBrief.regenerate": "다시 생성",
+    "aiBrief.placeholder": "뉴스 피드가 로드된 후 브리핑을 생성하세요.",
+    "aiBrief.noItems": "브리핑을 생성할 뉴스 항목이 없습니다.",
+    "satellites": "위성 궤적",
+    "satellites.tooltip": "CelesTrak 기반 실시간 위성 추적",
+    "flights": "항공 추적",
+    "flights.tooltip": "OpenSky Network 기반 실시간 항공기 추적",
+    "youtube": "YouTube",
+    "youtube.tooltip": "관련 YouTube 라이브 및 뉴스 영상"
+  },
+  "status": {
+    "online": "온라인",
+    "offline": "오프라인",
+    "fires": "열점",
+    "firms": "FIRMS",
+    "weather": "기상",
+    "feeds": "뉴스"
+  },
+  "map": {
+    "globe": "3D 지구본",
+    "flat": "평면 지도",
+    "layers": "레이어",
+    "fires": "열점",
+    "weather": "기상",
+    "dwi": "위험지수",
+    "satellites": "위성",
+    "flights": "항공기"
+  },
+  "fireTable": {
+    "region": "지역",
+    "fires": "건수",
+    "highConf": "고신뢰",
+    "totalFrp": "FRP 합계"
+  },
+  "components": {
+    "panel": {
+      "dragToResize": "드래그하여 크기 조절"
+    }
+  }
+}

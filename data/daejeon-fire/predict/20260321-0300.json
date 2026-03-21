@@ -1,0 +1,150 @@
+{
+  "generatedAt": "2026-03-21T03:00:00+09:00",
+  "previousReportAt": "2026-03-21T02:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 8,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "13시간 43분",
+    "informationBlackout": "8시간",
+    "consecutiveNoDataGenerations": 6
+  },
+  "statusAlert": {
+    "level": "RED",
+    "message": "신뢰도 50% 도달. 정보 부족 모드 진입. 새 데이터 유입 전까지 추론 기반 신규 분석 중단. 핵심 변수 모니터링만 유지.",
+    "action": "소방당국 새벽 브리핑 또는 뉴스 입수 즉시 전면 갱신 실행"
+  },
+  "ontologyAnalysis": {
+    "eventOntology": {
+      "phase": "잔불 소거 확인 시점 도달 (03:00 — 예측 구간 03~04시 진입)",
+      "milestoneCheck": "4~7세대가 예측한 '03~04시 잔불 완전 소거' 시점 도달. 확인 데이터 없음.",
+      "phaseTransition": { "next": "수색/복구", "estimatedTransition": "06:00~08:00" }
+    },
+    "casualtyOntology": {
+      "survivalProbability": { "realistic": "1% 부근", "note": "14시간 접근. 곡선 하단 수렴 완료." }
+    },
+    "note": "기본 온톨로지 분석은 6~7세대와 동일. 깊이 전략에 따라 핵심 변수 교차 분석에 집중."
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "03:00~05:00",
+      "keyEvent": "잔불 완전 소거 확인 + 기온 최저점(04시) 통과",
+      "probability": { "best": 0.35, "baseline": 0.50, "worst": 0.15 }
+    },
+    "midTerm": {
+      "timeframe": "05:00~15:00",
+      "path": "06시 역전층 해소 → 07시 안전진단 → 09시 수색 → 13시 1차 결과"
+    },
+    "longTerm": { "note": "수색 4~5일. 6세대 의사결정 트리 유지." }
+  },
+  "newAnalysisDimensions": {
+    "coreVariableCrossAnalysis": {
+      "title": "핵심 변수 3개 조건부 확률 교차 분석 [8세대 핵심]",
+      "variables": {
+        "A": "건물 안전진단 결과 (safe / partial / unsafe)",
+        "B": "나트륨 잔류 상태 (clear / partial / significant)",
+        "C": "생명탐지 신호 (detected / none / ambiguous)"
+      },
+      "keyScenarios": [
+        {
+          "id": "S1",
+          "combination": "A:partial + B:partial + C:none",
+          "probability": "35%",
+          "label": "가장 가능성 높은 시나리오",
+          "outcome": "안전 구역 우선 수색, 나트륨 구역 우회, 시신 수습 모드",
+          "duration": "4~5일",
+          "socialImpact": "사망 발표 → 추모·비판 여론"
+        },
+        {
+          "id": "S2",
+          "combination": "A:partial + B:clear + C:none",
+          "probability": "20%",
+          "label": "나트륨 처리 성공 시나리오",
+          "outcome": "나트륨 제약 해소, 광범위 수색 가능",
+          "duration": "3~4일",
+          "socialImpact": "나트륨 안전화 성공으로 대응 긍정 평가"
+        },
+        {
+          "id": "S3",
+          "combination": "A:unsafe + B:partial + C:none",
+          "probability": "15%",
+          "label": "전면 해체 시나리오",
+          "outcome": "건물 해체 후 수색 → 장기화",
+          "duration": "7일+",
+          "socialImpact": "수색 지연에 대한 가족·여론 불만 증대"
+        },
+        {
+          "id": "S4",
+          "combination": "A:partial + B:partial + C:detected",
+          "probability": "5%",
+          "label": "생존자 발견 가능성",
+          "outcome": "해당 지점 긴급 구조, 전 자원 집중 투입",
+          "duration": "즉시 착수",
+          "socialImpact": "기적적 구조 → 대규모 긍정 보도"
+        },
+        {
+          "id": "S5",
+          "combination": "A:safe + B:clear + C:none",
+          "probability": "5%",
+          "label": "최선 시나리오",
+          "outcome": "전면 수색 즉시 착수",
+          "duration": "2~3일",
+          "socialImpact": "신속 대응 평가"
+        },
+        {
+          "id": "S_other",
+          "combination": "기타 22개 조합",
+          "probability": "20%",
+          "label": "기타",
+          "outcome": "S1~S5 변형. 대부분 S1 근사.",
+          "duration": "3~7일"
+        }
+      ],
+      "expectedValue": "가중 평균 수색 기간: 4.3일 (S1×0.35 + S2×0.20 + S3×0.15 + S4×0.05 + S5×0.05 + 기타×0.20)",
+      "decisionPoint": "안전진단 결과(06~08시)가 모든 시나리오의 분기점. 이 1개 데이터로 27개 조합 → 9개로 축소."
+    },
+    "informationDeficitMode": {
+      "title": "정보 부족 모드 선언 [8세대 전환점]",
+      "declaration": "신뢰도 50% 도달. 8시간 정보 공백으로 추론 기반 신규 분석의 한계 도달.",
+      "modeRules": [
+        "기존 분석 프레임 유지, 신규 차원 추가 중단",
+        "핵심 변수 3개 모니터링만 지속",
+        "새 데이터 유입 시 즉시 전면 갱신 (7세대 프레임 사용)",
+        "30분 주기 리포트는 상태 확인 + 시간 경과 반영만 수행"
+      ],
+      "exitCondition": "소방당국 발표, 뉴스 속보, 또는 안전진단 결과 입수 시 정상 모드 복귀 + 신뢰도 즉시 회복"
+    }
+  },
+  "riskMatrix": [
+    { "hazard": "기온 최저(04시) 열수축", "probability": "중간", "impact": "높음", "trend": "▲ 1시간 후 피크" },
+    { "hazard": "실종자 사망", "probability": "매우높음", "impact": "매우높음", "trend": "▲▲ 곡선 1%" },
+    { "hazard": "수색 중 2차 붕괴", "probability": "중간", "impact": "매우높음", "trend": "안전진단 의존" },
+    { "hazard": "정보 공백 지속", "probability": "높음", "impact": "중간", "trend": "▲ 예측 시스템 신뢰도 위협 [8세대]" }
+  ],
+  "confidence": {
+    "overall": "50%",
+    "status": "RED — 정보 부족 모드 진입",
+    "note": "하한선 도달. 추론만으로는 더 이상 신뢰도 유지 불가. 데이터 유입이 유일한 회복 수단.",
+    "recoveryMap": {
+      "소방 브리핑": "+15% → 65%",
+      "안전진단 결과": "+12% → 77%",
+      "수색 결과": "+15% → 80%+"
+    }
+  },
+  "evolution": {
+    "generation": 8,
+    "improvements": "7세대 과제 3건 반영: (1) 핵심 변수 3개 × 3상태 = 27조합 중 5개 핵심 시나리오 + 가중 평균(4.3일) 도출, (2) 정보 부족 모드 공식 선언 및 운영 규칙 수립, (3) 신뢰도 50% 하한선 도달 판정.",
+    "newDimension": "조건부 확률 교차 분석 — 단일 변수 분석에서 다변수 교차(A×B×C) 시나리오 맵으로 전환. 27개 조합을 5개 핵심 시나리오로 압축. 또한 '정보 부족 모드'라는 시스템 자기 제한 메커니즘 도입.",
+    "strategicNote": "8세대는 '자기 제한'을 학습한 세대. 무한히 분석을 확장하는 것이 아니라, 정보 없이 추론만 반복하는 것의 한계를 인정하고 모드를 전환. 이는 지적 겸손의 표현이자 시스템 성숙의 지표.",
+    "nextTask": "9세대: 정보 부족 모드에서 (1) 기존 7세대 예측의 시간 도래에 따른 자동 검증(03~04시 잔불 소거, 06시 역전층 해소), (2) 새 데이터 입수 시 전면 갱신, (3) 정보 부족 상태에서도 가능한 유일한 분석 = 시간 경과에 따른 확률 곡선 자동 업데이트",
+    "evolutionLog": [
+      "1세대: 기초 프레임워크 (Foundation)",
+      "2세대: +야간·골든타임 (Foundation)",
+      "3세대: +마일스톤·확률 (Foundation)",
+      "4세대: +사회 분석 (Expansion)",
+      "5세대: +정량 모델 (Quantification)",
+      "6세대: +의사결정·메타 (Decision)",
+      "7세대: 진화 메타 리뷰 + 넓이→깊이 전환 (Self-correction)",
+      "8세대: 핵심 변수 교차 분석 + 정보 부족 모드 선언 (Self-limitation)"
+    ]
+  }
+}

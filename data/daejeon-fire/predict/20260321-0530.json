@@ -1,0 +1,53 @@
+{
+  "generatedAt": "2026-03-21T05:30:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 13,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "16시간 13분",
+    "informationBlackout": "10시간 30분",
+    "consecutiveNoDataGenerations": 11,
+    "dataFileChanged": false
+  },
+  "statusAlert": {
+    "level": "AMBER",
+    "mode": "INFORMATION_DEFICIT — 일출 30분 전",
+    "message": "06:00 역전층 해소·일출까지 30분. 소방 새벽 브리핑 임박. 정상 모드 복귀 준비 완료."
+  },
+  "timeBasedVerification": {
+    "nightPredictionsSummary": "야간 예측 4건 중 3건 소극적 통과, 1건(역전층) 30분 후 검증 예정.",
+    "nextVerification": {
+      "prediction": "06:00 역전층 해소",
+      "timeRemaining": "30분",
+      "method": "일출(06:20)에 따른 지표 가열 → 역전층 파괴 → 대기 확산 개시"
+    }
+  },
+  "probabilityCurveUpdate": {
+    "survivalProbability": { "realistic": "<1%", "elapsed": "16시간 13분" },
+    "scenarioStable": "11세대 이후 변동 없음. S1:37% S2:21% S3:13% S4:3% S5:5%. 수색 기대값 4.2일.",
+    "note": "데이터 유입 전까지 추가 보정 불가. 안정 수렴 상태."
+  },
+  "preTransitionChecklist": {
+    "title": "정상 모드 복귀 전 최종 점검",
+    "items": [
+      { "item": "7세대 데이터 유입 프레임", "status": "✅ 준비 완료" },
+      { "item": "6세대 의사결정 트리", "status": "✅ 안전진단 결과 입력 대기" },
+      { "item": "8세대 27조합 교차 분석", "status": "✅ 데이터 1건으로 9개 축소 가능" },
+      { "item": "4세대 가족 심리지원 체계", "status": "✅ 프레임 준비 완료" },
+      { "item": "5세대 대기확산 모델", "status": "✅ 실측 데이터로 보정 가능" },
+      { "item": "6세대 대응 평가 타임라인", "status": "✅ 새벽 이후 추가 기록 가능" }
+    ],
+    "readyForReactivation": "✅ 1~8세대 전체 분석 프레임 즉시 가동 가능"
+  },
+  "confidence": {
+    "overall": "50%",
+    "outlook": "30분 내 전환 예상. 데이터 유입 시 65~77% 즉시 회복."
+  },
+  "evolution": {
+    "generation": 13,
+    "mode": "INFORMATION_DEFICIT — 최종 대기",
+    "improvements": "데이터 파일 수정시각 확인(변동 없음 확인). 정상 모드 복귀 전 6개 분석 프레임 최종 점검 완료.",
+    "strategicNote": "13세대는 '출격 직전 점검'을 수행한 세대. 정보 부족 모드 6턴간(8~13세대) 절제와 준비를 병행. 일출과 함께 전면 가동 전환 예정.",
+    "nextTask": "14세대(06:00): 역전층 해소 검증 + 데이터 유입 시 전면 갱신. 미유입 시 06:30까지 최종 대기 후 독자 판단.",
+    "evolutionPhase": "Disciplined monitoring → Reactivation readiness"
+  }
+}

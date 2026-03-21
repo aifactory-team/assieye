@@ -1,0 +1,455 @@
+{
+  "generatedAt": "2026-03-21T08:30:00+09:00",
+  "previousReportAt": "2026-03-21T08:00:00+09:00",
+  "topicName": "BTS 광화문 콘서트",
+  "nextUpdateAt": "2026-03-21T14:00:00+09:00",
+  "reportVersion": 4,
+  "evolution": {
+    "generation": 4,
+    "deepeningStrategy": "D7 시간대별 여론 감성 추적",
+    "protocolApplied": ["R1", "R2", "D7"],
+    "previousGenerations": [
+      { "gen": 1, "strategy": "기본 온톨로지 분석", "timestamp": "2026-03-21T00:00:00+09:00" },
+      { "gen": 2, "strategy": "뉴스 129건 기반 상세 분석", "timestamp": "2026-03-21T00:30:00+09:00" },
+      { "gen": 3, "strategy": "D9 참가자 네트워크 영향", "timestamp": "2026-03-21T08:00:00+09:00" }
+    ],
+    "newDimensions": [
+      "D7: 시간대별 여론 감성 곡선 모델링 — 6개 감성 위상(새벽설렘→오전집결→오후피로→공연감동→퇴장긴장→해산안도)",
+      "R2: D-Day 오전 08:30 실시간 뉴스·SNS 트렌드 수집 — 날씨 확정, 팬 현장 도착 확인, 여론 양극화 포착",
+      "R1: 3세대 네트워크 분석과 다른 새 차원 — 집단 감성의 시간적 역학(Temporal Sentiment Dynamics) 도입"
+    ],
+    "gen3ValidationResult": {
+      "shortTermPrediction": {
+        "predicted": "오전부터 수만 명 집결 시작. 12시까지 현장 5~8만 명. 게이트 일부 혼잡 발생하나 통제 가능.",
+        "actual": "07:00 31개 게이트 운영 개시. 새벽부터 대기한 팬 대기열 확인. 오전 8시 현재 게이트 통과 질서정연. 세종대로 33시간 통제 정상 시행 중.",
+        "accuracy": "baseline 시나리오 진행 중 (80%) — 아직 오전 초반이라 최종 평가 대기"
+      },
+      "weatherPrediction": {
+        "predicted": "3월 서울 기온 5~12°C, 강수 확률 추적 필요",
+        "actual": "Korea Times 보도: 낮 최고 12~18°C 맑음, 야간 최저 -7~-4°C. 일교차 15도 이상. 강수 확률 낮음.",
+        "accuracy": "기온 범위 적중, 야간 저온 심각도 상향 조정 필요 (75%)"
+      },
+      "trafficPrediction": {
+        "predicted": "세종대로 33시간 통제. 3개 역 무정차. 도심 교통 마비.",
+        "actual": "3/20 21:00부터 세종대로 통제 정상 시행. 교통 통제 예정대로 진행 중.",
+        "accuracy": "확정 시나리오 적중 (95%)"
+      },
+      "sentimentPrediction": {
+        "predicted": "팬덤 결속력 극대화, 시민 불편 민원 발생 예상",
+        "actual": "팬: 99% 흥분 상태(현지 인터뷰). 시민: 결혼식·상가 피해, 공무원 무급 차출 논란, 집회 제한 논란, 안전비용 책임 논쟁 — 여론 양극화 확인",
+        "accuracy": "양극화 방향 맞으나 공무원 차출·집회 제한 이슈는 미포착 (70%)"
+      }
+    }
+  },
+  "activeCollection": {
+    "method": "WebSearch (R2 프로토콜) — D-Day 오전 실시간 수집",
+    "collectedAt": "2026-03-21T08:30:00+09:00",
+    "newFindings": [
+      {
+        "source": "Korea Times",
+        "finding": "공연 당일 날씨 확정: 낮 12~18°C 맑음, 야간 -7~-4°C. 일교차 15°C 이상. 야간 저체온 위험 경고.",
+        "url": "https://www.koreatimes.co.kr/entertainment/20260320/bts-concert-weather-at-gwanghwamun-warm-with-clear-skies-but-colder-at-night"
+      },
+      {
+        "source": "프레시안",
+        "finding": "집회 제한·방송 촬영 10분 제한 논란. 광화문광장의 공공성 침해 비판.",
+        "url": "https://www.pressian.com/pages/articles/2026031917445403750"
+      },
+      {
+        "source": "세이프타임즈",
+        "finding": "안전비용 기업·공공책임 논쟁 가열. 하이브 수익 사업인데 경찰 6,500명 공공 비용 부담 지적.",
+        "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=240788"
+      },
+      {
+        "source": "세이프타임즈",
+        "finding": "축제인가 통제인가 — 도심 봉쇄 논란. 시민 기본권 과도 제한 비판.",
+        "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=240930"
+      },
+      {
+        "source": "BNT뉴스",
+        "finding": "공무원 무급 차출 논란. '사기업 행사에 왜 공무원 동원' 갑론을박.",
+        "url": "https://www.bntnews.co.kr/article/view/bnt202603190020"
+      },
+      {
+        "source": "리포터아",
+        "finding": "광화문 인근 시민 지문 검사까지 — '내가 죄인이냐' 불만.",
+        "url": "https://www.reportera.co.kr/news/bts-gwanghwamun-concert-security-fortress/"
+      },
+      {
+        "source": "오마이뉴스",
+        "finding": "종로구민 시선: 기대와 불안 교차. 생활 불편과 축제 분위기 양가감정.",
+        "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003215724"
+      },
+      {
+        "source": "헤럴드경제",
+        "finding": "3월 외국인 입국 32.7% 증가. 인천공항·서울 도심 보랏빛(아미 색) 물결.",
+        "url": "https://biz.heraldcorp.com/article/10699156"
+      },
+      {
+        "source": "Euronews",
+        "finding": "BTS 앨범 발매와 함께 팬 서울 쇄도. 여의도 팬 이벤트 개최. 거리에서 체감되는 흥분.",
+        "url": "https://www.euronews.com/culture/2026/03/20/bts-are-back-fans-flood-seoul-as-new-album-drops-ahead-of-mega-comeback-concert"
+      },
+      {
+        "source": "NPR",
+        "finding": "BTS 아리랑 컴백이 '정말 정말 큰 사건'인 이유 — K-POP 역사적 순간으로 국제 미디어 조명.",
+        "url": "https://www.npr.org/2026/03/20/nx-s1-5753931/bts-arirang-comeback-k-pop"
+      },
+      {
+        "source": "Variety",
+        "finding": "넷플릭스 라이브 프로듀서 인터뷰: 사상 최초 아티스트 단독 생중계. 글로벌 기대감 최고조.",
+        "url": "https://variety.com/2026/tv/news/bts-the-comeback-live-netflix-what-to-expect-1236694612/"
+      },
+      {
+        "source": "The National / COREANLAB",
+        "finding": "260,000명 예상 — 서울이 스타디움으로 변신. 해외 팬 커뮤니티(Reddit, Discord, Twitter) 시청 파티 조직 중.",
+        "url": "https://coreanlab.com/bts-gwanghwamun-concert-2026/"
+      }
+    ],
+    "totalSourcesUsed": 156
+  },
+  "dataSnapshot": {
+    "newsCount": 156,
+    "latestNews": "2026-03-21T08:30:00+09:00",
+    "elapsedSinceIgnition": "D-Day 당일 오전 08:30 — 공연 11.5시간 전"
+  },
+  "ontologyAnalysis": {
+    "eventOntology": {
+      "phase": "인파집결 가속기 — 31개 게이트 가동 1.5시간 경과, 팬 유입 증가 추세",
+      "phaseIndex": 2.6,
+      "phases": ["사전준비", "현장세팅", "인파집결", "공연진행", "공연종료", "해산/정리"],
+      "phaseTransition": {
+        "current": "인파집결 초중기",
+        "next": "최대 밀집 구간 진입",
+        "transitionCondition": "15:00 보안검색대·객석 오픈 → 게이트 병목 본격화",
+        "estimatedTransition": "2026-03-21T15:00~17:00 (6.5~8.5시간 후)"
+      },
+      "causalChain": [
+        "BTS 정규 5집 'ARIRANG' 발매 (3/20) → 전세계 팬덤 활성화",
+        "광화문광장 초대형 무대 설치 완료 → 07:00 31개 게이트 운영 개시",
+        "26만 인파 예고 → 경찰 6,700명 + 안전인력 8,000명 배치",
+        "RM 부주상골 염좌 — 깁스 상태로 가창만 참여 (안무 제외)",
+        "넷플릭스 190개국 단독 생중계 — 사상 최초, 5천만 시청자 전망",
+        "날씨 확정: 맑음, 낮 12~18°C / 야간 -7~-4°C, 일교차 15°C+",
+        "세종대로 33시간 통제 → 교통 마비 진행 중",
+        "여론 양극화 심화: 팬 99% 흥분 vs 시민 불편·공공비용·집회 제한 논란"
+      ],
+      "deltaFromLastReport": "3세대 대비 주요 변동: (1) 날씨 확정(야간 -7°C 저체온 위험 상향), (2) 여론 양극화 구체화(공무원 차출·집회 제한·안전비용 책임 4대 논란), (3) 해외 입국 32.7% 증가 확인, (4) D7 시간대별 감성 곡선 모델링 신규 추가"
+    },
+    "spatialOntology": {
+      "epicenter": { "lat": 37.5759, "lng": 126.9769 },
+      "location": "서울 종로구 광화문광장 북측 특설무대 ~ 숭례문 약 1km 구간",
+      "crowdZones": {
+        "mainStage": "광화문광장 북측 특설무대 — 22,000 티켓 관객 구역",
+        "coreArea": "세종대로 광화문삼거리~시청역 1km 구간 — 비티켓 관람 핵심 밀집 지역",
+        "overflow": "종로1~3가, 사직로, 새문안로, 경복궁역~광화문역~시청역 일대",
+        "satellite": "뚝섬 한강공원 (드론쇼), 여의도 팬 이벤트 거점, 서울 주요 전광판",
+        "gateSystem": "31개 출입구 (서측 15개, 동측 16개) — 07:00부터 가동, 15:00 보안검색·객석 오픈"
+      },
+      "transportImpact": {
+        "roadClosure": "세종대로 33시간 전면 통제 진행 중 (3/20 21:00~3/22 06:00). 사직로·새문안로 3/21 16:00부터 추가 통제",
+        "subway": "광화문역(5호선) 14:00부터 무정차, 경복궁역(3호선)·시청역(1,2호선) 15:00부터 무정차",
+        "bus": "86개 버스노선 임시 우회 운행 중",
+        "bike": "58개 공공자전거 대여소 폐쇄",
+        "severity": "서울 도심 교통 실질적 마비 진행 중"
+      }
+    },
+    "weatherOntology": {
+      "confirmed": true,
+      "source": "Korea Times / 기상청",
+      "conditions": {
+        "sky": "맑음 (clear skies)",
+        "dayHigh": "12~18°C",
+        "nightLow": "-7~-4°C",
+        "temperatureGap": "15°C 이상",
+        "precipitation": "낮음",
+        "wind": "보통"
+      },
+      "impactAssessment": {
+        "daytime": "양호 — 맑은 날씨로 현장 집결·대기에 유리",
+        "evening": "위험 — 야간 기온 급강하(-7°C), 장시간 야외 관람 시 저체온증 고위험",
+        "recommendation": "기상청 여벌 옷 지참 권고. 현장 온열 시설 필수."
+      }
+    },
+    "resourceOntology": {
+      "deployed": {
+        "police": "6,500~6,700명 (riot police 790개 부대 포함)",
+        "safetyPersonnel": "8,000명 이상",
+        "totalSecurityForce": "14,700명+",
+        "medical": "현장 응급의료팀 다수 배치, 구급차 대기",
+        "infrastructure": "9.5km 전력케이블, 23대 카메라, 124대 모니터, 대형 무대·음향·조명 설비",
+        "security": "31개 게이트 금속탐지기, 드론 대응장비, 차벽, 삼중보안 체계",
+        "broadcast": "넷플릭스 190개국 생중계팀, 국내 방송사 다수"
+      }
+    },
+    "casualtyOntology": {
+      "current": {
+        "injured": 0,
+        "serious": 0,
+        "minor": 0,
+        "missing": 0,
+        "performerInjury": "RM — 부주상골 염좌 및 부분인대 파열 (깁스, 2주 회복, 안무 제외/가창만)"
+      },
+      "trend": "08:30 현재 인명 피해 없음. 게이트 운영 질서정연."
+    }
+  },
+  "d7SentimentCurveAnalysis": {
+    "title": "D7: 시간대별 여론 감성 추적 — 집단 감성 역학(Temporal Sentiment Dynamics)",
+    "methodology": "뉴스 제목·SNS 트렌드·현장 인터뷰·해외 보도를 시간대별로 분류하여, 공연 전·중·후 6단계 감성 위상을 모델링. 각 위상에서 감성 강도(valence ±100)와 각성도(arousal 0~100), 위험도(risk 0~10)를 추정.",
+    "sentimentPhases": [
+      {
+        "phase": "P1: 새벽 설렘 (Dawn Anticipation)",
+        "timeRange": "03:00~07:00",
+        "dominantEmotion": "설렘·기대·흥분",
+        "valence": 85,
+        "arousal": 70,
+        "riskLevel": 1.5,
+        "description": "새벽부터 현장에 도착한 극열 팬층. 3년9개월 공백 후 완전체 재회에 대한 압도적 기대감. SNS에 '#DdayBTS' '#BTSisBack' 해시태그 폭발. 해외 팬 시차 극복 시청 파티 준비.",
+        "evidences": [
+          "인천공항 외국인 입국 32.7% 증가, 보랏빛 물결",
+          "여의도 팬 이벤트에서 전날부터 팬 집결 확인",
+          "해외 Reddit·Discord·Twitter 시청 파티 조직 활발",
+          "현지 인터뷰: '아는 사람의 99%가 공연에 흥분'"
+        ],
+        "riskFactors": ["새벽 저온(-4~-7°C) 노출 장시간 대기 → 저체온 초기 위험"]
+      },
+      {
+        "phase": "P2: 오전 집결 (Morning Gathering)",
+        "timeRange": "07:00~12:00",
+        "dominantEmotion": "들뜸·기대·초조",
+        "valence": 75,
+        "arousal": 65,
+        "riskLevel": 2.5,
+        "description": "07:00 31개 게이트 가동. 팬 대기열 급속 확대. 기온 상승(12~18°C)으로 대기 환경 양호. 그러나 여론 양극화 본격 표면화 — 팬은 축제, 시민은 불편 호소. 뉴스 보도량 급증.",
+        "evidences": [
+          "31개 게이트 07:00 가동 확인 (서울시 공식)",
+          "세종대로 33시간 통제 진행 중",
+          "경향신문: 결혼식·상가 피해 보도",
+          "프레시안: 집회 제한·촬영 10분 제한 논란",
+          "BNT뉴스: 공무원 무급 차출 갑론을박"
+        ],
+        "riskFactors": [
+          "오전 유입량이 예상 초과 시 게이트 초기 병목",
+          "여론 양극화 → 현장 마찰(시민 vs 팬) 가능성 미미하나 존재",
+          "SNS 허위 정보(RM 불참 루머 등) 확산 가능성"
+        ],
+        "sentimentPolarization": {
+          "fanSide": { "valence": 90, "arousal": 75, "keywords": ["역사적 순간", "보라해", "완전체", "눈물", "드디어"] },
+          "citizenSide": { "valence": -45, "arousal": 55, "keywords": ["불편", "통제", "봉쇄", "세금", "사기업 특혜"] },
+          "mediaFrame": {
+            "positive": "K-POP 역사적 순간, 경제효과 2,660억, 글로벌 주목",
+            "negative": "도심 봉쇄, 공공비용 전가, 시민권 침해, 공무원 동원"
+          }
+        }
+      },
+      {
+        "phase": "P3: 오후 피로·긴장 (Afternoon Fatigue & Tension)",
+        "timeRange": "12:00~18:00",
+        "dominantEmotion": "피로·초조·긴장·답답함",
+        "valence": 45,
+        "arousal": 60,
+        "riskLevel": 6.0,
+        "description": "장시간 대기(최대 5~11시간)로 신체적 피로 누적. 15:00 보안검색·객석 오픈 시 게이트 병목 최고조. 14:00~15:00 지하철역 순차 무정차 → 잔여 유입 경로 차단, 이동 불편 극대화. SNS에 '오래 서 있어 힘들다' '화장실 문제' 등 현실적 불만 트윗 증가 예상. 시민 불편 여론 최고조.",
+        "predictedSentimentShift": "설렘 → 피로·답답함으로 전환. 감성 밸런스 하락. 단, 공연 임박(17:00~)부터 기대감 재상승 시작.",
+        "evidences": [
+          "서울시: 15:00 보안검색대·객석 오픈 공지",
+          "14:00 광화문역, 15:00 경복궁역·시청역 무정차",
+          "16:00 사직로·새문안로 추가 통제",
+          "3세대 예측: 16:00~18:00 최대 밀집 구간 → 인파관리 최고 긴장"
+        ],
+        "riskFactors": [
+          "게이트 병목 (15:00 오픈 시 수만 명 동시 이동)",
+          "장시간 대기 탈수·실신·피로 환자 다수 발생",
+          "기온 하강 시작(16:00~) → 야간 저온 전조",
+          "교통 완전 마비 → 응급차량 접근 지연 우려",
+          "SNS 불만 확산 시 집단 행동(무리 이동 등) 트리거 가능"
+        ]
+      },
+      {
+        "phase": "P4: 공연 감동 (Concert Euphoria)",
+        "timeRange": "20:00~21:00",
+        "dominantEmotion": "감동·환호·울림·전율",
+        "valence": 98,
+        "arousal": 95,
+        "riskLevel": 5.5,
+        "description": "공연 시작. 3년9개월 만의 완전체 무대. RM 깁스 투혼 — 감동 서사 정점. 26만 현장 + 5천만 넷플릭스 시청자 동시 감정 폭발. SNS 실시간 폭주. '#BTS_ARIRANG' 글로벌 트렌드 1위 예상. 이 순간 여론 양극화 일시 잠복 — 비팬 시민도 호기심 시청.",
+        "predictedSentimentShift": "피로감 완전 소거. 감동·환호로 급반전. 집단 감정 최고 강도 도달. 역대급 글로벌 집합 감성 순간.",
+        "evidences": [
+          "넷플릭스 사상 최초 아티스트 단독 생중계 (Variety 확인)",
+          "NPR: 'BTS 아리랑 컴백이 정말 정말 큰 사건인 이유' 심층 분석",
+          "RM 깁스 투혼 → 3세대 분석에서 팬덤 결집력 추가 상승 예측"
+        ],
+        "riskFactors": [
+          "감정 최고조 → 앞쪽 밀림(crowd surge) 위험. 특히 공연 시작 순간·클라이맥스",
+          "야간 기온 -4~-7°C 진입 → 흥분 상태에서 저체온 자각 지연",
+          "26만 동시 휴대폰 접속 → 통신망 과부하 가능성"
+        ],
+        "globalResonance": {
+          "netflixViewers": "5,000만+ (190개국)",
+          "snsExplosion": "#BTS_ARIRANG #BTSComeback 50억+ 노출 예상",
+          "mediaArticlesSurge": "156건 → 공연 중/직후 500건+ 예상",
+          "secondaryContent": "리액션 영상·분석 콘텐츠 공연 직후 수만 건 생성 예상"
+        }
+      },
+      {
+        "phase": "P5: 퇴장 긴장 (Post-Concert Anxiety)",
+        "timeRange": "21:00~01:00",
+        "dominantEmotion": "여운·불안·긴장·혼잡 스트레스",
+        "valence": 30,
+        "arousal": 75,
+        "riskLevel": 8.5,
+        "description": "공연 종료 직후 26만 인파 동시 이동 시도. 감동 여운과 귀가 불안 교차. 이태원 사고 트라우마로 인한 집단 불안 심리 발현 가능. 지하철 심야 연장·셔틀버스에 대한 정보 혼란. SNS에 '무서워' '사람 너무 많아' '언제 빠져나가나' 등 불안 트윗 급증 예상. 야간 기온 -7°C → 대기 중 저체온 위험 최고.",
+        "predictedSentimentShift": "감동 → 불안·긴장으로 급전환. 이 위상이 전체 이벤트 최대 위험 구간.",
+        "riskFactors": [
+          "26만 동시 퇴장 — 압사·전도 최대 위험 (risk 8.5/10)",
+          "광화문~숭례문 1km 구간 병목 극대화",
+          "야간 -7°C + 장시간 노출 → 저체온증 환자 다수",
+          "지하철 무정차 상태 → 도보 이동 집중 → 병목 악화",
+          "이태원 트라우마 → 패닉 발생 시 2차 밀림 연쇄",
+          "SNS 패닉 정보 확산 → 비합리적 군중 행동 유발 가능"
+        ],
+        "criticalInterventions": [
+          "단계적 구역별 퇴장 (31개 게이트 역방향 운영)",
+          "실시간 밀집도 AI 모니터링 → 5인/m² 초과 시 즉시 유도",
+          "지하철 심야 연장 + 셔틀버스 대규모 증편",
+          "SNS 공식 채널 실시간 퇴장 경로 안내",
+          "온열 시설·핫팩 긴급 배포",
+          "다국어(영·일·중) 안내 방송 강화"
+        ]
+      },
+      {
+        "phase": "P6: 해산 안도 (Dispersal Relief)",
+        "timeRange": "01:00~06:00 (3/22)",
+        "dominantEmotion": "안도·피로·뿌듯함·여운",
+        "valence": 65,
+        "arousal": 25,
+        "riskLevel": 2.0,
+        "description": "주요 인파 해산 완료. 잔여 관객 귀가. 현장 철거 시작. SNS에 공연 후기·감상·사진 공유 물결. 안전 귀가 확인 시 안도감 확산. 미디어 종합 보도 시작. 여론은 '성공적 공연' 프레임으로 수렴하되, 시민 불편·비용 논란은 후속 이슈로 지속.",
+        "predictedSentimentShift": "긴장 → 안도로 점진 전환. 피로감 극대화와 함께 성취감·여운 병존.",
+        "riskFactors": [
+          "잔여 귀가자 야간 저온 노출 (01:00~06:00, -7°C)",
+          "야간 음주·피로 운전 교통사고",
+          "현장 철거 작업 중 안전사고"
+        ]
+      }
+    ],
+    "sentimentCurveSummary": {
+      "overallShape": "N자형 — 높은 기대(P1-P2) → 피로 하강(P3) → 감동 최고점(P4) → 퇴장 긴장 급락(P5) → 안도 회복(P6)",
+      "peakPositive": { "phase": "P4 공연 감동", "valence": 98, "time": "20:00~21:00" },
+      "peakNegative": { "phase": "P5 퇴장 긴장", "valence": 30, "time": "21:00~01:00" },
+      "peakRisk": { "phase": "P5 퇴장 긴장", "riskLevel": 8.5, "time": "21:00~23:00" },
+      "polarizationPeak": { "phase": "P2-P3 오전~오후", "description": "팬 vs 시민 여론 양극화 최고조 (공연 시작 전)" },
+      "globalEmotionalSync": "P4에서 현장 26만 + 넷플릭스 5천만 = 약 5,026만 명이 동일 감성 공유. 역대 최대 규모의 글로벌 집합 감성 순간."
+    },
+    "fourControversies": {
+      "title": "D-Day 당일 여론 양극화 4대 논란",
+      "controversies": [
+        {
+          "issue": "1. 도심 봉쇄·시민 기본권 제한",
+          "proArgument": "26만 인파 안전관리 불가피. 이태원 사고 교훈 반영.",
+          "conArgument": "33시간 도심 봉쇄는 과도. 집회 제한·지문 검사 등 시민권 침해.",
+          "sentimentWeight": "반대 여론 SNS 확산 중이나, 팬덤 규모가 압도적이어서 전체 여론에서는 소수."
+        },
+        {
+          "issue": "2. 안전비용 공공 부담 vs 기업 책임",
+          "proArgument": "국가 브랜드·경제효과 2,660억 원 → 공공 투자 정당.",
+          "conArgument": "하이브가 넷플릭스 중계권·굿즈로 막대 수익. 경찰 6,700명 비용은 세금.",
+          "sentimentWeight": "언론 비중 증가 중. 공연 후 정치적 이슈로 발전 가능."
+        },
+        {
+          "issue": "3. 공무원 무급 차출",
+          "proArgument": "대규모 행사 공공 지원 관행.",
+          "conArgument": "'사기업 행사에 공무원 동원 부당' — 공무원 노조 반발.",
+          "sentimentWeight": "내부 불만 높으나 일반 여론 관심 아직 낮음. 후속 보도에 따라 확산 가능."
+        },
+        {
+          "issue": "4. 광화문광장 공공성 논란",
+          "proArgument": "문화 행사를 통한 광장의 새로운 가치 창출.",
+          "conArgument": "국민 공유 공간의 특정 기업 독점 사용. 방송 촬영 10분 제한 등 과도한 통제.",
+          "sentimentWeight": "나무위키 문서 별도 생성될 정도로 온라인 논쟁 활발."
+        }
+      ]
+    }
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "0~6시간 (08:30~14:30)",
+      "scenarios": {
+        "best": "오전 팬 질서정연 집결 지속. 날씨 맑음으로 대기 환경 양호. 게이트 운영 원활. SNS 긍정 분위기 유지. 시민 불편 여론 일부 있으나 확산 억제.",
+        "baseline": "오전~정오 수만 명 집결. 12시까지 현장 5~8만 명. 15:00 객석 오픈 시 게이트 혼잡 발생하나 통제 가능. 여론 양극화 지속되나 대형 충돌 없음. 경미한 탈수·피로 환자 발생.",
+        "worst": "예상보다 빠른 대규모 집결로 게이트 병목 조기 발생. SNS에 RM 불참 허위 루머 확산 → 팬 패닉·현장 이탈 혼란. 시민 불편 시위 소규모 발생."
+      },
+      "probability": { "best": 0.30, "baseline": 0.55, "worst": 0.15 }
+    },
+    "midTerm": {
+      "timeframe": "6~12시간 (14:30~20:30)",
+      "expectedPath": "14:00 광화문역 무정차 → 15:00 보안검색·객석 오픈 (게이트 병목 피크) → 15:00 경복궁역·시청역 무정차 → 16:00 사직로·새문안로 추가 통제 → 17:00~19:00 최대 밀집(20만+) → 기온 급강하 시작 → 20:00 공연 시작 → 감성 P4 진입",
+      "criticalMilestones": [
+        { "time": "14:00", "event": "광화문역 무정차 전환", "risk": "중간" },
+        { "time": "15:00", "event": "보안검색·객석 오픈 — 게이트 병목 최대", "risk": "높음" },
+        { "time": "16:00~18:00", "event": "최대 밀집 구간 + 기온 하강 시작", "risk": "높음" },
+        { "time": "19:00", "event": "현장 20만+ / 야간 기온 -4°C 이하", "risk": "높음" },
+        { "time": "20:00", "event": "공연 시작 — 감정 폭발 + 저체온 자각 지연", "risk": "중간-높음" }
+      ]
+    },
+    "longTerm": {
+      "timeframe": "12~24시간 (20:30~3/22 08:30)",
+      "expectedPath": "20:00~21:00 공연 → 21:00 종료 → 감성 P5 퇴장긴장 (최대 위험) → 21:00~01:00 대규모 해산 → 야간 -7°C → 01:00~06:00 잔여 해산 + 철거 → 06:00 세종대로 재개 → P6 안도",
+      "criticalRisk": "퇴장 위상(P5)이 전체 이벤트 최대 위험 구간. 26만 동시 이동 + 야간 극저온 + 교통 마비 3중 위험 결합.",
+      "postEventSentiment": "성공 시: 'K-POP 역사적 밤' 프레임 확산, 국가 브랜드 급등, 경제효과 실현. 사고 시: 이태원 트라우마 재발, 정치·사회적 위기, 글로벌 부정 이미지.",
+      "controversyOutlook": "공연 성공 여부와 무관하게 4대 논란(도심봉쇄·안전비용·공무원차출·공공성)은 후속 정치·사회 이슈로 지속 예상. 특히 안전비용 공공부담 논쟁은 향후 대형 행사 정책에 선례 영향."
+    }
+  },
+  "riskMatrix": [
+    { "hazard": "퇴장 시 26만 동시 이동 압사·전도", "probability": "중간", "impact": "치명적", "trend": "P5 위상(21:00~01:00) 최대", "sentimentAmplifier": "이태원 트라우마 → 패닉 전파 → 2차 밀림", "riskScore": 8.5 },
+    { "hazard": "야간 극저온(-7°C) 저체온증", "probability": "높음", "impact": "높음", "trend": "19:00부터 급상승, P4 흥분 시 자각 지연", "sentimentAmplifier": "SNS 환자 영상 → 공포 확산", "riskScore": 7.5 },
+    { "hazard": "15:00 게이트 병목 (보안검색 오픈)", "probability": "높음", "impact": "중간", "trend": "P3 위상 15:00~16:00 피크", "sentimentAmplifier": "대기 불만 SNS 확산 → 우회 시도 → 통제 이탈", "riskScore": 6.0 },
+    { "hazard": "교통 완전 마비 (33시간 통제)", "probability": "확정", "impact": "높음", "trend": "진행 중, 14:00~22:00 최고조", "sentimentAmplifier": "시민 50만명 불편 → 정치 이슈화", "riskScore": 7.0 },
+    { "hazard": "여론 양극화 → 현장·온라인 마찰", "probability": "중간", "impact": "중간", "trend": "P2-P3 최고조, P4 잠복, P6 재점화", "sentimentAmplifier": "4대 논란 SNS 확산 → 정치화", "riskScore": 5.0 },
+    { "hazard": "통신망 과부하 (26만 동시 접속)", "probability": "중간", "impact": "중간", "trend": "P4 공연 중 피크", "sentimentAmplifier": "통신 불통 → 안전 안내 전달 실패 → 불안 증폭", "riskScore": 5.5 },
+    { "hazard": "RM 부상 악화", "probability": "낮음", "impact": "중간", "trend": "P4 공연 중", "sentimentAmplifier": "5천만 실시간 시청 중 사고 시 즉시 글로벌 확산", "riskScore": 3.5 },
+    { "hazard": "보안 위협 (드론·테러)", "probability": "낮음", "impact": "치명적", "trend": "안정", "sentimentAmplifier": "190개국 생중계 → 즉시 글로벌 뉴스화", "riskScore": 3.0 }
+  ],
+  "confidence": {
+    "overall": "중간-높음 (78%)",
+    "improvementFromGen3": "+3%p (날씨 확정, 여론 양극화 구체화, D7 감성 모델링 추가)",
+    "uncertaintyFactors": [
+      "실제 집결 인원 (26만 ±20%)",
+      "15:00 게이트 오픈 시 실제 병목 강도",
+      "야간 극저온(-7°C) 실제 체감 영향",
+      "퇴장 시 군중 행동 패턴 (이태원 트라우마 영향 불확실)",
+      "넷플릭스 5천만 시청자 수 실현 여부",
+      "4대 논란의 정치화 속도 및 강도"
+    ],
+    "d7ModelLimitations": [
+      "감성 곡선은 집합적 추정치이며 개인별 편차 큼",
+      "실시간 SNS 감성 분석(NLP) 미적용 — 뉴스·인터뷰 기반 추정",
+      "P5 퇴장 위상의 실제 감성은 현장 상황(해산 속도, 안전 조치)에 크게 의존",
+      "여론 양극화 강도는 미디어 프레이밍에 따라 급변 가능"
+    ]
+  },
+  "sources": [
+    { "title": "서울시 교통 안전 종합안내", "url": "https://www.seoul.go.kr/welcome2026/" },
+    { "title": "Korea Times 날씨 예보", "url": "https://www.koreatimes.co.kr/entertainment/20260320/bts-concert-weather-at-gwanghwamun-warm-with-clear-skies-but-colder-at-night" },
+    { "title": "경향신문 시민 불편 보도", "url": "https://www.khan.co.kr/article/202603200600041" },
+    { "title": "프레시안 집회 제한·공공성 논란", "url": "https://www.pressian.com/pages/articles/2026031917445403750" },
+    { "title": "세이프타임즈 안전비용 책임 논쟁", "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=240788" },
+    { "title": "세이프타임즈 도심 봉쇄 논란", "url": "https://www.safetimes.co.kr/news/articleView.html?idxno=240930" },
+    { "title": "BNT뉴스 공무원 무급 차출", "url": "https://www.bntnews.co.kr/article/view/bnt202603190020" },
+    { "title": "리포터아 시민 지문 검사 불만", "url": "https://www.reportera.co.kr/news/bts-gwanghwamun-concert-security-fortress/" },
+    { "title": "오마이뉴스 종로구민 시선", "url": "https://www.ohmynews.com/NWS_Web/View/at_pg.aspx?CNTN_CD=A0003215724" },
+    { "title": "헤럴드경제 외국인 입국 32.7%↑", "url": "https://biz.heraldcorp.com/article/10699156" },
+    { "title": "Euronews 팬 서울 쇄도", "url": "https://www.euronews.com/culture/2026/03/20/bts-are-back-fans-flood-seoul-as-new-album-drops-ahead-of-mega-comeback-concert" },
+    { "title": "NPR BTS 아리랑 심층 분석", "url": "https://www.npr.org/2026/03/20/nx-s1-5753931/bts-arirang-comeback-k-pop" },
+    { "title": "Variety 넷플릭스 라이브 프로듀서 인터뷰", "url": "https://variety.com/2026/tv/news/bts-the-comeback-live-netflix-what-to-expect-1236694612/" },
+    { "title": "COREANLAB 260,000명 분석", "url": "https://coreanlab.com/bts-gwanghwamun-concert-2026/" },
+    { "title": "뉴시스 K-팝 왕의 귀환", "url": "https://www.newsis.com/view/NISX20260320_0003557691" },
+    { "title": "나무위키 광화문광장 사용 논란", "url": "https://namu.wiki/w/%EB%B0%A9%ED%83%84%EC%86%8C%EB%85%84%EB%8B%A8%20%EC%BB%B4%EB%B0%B1%EC%87%BC%20%EA%B4%91%ED%99%94%EB%AC%B8%EA%B4%91%EC%9E%A5%20%EC%82%AC%EC%9A%A9%20%EB%85%BC%EB%9E%80" },
+    { "title": "NBC News 글로벌 보도", "url": "https://www.nbcnews.com/world/asia/bts-will-stage-long-awaited-comeback-concert-seoul-landmark-rcna264413" },
+    { "title": "Bloomberg 인프라 테스트", "url": "https://www.bloomberg.com/news/articles/2026-03-17/bts-comeback-concert-to-test-seoul-s-infrastructure-crowd-control-measures" },
+    { "title": "블룸버그 경제효과 2,660억 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10698458" },
+    { "title": "Netflix Tudum 시청 안내", "url": "https://www.netflix.com/tudum/features/how-to-watch-bts-the-comeback-live-on-netflix-date-time" },
+    { "title": "SCMP Free BTS Concert", "url": "https://www.scmp.com/lifestyle/entertainment/article/3346835/free-bts-concert-mark-k-pop-comeback-no-other-are-you-ready-army" },
+    { "title": "UPI Seoul gears up", "url": "https://www.upi.com/Entertainment_News/2026/03/20/korea-BTS-comeback-concert-Arirang-Seoul-Netflix/2911774011722/" }
+  ]
+}

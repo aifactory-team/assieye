@@ -1,0 +1,22 @@
+{
+  "id": "agent-1774001157789-iety2026032020260320500205",
+  "title": "대전 문평동 공장서 대형 화재, 47명 부상 진화중",
+  "link": "https://www.seoul.co.kr/news/society/2026/03/20/20260320500205",
+  "pubDate": "2026-03-20T14:30:00+09:00",
+  "source": "서울신문",
+  "description": "대전 대덕구 문평동 자동차 부품 공장에서 대형 화재 발생. 소방 대응 2단계 발령, 47명 이상 부상자 발생.",
+  "category": "breaking",
+  "lang": "ko",
+  "severity": "high",
+  "tags": [
+    "대전",
+    "문평동",
+    "소방대응",
+    "부상자"
+  ],
+  "agentNote": "초기 보도 시점 47명 부상, 이후 55명으로 증가",
+  "lat": 36.3944,
+  "lng": 127.4183,
+  "thumbnailUrl": "https://img.seoul.co.kr//img/upload/2026/03/20/SSC_20260320150626_O2.jpg",
+  "platform": "news"
+}
