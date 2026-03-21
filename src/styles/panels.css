@@ -1381,11 +1381,18 @@
 .tc-progress-bar { background:rgba(74,222,128,0.6); width:100%; min-width:8px; max-width:20px; border-radius:2px 2px 0 0; }
 .tc-time-label { font-size:7px; color:rgba(255,255,255,0.4); position:absolute; bottom:-12px; white-space:nowrap; }
 
-/* ── Bottom panel 2-row layout ────────────────────────────────── */
-.panels-bottom > .panel { flex: 1 1 30%; min-width: 200px; }
-.panels-bottom [data-panel-id="timeline-chart"] { flex: 2 1 50%; min-width: 300px; }
+/* ── Bottom panel 2-row layout (forced) ───────────────────────── */
+.panels-bottom > .panel { flex: 1 1 calc(33% - 4px); max-width: calc(50% - 4px); }
+
+/* Row 1: sentiment + chart — each ~33% forces wrap */
 .panels-bottom [data-panel-id="sentiment-positive"],
-.panels-bottom [data-panel-id="sentiment-negative"] { flex: 1 1 20%; min-width: 150px; }
+.panels-bottom [data-panel-id="sentiment-negative"] { flex: 1 1 calc(20% - 4px); max-width: calc(25% - 4px); }
+.panels-bottom [data-panel-id="timeline-chart"] { flex: 2 1 calc(50% - 4px); max-width: calc(50% - 4px); }
+
+/* Row 2: summary + stats + predict — forced to next line */
+.panels-bottom [data-panel-id="situation-summary"],
+.panels-bottom [data-panel-id="fire-stats"],
+.panels-bottom [data-panel-id="predict"] { flex: 1 1 calc(33% - 4px); max-width: calc(34% - 4px); }
 
 /* ── Sentiment Panel ──────────────────────────────────────────── */
 .sentiment-bar-wrap { padding: 4px 0; }

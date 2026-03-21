@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"node ~/.claude/skills/cheliped-browser/scripts/cheliped-cli.mjs '[{\\\"cmd\\\":\\\"run-js\\\",\\\"args\\\":[\\\"(() => { var map = document.querySelector(\\\\\\\".maplibregl-map, [class*=map]\\\\\\\"); var mark...",
-  "error": "Exit code 1",
-  "timestamp": "2026-03-21T13:38:53.040Z",
-  "retry_count": 2
+  "tool_input_preview": "{\"command\":\"JSCODE=$(cat /tmp/assieye_check1.js | tr '\\\\n' ' ')\\nnode ~/.claude/skills/cheliped-browser/scripts/cheliped-cli.mjs \\\"[{\\\\\\\"cmd\\\\\\\":\\\\\\\"run-js\\\\\\\",\\\\\\\"args\\\\\\\":[\\\\\\\"$JSCODE\\\\\\\"]}]\\\"\",\"tim...",
+  "error": "Exit code 1\n{\"error\":\"JSON 파싱 오류: Expected ',' or ']' after array element in JSON at position 67 (line 1 column 68)\"}",
+  "timestamp": "2026-03-21T14:04:06.726Z",
+  "retry_count": 4
 }
