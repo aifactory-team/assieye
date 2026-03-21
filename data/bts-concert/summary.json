@@ -1,17 +1,17 @@
 {
-  "situation": "BTS 광화문 콘서트 진행 중. 10만명 운집. SNS 실시간 트렌드 1위.",
-  "casualties": "해당 없음",
-  "response": "경찰 3,000명 배치. 세종대로 전면 통제. 응급 환자 12건 처리.",
-  "outlook": "공연 2시간 진행. 종료 후 분산 퇴장 유도 필요.",
-  "lastAnalysis": "2026-03-21T18:00:00+09:00",
+  "situation": "BTS 광화문 콘서트 진행 중. 광화문광장에 4만명 이상 운집. 26만명 예상 동원. 전 세계 아미 집결.",
+  "casualties": "RM 발목 부상 투혼 공연. 관객 안전사고 보고 없음.",
+  "response": "경찰 3,000명 배치. 세종대로 교통 통제. 경복궁 임시 휴관. 소지품·몸수색 후 입장. 응급의료팀 20개조 대기.",
+  "outlook": "오후 3시 관객 입장 시작. 공연 진행 중. 행사 종료 후 인파 분산 대책 시행 예정.",
+  "lastAnalysis": "2026-03-21T23:30:00+09:00",
   "eventStats": {
-    "currentAttendees": "100,000",
-    "expectedAttendees": "100,000",
-    "snsMentions": "2,450,000",
-    "trending": "#1 실시간 트렌드",
+    "expectedAttendees": "260,000",
+    "currentAttendees": "40,000+",
+    "snsMentions": "5,200,000+",
+    "trending": "#1 실시간 트렌드 (전세계)",
     "policeDeployed": "3,000",
     "medicalTeams": "20",
-    "emergencyCases": "12",
-    "mediaArticles": "350"
+    "economicImpact": "매출 급등 (10분 180만원)",
+    "accommodationSurge": "외국인 숙소 예약 103% 폭증"
   }
 }
