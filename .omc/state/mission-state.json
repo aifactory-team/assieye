@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-21T14:02:56.744Z",
+  "updatedAt": "2026-03-21T14:12:04.976Z",
   "missions": [
     {
       "id": "session:29fa6236-93b4-4d2a-89fa-598e594ff01e:none",
@@ -81,15 +81,15 @@
       "name": "none",
       "objective": "Session mission",
       "createdAt": "2026-03-20T09:57:36.440Z",
-      "updatedAt": "2026-03-21T14:02:56.744Z",
-      "status": "running",
+      "updatedAt": "2026-03-21T14:12:04.976Z",
+      "status": "done",
       "workerCount": 58,
       "taskCounts": {
         "total": 58,
         "pending": 0,
         "blocked": 0,
-        "inProgress": 1,
-        "completed": 57,
+        "inProgress": 0,
+        "completed": 58,
         "failed": 0
       },
       "agents": [
@@ -667,11 +667,11 @@
           "name": "general-purpose:ae3d2cc",
           "role": "general-purpose",
           "ownership": "ae3d2cc3b20d7c4a0",
-          "status": "running",
+          "status": "done",
           "currentStep": null,
-          "latestUpdate": null,
+          "latestUpdate": "completed",
           "completedSummary": null,
-          "updatedAt": "2026-03-21T14:02:56.744Z"
+          "updatedAt": "2026-03-21T14:12:04.976Z"
         }
       ],
       "timeline": [
@@ -698,6 +698,14 @@
           "agent": "general-purpose:ae3d2cc",
           "detail": "started general-purpose:ae3d2cc",
           "sourceKey": "session-start:ae3d2cc3b20d7c4a0"
+        },
+        {
+          "id": "session-stop:ae3d2cc3b20d7c4a0:2026-03-21T14:12:04.976Z",
+          "at": "2026-03-21T14:12:04.976Z",
+          "kind": "completion",
+          "agent": "general-purpose:ae3d2cc",
+          "detail": "completed",
+          "sourceKey": "session-stop:ae3d2cc3b20d7c4a0"
         }
       ]
     },
@@ -755,15 +763,15 @@
       "name": "none",
       "objective": "Session mission",
       "createdAt": "2026-03-20T22:30:16.142Z",
-      "updatedAt": "2026-03-21T14:02:18.518Z",
-      "status": "running",
+      "updatedAt": "2026-03-21T14:11:13.536Z",
+      "status": "done",
       "workerCount": 49,
       "taskCounts": {
         "total": 49,
         "pending": 0,
         "blocked": 0,
-        "inProgress": 2,
-        "completed": 47,
+        "inProgress": 0,
+        "completed": 49,
         "failed": 0
       },
       "agents": [
@@ -1241,21 +1249,21 @@
           "name": "general-purpose:a771941",
           "role": "general-purpose",
           "ownership": "a771941cb7227d00a",
-          "status": "running",
+          "status": "done",
           "currentStep": null,
-          "latestUpdate": null,
+          "latestUpdate": "completed",
           "completedSummary": null,
-          "updatedAt": "2026-03-21T14:02:10.486Z"
+          "updatedAt": "2026-03-21T14:07:51.542Z"
         },
         {
           "name": "general-purpose:a235e8e",
           "role": "general-purpose",
           "ownership": "a235e8e1ceb027219",
-          "status": "running",
+          "status": "done",
           "currentStep": null,
-          "latestUpdate": null,
+          "latestUpdate": "completed",
           "completedSummary": null,
-          "updatedAt": "2026-03-21T14:02:18.518Z"
+          "updatedAt": "2026-03-21T14:11:13.536Z"
         }
       ],
       "timeline": [
@@ -1282,6 +1290,22 @@
           "agent": "general-purpose:a235e8e",
           "detail": "started general-purpose:a235e8e",
           "sourceKey": "session-start:a235e8e1ceb027219"
+        },
+        {
+          "id": "session-stop:a771941cb7227d00a:2026-03-21T14:07:51.542Z",
+          "at": "2026-03-21T14:07:51.542Z",
+          "kind": "completion",
+          "agent": "general-purpose:a771941",
+          "detail": "completed",
+          "sourceKey": "session-stop:a771941cb7227d00a"
+        },
+        {
+          "id": "session-stop:a235e8e1ceb027219:2026-03-21T14:11:13.536Z",
+          "at": "2026-03-21T14:11:13.536Z",
+          "kind": "completion",
+          "agent": "general-purpose:a235e8e",
+          "detail": "completed",
+          "sourceKey": "session-stop:a235e8e1ceb027219"
         }
       ]
     }
