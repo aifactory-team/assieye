@@ -44,8 +44,6 @@ export const TOPIC_BTS_CONCERT: TopicConfig = {
       { type: 'platform-youtube' },
     ],
     right: [
-      { type: 'sentiment-positive' },
-      { type: 'sentiment-negative' },
       { type: 'platform-news' },
       { type: 'platform-twitter' },
       { type: 'platform-instagram' },
@@ -54,6 +52,8 @@ export const TOPIC_BTS_CONCERT: TopicConfig = {
       { type: 'platform-threads' },
     ],
     bottom: [
+      { type: 'sentiment-positive' },
+      { type: 'sentiment-negative' },
       { type: 'timeline-chart' },
       { type: 'situation-summary' },
       { type: 'fire-stats' },

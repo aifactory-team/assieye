@@ -71,10 +71,11 @@
   right: 244px;
   z-index: 6;
   display: flex;
+  flex-wrap: wrap;
   gap: 4px;
   padding: 4px;
   pointer-events: auto;
-  max-height: 280px;
+  max-height: 45vh;
   overflow-y: auto;
 }
 .panels-bottom > .panel {
@@ -1379,6 +1380,12 @@
 .tc-missing { background:#ffcc00; }
 .tc-progress-bar { background:rgba(74,222,128,0.6); width:100%; min-width:8px; max-width:20px; border-radius:2px 2px 0 0; }
 .tc-time-label { font-size:7px; color:rgba(255,255,255,0.4); position:absolute; bottom:-12px; white-space:nowrap; }
+
+/* ── Bottom panel 2-row layout ────────────────────────────────── */
+.panels-bottom > .panel { flex: 1 1 30%; min-width: 200px; }
+.panels-bottom [data-panel-id="timeline-chart"] { flex: 2 1 50%; min-width: 300px; }
+.panels-bottom [data-panel-id="sentiment-positive"],
+.panels-bottom [data-panel-id="sentiment-negative"] { flex: 1 1 20%; min-width: 150px; }
 
 /* ── Sentiment Panel ──────────────────────────────────────────── */
 .sentiment-bar-wrap { padding: 4px 0; }

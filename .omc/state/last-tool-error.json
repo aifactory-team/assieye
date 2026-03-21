@@ -1,7 +1,7 @@
 {
   "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"node ~/.claude/skills/cheliped-browser/scripts/cheliped-cli.mjs '[{\\\"cmd\\\":\\\"run-js\\\",\\\"args\\\":[\\\"document.querySelectorAll(\\\\\\\".panel\\\\\\\").length + \\\\\\\" panels, map: \\\\\\\" + !!document.que...",
+  "tool_input_preview": "{\"command\":\"node ~/.claude/skills/cheliped-browser/scripts/cheliped-cli.mjs '[{\\\"cmd\\\":\\\"run-js\\\",\\\"args\\\":[\\\"(() => { var map = document.querySelector(\\\\\\\".maplibregl-map, [class*=map]\\\\\\\"); var mark...",
   "error": "Exit code 1",
-  "timestamp": "2026-03-21T10:04:17.624Z",
-  "retry_count": 3
+  "timestamp": "2026-03-21T13:38:53.040Z",
+  "retry_count": 2
 }

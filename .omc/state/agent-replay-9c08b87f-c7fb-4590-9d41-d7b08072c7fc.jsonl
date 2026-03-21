@@ -107,3 +107,8 @@
 {"t":0,"agent":"af11a89","agent_type":"general-purpose","event":"agent_start","parent_mode":"none"}
 {"t":0,"agent":"af11a89","agent_type":"general-purpose","event":"agent_stop","success":true,"duration_ms":663321}
 {"t":0,"agent":"a61205b","agent_type":"general-purpose","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a61205b","agent_type":"general-purpose","event":"agent_stop","success":true,"duration_ms":709527}
+{"t":0,"agent":"system","event":"skill_activated","skill_name":"add-news","skill_source":"project"}
+{"t":0,"agent":"a73800a","agent_type":"general-purpose","event":"agent_start","parent_mode":"none"}
+{"t":0,"agent":"a73800a","agent_type":"general-purpose","event":"agent_stop","success":true,"duration_ms":506755}
+{"t":0,"agent":"system","event":"skill_activated","skill_name":"add-news","skill_source":"project"}
