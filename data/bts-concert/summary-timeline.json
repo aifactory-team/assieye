@@ -4,48 +4,90 @@
     "situation": "세종대로 교통 통제 시작. 무대 설치 완료.",
     "casualties": "해당 없음",
     "response": "경찰 배치 시작. 교통 우회 안내.",
-    "outlook": "내일 공연 준비 완료."
+    "outlook": "내일 공연 준비 완료.",
+    "eventMetrics": {
+      "attendees": 0,
+      "snsMentions": 500000,
+      "police": 500,
+      "mediaArticles": 30
+    }
   },
   {
     "time": "3/21 00:00",
     "situation": "새벽 팬 운집 시작. 추위 속 텐트 설치.",
     "casualties": "해당 없음",
     "response": "야간 경비 강화. 응급의료팀 대기.",
-    "outlook": "새벽부터 인파 증가 예상."
+    "outlook": "새벽부터 인파 증가 예상.",
+    "eventMetrics": {
+      "attendees": 500,
+      "snsMentions": 800000,
+      "police": 500,
+      "mediaArticles": 50
+    }
   },
   {
     "time": "3/21 06:00",
     "situation": "1만명 돌파. 외신 보도 시작. 한복 패션쇼.",
     "casualties": "해당 없음",
     "response": "소지품 검사 시작. 지하철 혼잡 관리.",
-    "outlook": "오전 중 2~3만명 예상."
+    "outlook": "오전 중 2~3만명 예상.",
+    "eventMetrics": {
+      "attendees": 10000,
+      "snsMentions": 1500000,
+      "police": 1500,
+      "mediaArticles": 100
+    }
   },
   {
     "time": "3/21 08:00",
     "situation": "2만8000명 운집. 26만명 동원 예상. 숙소 103% 폭증.",
     "casualties": "RM 발목 부상 공개.",
     "response": "경찰 3,000명 배치. 경복궁 휴관 결정.",
-    "outlook": "오후 입장 시작 예정."
+    "outlook": "오후 입장 시작 예정.",
+    "eventMetrics": {
+      "attendees": 28000,
+      "snsMentions": 2500000,
+      "police": 3000,
+      "mediaArticles": 180
+    }
   },
   {
     "time": "3/21 11:00",
     "situation": "3만4000명 돌파. 수만명 운집. 보라빛 광화문.",
     "casualties": "안전사고 없음.",
     "response": "정부 빈틈없는 안전대응 지시.",
-    "outlook": "오후 3시 입장, 공연 임박."
+    "outlook": "오후 3시 입장, 공연 임박.",
+    "eventMetrics": {
+      "attendees": 34000,
+      "snsMentions": 3800000,
+      "police": 3000,
+      "mediaArticles": 250
+    }
   },
   {
     "time": "3/21 13:00",
     "situation": "4만명 운집. 아미 환호성. 컴백 공연 시작.",
     "casualties": "안전사고 없음.",
     "response": "전 구간 통제. 매출 급등(10분 180만원).",
-    "outlook": "공연 진행 중. 종료 후 인파 분산 대책."
+    "outlook": "공연 진행 중. 종료 후 인파 분산 대책.",
+    "eventMetrics": {
+      "attendees": 40000,
+      "snsMentions": 5200000,
+      "police": 3000,
+      "mediaArticles": 350
+    }
   },
   {
     "time": "현재",
     "situation": "BTS 광화문 콘서트 진행 중. 4만명+ 관객. 전세계 생중계.",
     "casualties": "RM 발목 부상 투혼. 관객 안전사고 없음.",
     "response": "경찰 3,000명. 응급의료 20개조. 교통 전면 통제.",
-    "outlook": "공연 종료 후 인파 분산. 경제 효과 집계 예정."
+    "outlook": "공연 종료 후 인파 분산. 경제 효과 집계 예정.",
+    "eventMetrics": {
+      "attendees": 40000,
+      "snsMentions": 5200000,
+      "police": 3000,
+      "mediaArticles": 350
+    }
   }
 ]
