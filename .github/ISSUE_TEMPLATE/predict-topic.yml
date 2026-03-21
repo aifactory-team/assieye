@@ -1,0 +1,70 @@
+name: "New Prediction Topic"
+description: "온톨로지 기반 AI 예측 새 주제 등록"
+labels: ["predict"]
+body:
+  - type: input
+    id: topic-id
+    attributes:
+      label: "Topic ID"
+      description: "영문 하이픈 형식 (예: daejeon-fire, bts-concert)"
+      placeholder: "my-topic"
+    validations:
+      required: true
+
+  - type: input
+    id: topic-name
+    attributes:
+      label: "주제명"
+      description: "한국어 주제 이름"
+      placeholder: "대전 화재"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "상황 설명"
+      description: "분석 대상 상황을 간략히 설명"
+      placeholder: "2026.03.20 대전 대덕구 공장 화재 발생..."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: "주제 유형"
+      options:
+        - 재난/사고 (Disaster)
+        - 대규모 이벤트 (Event)
+        - 사회 이슈 (Social)
+        - 기타 (Other)
+    validations:
+      required: true
+
+  - type: textarea
+    id: data-sources
+    attributes:
+      label: "데이터 소스"
+      description: "뉴스 검색 키워드, RSS URL 등"
+      placeholder: |
+        - 키워드: 대전 화재
+        - RSS: https://news.google.com/rss/...
+
+  - type: checkboxes
+    id: strategies
+    attributes:
+      label: "적용할 심화 전략"
+      description: "이 주제에 적용할 기본 전략 선택"
+      options:
+        - label: "D1 화학/물리 반응 분석"
+        - label: "D2 구조/대피 시뮬레이션"
+        - label: "D3 능동적 웹 뉴스 수집"
+        - label: "D4 보험/보상 판례 분석"
+        - label: "D5 법적 책임 분석"
+        - label: "D6 국제 유사사고 비교"
+        - label: "D7 여론 감성 추적"
+        - label: "D8 수색/구조 정밀 모델"
+        - label: "D9 참가자/피해자 네트워크"
+        - label: "D10 도시 인프라 평가"
+        - label: "D11 기상/환경 보정"
+        - label: "D12 시스템 성능 통계"

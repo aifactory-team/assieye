@@ -1,0 +1,196 @@
+name: Ontology-Based AI Prediction
+
+on:
+  schedule:
+    # 30분마다 실행 (KST 기준으로 설정)
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+    inputs:
+      topics:
+        description: 'Comma-separated topic IDs (e.g., daejeon-fire,bts-concert)'
+        required: false
+        default: 'all'
+      force_strategy:
+        description: 'Force a specific deepening strategy (e.g., D1, D6, NEW)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+  issues: write
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+jobs:
+  predict:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Claude Code
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Detect active topics
+        id: topics
+        run: |
+          if [ "${{ github.event.inputs.topics }}" = "all" ] || [ -z "${{ github.event.inputs.topics }}" ]; then
+            # Auto-detect topics with predict-report.json
+            TOPICS=""
+            for dir in data/*/; do
+              if [ -f "${dir}predict-report.json" ]; then
+                topic=$(basename "$dir")
+                TOPICS="${TOPICS}${topic},"
+              fi
+            done
+            TOPICS=${TOPICS%,}
+          else
+            TOPICS="${{ github.event.inputs.topics }}"
+          fi
+          echo "active_topics=${TOPICS}" >> $GITHUB_OUTPUT
+          echo "Detected topics: ${TOPICS}"
+
+      - name: Build prediction prompt
+        id: prompt
+        run: |
+          TOPICS="${{ steps.topics.outputs.active_topics }}"
+          FORCE_STRATEGY="${{ github.event.inputs.force_strategy }}"
+
+          # Start with the base prompt from predict-prompt.md
+          PROMPT="$(cat scripts/predict-prompt.md)"
+
+          # Add runtime context
+          PROMPT="${PROMPT}
+
+          ---
+          ## 이번 실행 컨텍스트
+          - 실행 시각: $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M KST')
+          - 활성 토픽: ${TOPICS}
+          - 트리거: ${{ github.event_name }}"
+
+          # Add topic-specific instructions
+          IFS=',' read -ra TOPIC_ARRAY <<< "$TOPICS"
+          for topic in "${TOPIC_ARRAY[@]}"; do
+            PROMPT="${PROMPT}
+
+          **주제: ${topic}**
+          - data/${topic}/의 데이터를 분석한다
+          - 결과를 data/${topic}/predict/ 에 저장한다"
+          done
+
+          # Add force strategy if specified
+          if [ -n "$FORCE_STRATEGY" ]; then
+            PROMPT="${PROMPT}
+
+          **강제 심화 전략: ${FORCE_STRATEGY}**"
+          fi
+
+          # Save prompt to file for Claude Code
+          echo "$PROMPT" > /tmp/predict-prompt.txt
+
+      - name: Run Claude Code prediction
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          # Claude Code 실행 (비대화형 모드)
+          # --dangerously-skip-permissions: CI 환경에서 자동 승인
+          # --max-turns: 충분한 턴 허용 (토픽당 분석에 여러 도구 호출 필요)
+          cat /tmp/predict-prompt.txt | claude \
+            --dangerously-skip-permissions \
+            --max-turns 50 \
+            --output-format json \
+            2>&1 | tee /tmp/claude-output.json || true
+
+          # 실행 결과 요약 출력
+          echo "=== Claude Code execution completed ==="
+          if [ -f /tmp/claude-output.json ]; then
+            python3 -c "
+          import json, sys
+          try:
+              data = json.load(open('/tmp/claude-output.json'))
+              print(f'Result: {json.dumps(data, ensure_ascii=False)[:500]}...')
+          except:
+              print('Output is not JSON, checking raw output...')
+              print(open('/tmp/claude-output.json').read()[:500])
+          " 2>/dev/null || echo "Could not parse output"
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git add -A data/*/predict/ data/*/predict-report.json data/predict-evolution-protocol.json
+          if git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            # Extract generation info for commit message
+            TOPICS="${{ steps.topics.outputs.active_topics }}"
+            COMMIT_MSG="predict: ontology analysis cycle"
+            for dir in data/*/predict/; do
+              topic=$(basename "$(dirname "$dir")")
+              if [ -f "${dir}index.json" ]; then
+                count=$(python3 -c "import json; print(len(json.load(open('${dir}index.json'))))" 2>/dev/null || echo "?")
+                COMMIT_MSG="${COMMIT_MSG} | ${topic}:gen${count}"
+              fi
+            done
+            echo "commit_msg=${COMMIT_MSG}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push results
+        if: steps.changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "ontology-predict-bot"
+          git config user.email "predict-bot@assieye.ai"
+          git commit -m "${{ steps.changes.outputs.commit_msg }}"
+          git push
+
+      - name: Update issue comments
+        if: steps.changes.outputs.has_changes == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const topics = '${{ steps.topics.outputs.active_topics }}'.split(',');
+
+            for (const topic of topics) {
+              const reportPath = `data/${topic}/predict-report.json`;
+              if (!fs.existsSync(reportPath)) continue;
+
+              try {
+                const report = JSON.parse(fs.readFileSync(reportPath, 'utf8'));
+                const gen = report.evolution?.generation || report.reportVersion || '?';
+                const confidence = report.confidence?.overall || '?';
+                const strategy = report.evolution?.deepeningStrategy || 'N/A';
+                const generatedAt = report.generatedAt || new Date().toISOString();
+
+                // Find open issue for this topic
+                const issues = await github.rest.issues.listForRepo({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  labels: `predict,${topic}`,
+                  state: 'open'
+                });
+
+                if (issues.data.length > 0) {
+                  const issueNumber = issues.data[0].number;
+                  await github.rest.issues.createComment({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    issue_number: issueNumber,
+                    body: `### Gen ${gen} | ${generatedAt}\n- **Strategy**: ${strategy}\n- **Confidence**: ${confidence}\n- **File**: \`data/${topic}/predict/\`\n`
+                  });
+                }
+              } catch (e) {
+                console.log(`Skip ${topic}: ${e.message}`);
+              }
+            }

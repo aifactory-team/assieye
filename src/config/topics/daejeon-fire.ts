@@ -25,7 +25,7 @@ export const TOPIC_DAEJEON_FIRE: TopicConfig = {
         lat: 36.3944,
         lng: 127.4183,
         label: '화재 현장 (안전공업)',
-        detail: '13:17 \uBC1C\uD654 | \uC0AC\uB9DD 10\uBA85 | \uBD80\uC0C1 55\uBA85 | \uC2E4\uC885 4\uBA85<br/>\uC9C4\uD654 \uC644\uB8CC(23:48) | \uAD6D\uAC00\uC18C\uBC29\uB3D9\uC6D0\uB839 13:53',
+        detail: '13:17 \uBC1C\uD654 | \uC0AC\uB9DD 11\uBA85 | \uBD80\uC0C1 59\uBA85 | \uC2E4\uC885 3\uBA85<br/>\uC9C4\uD654 \uC644\uB8CC(23:48) | \uC7D4\uD574 \uCCA0\uAC70 \uC218\uC0C9 \uC911',
         color: '#ff0000',
       },
     ],

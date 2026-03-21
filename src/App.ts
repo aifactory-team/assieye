@@ -152,14 +152,14 @@ export class App {
       }
     });
     mobileTabBar.setTabs([
-      { id: 'map', icon: '\uD83D\uDDFA\uFE0F', label: '\uC9C0\uB3C4' },
-      { id: 'platform-news', icon: '\uD83D\uDCF0', label: '\uB274\uC2A4' },
-      { id: 'platform-youtube', icon: '\u25B6\uFE0F', label: 'YouTube' },
-      { id: 'platform-twitter', icon: '\uD835\uDD4F', label: 'X' },
-      { id: 'platform-instagram', icon: '\uD83D\uDCF7', label: 'IG' },
-      { id: 'platform-facebook', icon: '\uD83D\uDC4D', label: 'FB' },
-      { id: 'fire-stats', icon: '\uD83D\uDCCA', label: '\uD1B5\uACC4' },
-      { id: 'predict', icon: '\uD83D\uDD2E', label: 'AI' },
+      { id: 'map', icon: '', label: '\uC9C0\uB3C4' },
+      { id: 'platform-news', icon: '', label: '\uB274\uC2A4' },
+      { id: 'platform-youtube', icon: '', label: 'YouTube' },
+      { id: 'platform-twitter', icon: '', label: 'X' },
+      { id: 'platform-instagram', icon: '', label: 'IG' },
+      { id: 'platform-facebook', icon: '', label: 'FB' },
+      { id: 'fire-stats', icon: '', label: '\uD1B5\uACC4' },
+      { id: 'predict', icon: '', label: 'AI' },
     ], 'map');
     this.container.insertBefore(mobileTabBar.getElement(), this.layout.getElement());
 
@@ -774,9 +774,10 @@ export class App {
         // Extract stats dynamically from summary (works for any topic)
         const cas = data.summary.casualties;
         const sit = data.summary.situation;
+        const es = data.summary.eventStats;
         this.layout.header.updateStats({
-          casualties: cas && cas !== '\uD655\uC778 \uC911' && cas.match(/\d+/) ? cas.split(',')[0]! : undefined,
-          missing: cas?.match(/\uC2E4\uC885\s*(\d+)/)?.[1] ? `\uC2E4\uC885 ${cas.match(/\uC2E4\uC885\s*(\d+)/)?.[1]}\uBA85` : undefined,
+          casualties: es?.currentAttendees ? `\uCC38\uAC00 ${es.currentAttendees}` : (cas && cas !== '\uD655\uC778 \uC911' && cas.match(/\d+/) ? cas.split(',')[0]! : undefined),
+          missing: es?.trending ? es.trending : (cas?.match(/\uC2E4\uC885\s*(\d+)/)?.[1] ? `\uC2E4\uC885 ${cas.match(/\uC2E4\uC885\s*(\d+)/)?.[1]}\uBA85` : undefined),
           progress: sit?.includes('\uC644\uC804 \uC9C4\uC555') || sit?.includes('\uC9C4\uD654 \uC644\uB8CC') ? '100%' : sit?.match(/(\d+)%/) ? `${sit.match(/(\d+)%/)?.[1]}%` : undefined,
           newsCount: data.items.filter(i => i.platform === 'news').length,
           videoCount: videoCount > 0 ? videoCount : undefined,

@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(cat:*)",
+      "Bash(npm install:*)",
+      "Bash(npx tsc:*)",
+      "Bash(npx vite:*)",
+      "Bash(curl:*)",
+      "Bash(lsof:*)",
+      "Bash(npx:*)",
+      "Bash(python:*)",
+      "Bash(playwright install:*)",
+      "Bash(node:*)",
+      "Bash(python3:*)",
+      "Bash(grep:*)",
+      "mcp__web-reader__webReader"
+    ]
+  }
+}

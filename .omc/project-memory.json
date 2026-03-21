@@ -1,0 +1,481 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1773999075941,
+  "projectRoot": "/Users/assi/Projects/assieye",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      },
+      {
+        "name": "TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "tsconfig.json"
+        ]
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "vite",
+        "version": "6.0.7",
+        "category": "build"
+      }
+    ],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": "npm run build",
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": "npm run dev",
+    "scripts": {
+      "dev": "vite",
+      "build": "tsc && vite build",
+      "preview": "vite preview",
+      "typecheck": "tsc --noEmit"
+    }
+  },
+  "conventions": {
+    "namingStyle": "camelCase/PascalCase",
+    "importStyle": "ES modules",
+    "testPattern": null,
+    "fileOrganization": "type-based"
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "public",
+      "src"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "api": {
+      "path": "api",
+      "purpose": "API routes",
+      "fileCount": 14,
+      "lastAccessed": 1773999075926,
+      "keyFiles": [
+        "_cors.js",
+        "_rate-limit.js",
+        "cctv.js",
+        "dwi.js",
+        "feeds.js"
+      ]
+    },
+    "dist": {
+      "path": "dist",
+      "purpose": "Distribution/build output",
+      "fileCount": 1,
+      "lastAccessed": 1773999075926,
+      "keyFiles": [
+        "index.html"
+      ]
+    },
+    "public": {
+      "path": "public",
+      "purpose": "Public files",
+      "fileCount": 0,
+      "lastAccessed": 1773999075926,
+      "keyFiles": []
+    },
+    "src": {
+      "path": "src",
+      "purpose": "Source code",
+      "fileCount": 3,
+      "lastAccessed": 1773999075930,
+      "keyFiles": [
+        "App.ts",
+        "main.ts",
+        "vite-env.d.ts"
+      ]
+    },
+    "dist/assets": {
+      "path": "dist/assets",
+      "purpose": "Static assets",
+      "fileCount": 2,
+      "lastAccessed": 1773999075930,
+      "keyFiles": [
+        "index-CJkJgN-c.js",
+        "index-WPRAIzPh.css"
+      ]
+    },
+    "src/app": {
+      "path": "src/app",
+      "purpose": "Application code",
+      "fileCount": 4,
+      "lastAccessed": 1773999075931,
+      "keyFiles": [
+        "app-context.ts",
+        "data-loader.ts",
+        "panel-layout.ts"
+      ]
+    },
+    "src/components": {
+      "path": "src/components",
+      "purpose": "UI components",
+      "fileCount": 30,
+      "lastAccessed": 1773999075931,
+      "keyFiles": [
+        "AiBriefPanel.ts",
+        "AlertPanel.ts",
+        "ComingSoonPanel.ts"
+      ]
+    },
+    "src/config": {
+      "path": "src/config",
+      "purpose": "Configuration files",
+      "fileCount": 5,
+      "lastAccessed": 1773999075931,
+      "keyFiles": [
+        "constants.ts",
+        "feed-sources.ts",
+        "feeds.ts"
+      ]
+    },
+    "src/services": {
+      "path": "src/services",
+      "purpose": "Business logic services",
+      "fileCount": 16,
+      "lastAccessed": 1773999075932,
+      "keyFiles": [
+        "ai-summary.ts",
+        "alerts.ts",
+        "cctv.ts"
+      ]
+    },
+    "src/types": {
+      "path": "src/types",
+      "purpose": "Type definitions",
+      "fileCount": 1,
+      "lastAccessed": 1773999075932,
+      "keyFiles": [
+        "index.ts"
+      ]
+    },
+    "src/utils": {
+      "path": "src/utils",
+      "purpose": "Utility functions",
+      "fileCount": 5,
+      "lastAccessed": 1773999075932,
+      "keyFiles": [
+        "dom-utils.ts",
+        "format.ts",
+        "index.ts"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "src/App.ts",
+      "accessCount": 211,
+      "lastAccessed": 1774077326300,
+      "type": "file"
+    },
+    {
+      "path": "src/styles/panels.css",
+      "accessCount": 71,
+      "lastAccessed": 1774077013092,
+      "type": "file"
+    },
+    {
+      "path": "package.json",
+      "accessCount": 71,
+      "lastAccessed": 1774077433711,
+      "type": "file"
+    },
+    {
+      "path": "src/config/topics/daejeon-fire.ts",
+      "accessCount": 56,
+      "lastAccessed": 1774076837232,
+      "type": "file"
+    },
+    {
+      "path": "src/components/FlatMap.ts",
+      "accessCount": 55,
+      "lastAccessed": 1774007537345,
+      "type": "file"
+    },
+    {
+      "path": "src/components/MapContainer.ts",
+      "accessCount": 24,
+      "lastAccessed": 1774003928370,
+      "type": "file"
+    },
+    {
+      "path": "src/services/agent-news.ts",
+      "accessCount": 21,
+      "lastAccessed": 1774049301822,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 21,
+      "lastAccessed": 1774064066581,
+      "type": "directory"
+    },
+    {
+      "path": "src/components/AgentNewsPanel.ts",
+      "accessCount": 19,
+      "lastAccessed": 1774003330778,
+      "type": "file"
+    },
+    {
+      "path": "src",
+      "accessCount": 19,
+      "lastAccessed": 1774049777145,
+      "type": "directory"
+    },
+    {
+      "path": "src/types/index.ts",
+      "accessCount": 13,
+      "lastAccessed": 1774049321047,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Panel.ts",
+      "accessCount": 10,
+      "lastAccessed": 1774022913150,
+      "type": "file"
+    },
+    {
+      "path": "data/daejeon-fire/news.json",
+      "accessCount": 9,
+      "lastAccessed": 1774019073072,
+      "type": "file"
+    },
+    {
+      "path": "src/config/topics/index.ts",
+      "accessCount": 9,
+      "lastAccessed": 1774076899996,
+      "type": "file"
+    },
+    {
+      "path": "src/config/topics/types.ts",
+      "accessCount": 7,
+      "lastAccessed": 1774014643047,
+      "type": "file"
+    },
+    {
+      "path": "vite.config.ts",
+      "accessCount": 6,
+      "lastAccessed": 1774000714815,
+      "type": "file"
+    },
+    {
+      "path": "src/components/FeedPanel.ts",
+      "accessCount": 6,
+      "lastAccessed": 1774002639006,
+      "type": "file"
+    },
+    {
+      "path": "scripts/save-news-item.mjs",
+      "accessCount": 6,
+      "lastAccessed": 1774012943314,
+      "type": "file"
+    },
+    {
+      "path": "api/feeds.js",
+      "accessCount": 5,
+      "lastAccessed": 1774020527762,
+      "type": "file"
+    },
+    {
+      "path": "v101_issue_list.csv",
+      "accessCount": 4,
+      "lastAccessed": 1774002004239,
+      "type": "file"
+    },
+    {
+      "path": "prd.md",
+      "accessCount": 3,
+      "lastAccessed": 1773999846531,
+      "type": "file"
+    },
+    {
+      "path": "src/components/FireHotspotPanel.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774001029396,
+      "type": "file"
+    },
+    {
+      "path": "src/components/YouTubePanel.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774001776972,
+      "type": "file"
+    },
+    {
+      "path": "src/config/topics/korea-forest.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774002648442,
+      "type": "file"
+    },
+    {
+      "path": ".env",
+      "accessCount": 3,
+      "lastAccessed": 1774004214938,
+      "type": "file"
+    },
+    {
+      "path": "src/config/constants.ts",
+      "accessCount": 3,
+      "lastAccessed": 1774014630848,
+      "type": "file"
+    },
+    {
+      "path": "src/config/map-layers.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774000670268,
+      "type": "file"
+    },
+    {
+      "path": "v100_issue_list.csv",
+      "accessCount": 2,
+      "lastAccessed": 1774000906072,
+      "type": "file"
+    },
+    {
+      "path": "src/services/firms.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774000935900,
+      "type": "file"
+    },
+    {
+      "path": "src/components/GlobeMap.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774001704121,
+      "type": "file"
+    },
+    {
+      "path": "src/components/AlertPanel.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774001938720,
+      "type": "file"
+    },
+    {
+      "path": "src/components/Layout.ts",
+      "accessCount": 2,
+      "lastAccessed": 1774002635081,
+      "type": "file"
+    },
+    {
+      "path": "api/youtube.js",
+      "accessCount": 2,
+      "lastAccessed": 1774004211117,
+      "type": "file"
+    },
+    {
+      "path": ".env.example",
+      "accessCount": 2,
+      "lastAccessed": 1774004211701,
+      "type": "file"
+    },
+    {
+      "path": "src/components",
+      "accessCount": 2,
+      "lastAccessed": 1774012192235,
+      "type": "directory"
+    },
+    {
+      "path": "tsconfig.json",
+      "accessCount": 1,
+      "lastAccessed": 1773999617154,
+      "type": "file"
+    },
+    {
+      "path": "vercel.json",
+      "accessCount": 1,
+      "lastAccessed": 1773999617574,
+      "type": "file"
+    },
+    {
+      "path": ".claude/settings.local.json",
+      "accessCount": 1,
+      "lastAccessed": 1773999633903,
+      "type": "file"
+    },
+    {
+      "path": ".ref/worldview.md",
+      "accessCount": 1,
+      "lastAccessed": 1773999637240,
+      "type": "file"
+    },
+    {
+      "path": "src/config/feed-sources.ts",
+      "accessCount": 1,
+      "lastAccessed": 1773999705861,
+      "type": "file"
+    },
+    {
+      "path": "issues.md",
+      "accessCount": 1,
+      "lastAccessed": 1773999706744,
+      "type": "file"
+    },
+    {
+      "path": "prd-daejeon-fire-news.md",
+      "accessCount": 1,
+      "lastAccessed": 1773999720937,
+      "type": "file"
+    },
+    {
+      "path": "scripts/add-news.mjs",
+      "accessCount": 1,
+      "lastAccessed": 1773999852746,
+      "type": "file"
+    },
+    {
+      "path": "src/utils/dom-utils.ts",
+      "accessCount": 1,
+      "lastAccessed": 1773999864983,
+      "type": "file"
+    },
+    {
+      "path": "src/utils/format.ts",
+      "accessCount": 1,
+      "lastAccessed": 1773999865413,
+      "type": "file"
+    },
+    {
+      "path": "src/config",
+      "accessCount": 1,
+      "lastAccessed": 1774000689682,
+      "type": "directory"
+    },
+    {
+      "path": "api/firms.js",
+      "accessCount": 1,
+      "lastAccessed": 1774000691667,
+      "type": "file"
+    },
+    {
+      "path": "src/config/index.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774000691973,
+      "type": "file"
+    },
+    {
+      "path": "src/config/topics/iran-war.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774000707161,
+      "type": "file"
+    },
+    {
+      "path": "src/components/WeatherPanel.ts",
+      "accessCount": 1,
+      "lastAccessed": 1774000917992,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

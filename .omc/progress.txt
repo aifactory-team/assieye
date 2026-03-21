@@ -1,0 +1,19 @@
+# Ralph Progress Log
+Started: 2026-03-07T00:00:00Z
+
+## Codebase Patterns
+- WorldMonitor 참조 코드: .ref/worldmonitor-main/
+- Vanilla TypeScript + class-based Panel 컴포넌트 (JSX 없음)
+- AppModule { init(), destroy() } 인터페이스 패턴
+- h() DOM 헬퍼 + replaceChildren() 패턴
+- Vercel Edge Runtime serverless functions (api/ 디렉토리, .js 파일)
+- i18next t() 함수로 한국어 기본 다국어 지원
+- @/* path alias -> src/*
+
+## Reference Files
+- PRD: prd.md
+- 기존 구현 계획: .omc/plans/foresteye-mvp.md
+- WorldView 컨셉: .ref/worldview.md
+- WorldMonitor 코드: .ref/worldmonitor-main/
+
+---

@@ -1,0 +1,157 @@
+{
+  "project": "ForestEye MVP",
+  "branchName": "ralph/foresteye-mvp",
+  "description": "산림과학 OSINT 실시간 대시보드 MVP. 듀얼 맵 엔진(3D globe + flat map)에 산불 열점, 기상 오버레이, 정책 RSS, AI 요약, 텔레그램 경보를 통합하는 산림과학 모니터링 플랫폼.",
+  "userStories": [
+    {
+      "id": "US-001",
+      "title": "프로젝트 스캐폴딩",
+      "description": "As a 개발자, I want to Vite + TypeScript 프로젝트 구조와 Panel 베이스 클래스, AppModule 인터페이스, DOM 유틸리티, i18n 인프라를 갖춘 프로젝트를 생성 so that 모든 후속 기능 개발의 기반이 된다.",
+      "acceptanceCriteria": [
+        "npm install 에러 없이 완료",
+        "npm run dev로 Vite 개발 서버 시작, ForestEye 헤더가 보이는 빈 페이지 렌더링",
+        "npm run typecheck 에러 0개로 통과",
+        "Panel 베이스 클래스 인스턴스화 시 header + content DOM 요소 렌더링",
+        "h('div', { className: 'test' }, 'hello')로 정상 DOM 요소 생성",
+        "t() 함수가 기본으로 한국어 문자열 반환",
+        ".env.example에 모든 환경변수 플레이스홀더 문서화",
+        "Typecheck passes"
+      ],
+      "priority": 1,
+      "passes": false
+    },
+    {
+      "id": "US-002",
+      "title": "듀얼 맵 엔진",
+      "description": "As a 사용자, I want to 3D 지구본(globe.gl)과 평면 지도(deck.gl + MapLibre)를 한반도 중심으로 전환하며 볼 수 있도록 so that 산림 데이터를 다양한 시각으로 확인할 수 있다.",
+      "acceptanceCriteria": [
+        "3D globe가 한반도(위도 36.5, 경도 127.5) 중심으로 렌더링",
+        "Flat map이 한반도 중심 dark basemap으로 렌더링",
+        "토글 버튼으로 globe/flat map 전환 시 WebGL 에러 없음",
+        "뷰 전환 시 map center/zoom 대략 보존",
+        "레이어 토글 패널에 사용 가능한 레이어 on/off 스위치 표시",
+        "반응형: 모바일에서 map 가용 너비 채움, 최소 높이 300px",
+        "destroy() 호출 시 WebGL 컨텍스트 정상 정리",
+        "Typecheck passes"
+      ],
+      "priority": 2,
+      "passes": false
+    },
+    {
+      "id": "US-003",
+      "title": "NASA FIRMS 산불 열점 통합",
+      "description": "As a 산림재난 담당관, I want to NASA FIRMS 실시간 열점 데이터를 지도 위에 컬러 마커로 보고 15분마다 자동 갱신되도록 so that 산불 발생을 즉시 파악할 수 있다.",
+      "acceptanceCriteria": [
+        "FIRMS API 열점이 flat map에 FRP/밝기 기반 컬러 점으로 렌더링",
+        "3D globe에도 열점 마커 렌더링",
+        "RefreshScheduler를 통해 15분마다 데이터 자동 갱신",
+        "FireHotspotPanel에 지역별 화재 통계(건수, FRP) 테이블 표시",
+        "패널에서 지역 클릭 시 해당 영역으로 지도 줌",
+        "로딩/에러 상태 graceful 처리 (showLoading/showError)",
+        "API 키가 브라우저에 노출되지 않음 (Edge Function 프록시)",
+        "Typecheck passes"
+      ],
+      "priority": 3,
+      "passes": false
+    },
+    {
+      "id": "US-004",
+      "title": "기상청 날씨 API 통합",
+      "description": "As a 산림재난 담당관, I want to 기상청 데이터(풍속/풍향, 습도, 기온)를 지도 오버레이로 볼 수 있도록 so that 산불 위험 기상 조건을 파악할 수 있다.",
+      "acceptanceCriteria": [
+        "기상 관측소가 flat map에 풍향 화살표 아이콘으로 표시",
+        "화살표가 풍향에 맞게 회전, 풍속별 색상 코딩(녹<5, 황5-10, 주10-15, 적>15 m/s)",
+        "WeatherPanel에 최소 5개 관측소 현재 기상 정보 표시",
+        "기상 마커 hover 시 툴팁에 기온/습도/풍속 상세 표시",
+        "KMA API 불가 시 Open-Meteo 폴백 정상 작동",
+        "KMA 격자 변환(nx/ny <-> lat/lng) 정확한 좌표 생성",
+        "Typecheck passes"
+      ],
+      "priority": 4,
+      "passes": false
+    },
+    {
+      "id": "US-005",
+      "title": "산림정책 RSS OSINT 피드",
+      "description": "As a 산림정책 기획관, I want to 산림청, FAO, 환경부 등의 RSS 피드를 자동 수집하여 카테고리별로 볼 수 있도록 so that 국내외 산림 정책 동향을 신속하게 파악할 수 있다.",
+      "acceptanceCriteria": [
+        "최소 3개 RSS 피드 소스 정상 수집 및 표시",
+        "피드 항목이 발행일 기준 최신순 정렬",
+        "카테고리 필터 탭(전체/정책/국제/모니터링) 정상 작동",
+        "피드 항목 클릭 시 새 탭에서 원본 URL 열기",
+        "RefreshScheduler를 통해 30분마다 갱신",
+        "한국어/영어 피드 모두 정상 표시",
+        "HTML 콘텐츠 DOMPurify로 정상 새니타이징",
+        "Typecheck passes"
+      ],
+      "priority": 5,
+      "passes": false
+    },
+    {
+      "id": "US-006",
+      "title": "산불위험지수(DWI) 히트맵",
+      "description": "As a 산림재난 담당관, I want to 산불위험지수를 히트맵 레이어로 한반도 위에 오버레이하여 볼 수 있도록 so that 위험 지역을 한눈에 파악할 수 있다.",
+      "acceptanceCriteria": [
+        "히트맵 레이어가 한반도 위에 flat map에서 렌더링",
+        "색상이 위험 등급에 맞게 매핑(녹=안전 ~ 적=매우위험)",
+        "범례에 한국어 위험 등급 라벨(안전/주의/경고/위험/매우위험) 표시",
+        "LayerToggle로 레이어 on/off 전환 가능",
+        "RefreshScheduler를 통해 일 1회 갱신",
+        "히트맵이 맵 성능에 큰 영향 없음(< 1000 데이터 포인트)",
+        "Typecheck passes"
+      ],
+      "priority": 6,
+      "passes": false
+    },
+    {
+      "id": "US-007",
+      "title": "텔레그램 경보 봇",
+      "description": "As a 산림재난 담당관, I want to 새 산불 열점 감지 시 텔레그램으로 자동 알림을 받도록 so that 현장에서 즉시 대응할 수 있다.",
+      "acceptanceCriteria": [
+        "새 열점 감지 시 텔레그램 메시지 전송(위치, 시간, 위성, 신뢰도 한국어 포맷)",
+        "동일 열점에 대한 중복 알림 미발송(ID 기반 dedup)",
+        "AlertPanel에 발송 이력 표시",
+        "그리드 셀당 15분 간격 rate limiting으로 알림 폭주 방지",
+        "텔레그램 API 불가 시 graceful failure(에러 로그, 크래시 없음)",
+        "Typecheck passes"
+      ],
+      "priority": 7,
+      "passes": false
+    },
+    {
+      "id": "US-008",
+      "title": "AI 뉴스 요약 (Claude API)",
+      "description": "As a 산림과학 연구원, I want to RSS 피드 기사를 AI로 요약하고 일간 브리핑을 생성할 수 있도록 so that 대량의 정보를 빠르게 소화할 수 있다.",
+      "acceptanceCriteria": [
+        "개별 기사 요약 10초 이내 생성",
+        "한국어 기사는 한국어로, 영어 기사는 영어로 요약",
+        "일간 브리핑이 여러 기사를 하나의 요약으로 통합",
+        "요약 결과 localStorage에 캐시하여 중복 API 호출 방지",
+        "분당 최대 10건 rate limiting",
+        "요약 생성 중 showLoading() 로딩 상태 표시",
+        "Claude API 키가 서버사이드에서만 사용, 브라우저 미노출",
+        "Typecheck passes"
+      ],
+      "priority": 8,
+      "passes": false
+    },
+    {
+      "id": "US-009",
+      "title": "Vercel 배포 및 최종 폴리싱",
+      "description": "As a 개발자, I want to Vercel에 정상 배포되고 에러 핸들링, i18n 완성, 반응형 UI가 갖춰지도록 so that 프로덕션 환경에서 안정적으로 서비스할 수 있다.",
+      "acceptanceCriteria": [
+        "vercel deploy 또는 vercel --prod 성공",
+        "모든 API 엔드포인트 배포 URL에서 접근 가능",
+        "API 키가 클라이언트 사이드 코드에 노출되지 않음",
+        "StatusBar에 데이터 신선도 타임스탬프 정확 표시",
+        "에러 상태에서 한국어 사용자 친화적 메시지 표시",
+        "Chrome, Firefox, Safari 최신 버전 정상 동작",
+        "모바일 레이아웃(맵 + 스택 패널) 사용 가능",
+        "모든 사용자 대면 문자열이 t()로 한국어 기본값 사용",
+        "Typecheck passes"
+      ],
+      "priority": 9,
+      "passes": false
+    }
+  ]
+}
