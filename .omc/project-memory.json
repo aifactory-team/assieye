@@ -213,16 +213,16 @@
       "type": "file"
     },
     {
+      "path": "",
+      "accessCount": 22,
+      "lastAccessed": 1774077837310,
+      "type": "directory"
+    },
+    {
       "path": "src/services/agent-news.ts",
       "accessCount": 21,
       "lastAccessed": 1774049301822,
       "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 21,
-      "lastAccessed": 1774064066581,
-      "type": "directory"
     },
     {
       "path": "src/components/AgentNewsPanel.ts",
