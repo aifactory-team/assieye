@@ -190,9 +190,11 @@ export class PredictPanel extends Panel {
       const res = await fetch(`/data/${topicId}/${file}?t=${Date.now()}`);
       if (!res.ok) return null;
       const data = await res.json();
-      if (!data.ontologyAnalysis) return null;
+      if (!data.ontologyAnalysis && !data.predictions && !data.dataSnapshot) return null;
 
-      const html = this.reportJsonToHtml(data);
+      const html = data.ontologyAnalysis
+        ? this.reportJsonToHtml(data)
+        : this.reportNewFormatToHtml(data);
       return { html, generatedAt: data.generatedAt || new Date().toISOString(), evolutionGen: data.evolution?.generation };
     } catch {
       return null;
@@ -371,6 +373,48 @@ export class PredictPanel extends Panel {
       const prevAccuracy = evo.previousAccuracy as string | undefined;
       if (prevAccuracy) evoItems.push(`\uC774\uC804 \uC608\uCE21 \uAC80\uC99D: ${prevAccuracy}`);
       if (evoItems.length) html += section('\uC790\uAE30 \uC9C4\uD654 \uB85C\uADF8', li(evoItems));
+    }
+
+    return html;
+  }
+
+  private reportNewFormatToHtml(data: Record<string, unknown>): string {
+    const snap = data.dataSnapshot as Record<string, unknown> || {};
+    const preds = data.predictions as Record<string, unknown> || {};
+    const evo = data.evolution as Record<string, unknown> | undefined;
+    const confidence = data.confidence as Record<string, unknown> | undefined;
+
+    const section = (title: string, content: string) =>
+      `<h4 class="predict-section-title">${title}</h4>${content}`;
+    const li = (items: string[]) => items.length
+      ? `<ul>${items.map(i => `<li>${i}</li>`).join('')}</ul>` : '';
+
+    let html = '';
+
+    // Data snapshot
+    if (snap.elapsedSinceIgnition) {
+      html += `<div class="predict-meta">\u23F1 ${snap.elapsedSinceIgnition} | \uC0AC\uB9DD ${snap.deceased ?? '?'} | \uBD80\uC0C1 ${snap.injured ?? '?'} | \uC2E4\uC885 ${snap.missing ?? '?'}</div>`;
+    }
+
+    // Predictions
+    const predItems: string[] = [];
+    if (preds.shortTerm) predItems.push(`<strong>\uB2E8\uAE30:</strong> ${typeof preds.shortTerm === 'string' ? preds.shortTerm : JSON.stringify(preds.shortTerm).replace(/[{}"[\]]/g, '').substring(0, 120)}`);
+    if (preds.midTerm) predItems.push(`<strong>\uC911\uAE30:</strong> ${typeof preds.midTerm === 'string' ? preds.midTerm : JSON.stringify(preds.midTerm).replace(/[{}"[\]]/g, '').substring(0, 120)}`);
+    if (preds.longTerm) predItems.push(`<strong>\uC7A5\uAE30:</strong> ${typeof preds.longTerm === 'string' ? preds.longTerm : JSON.stringify(preds.longTerm).replace(/[{}"[\]]/g, '').substring(0, 120)}`);
+    if (predItems.length) html += section('\uD5A5\uD6C4 \uC804\uAC1C \uC608\uCE21', li(predItems));
+
+    // Confidence
+    if (confidence?.overall) {
+      html += `<div class="predict-confidence">\uC2E0\uB8B0\uB3C4: ${confidence.overall}</div>`;
+    }
+
+    // Evolution
+    if (evo) {
+      const evoItems: string[] = [];
+      if (evo.generation) evoItems.push(`<strong>${evo.generation}\uC138\uB300</strong>`);
+      if (evo.improvements) evoItems.push(`\uAC1C\uC120: ${evo.improvements}`);
+      if (evo.newDimension) evoItems.push(`\uC0C8 \uBD84\uC11D: ${evo.newDimension}`);
+      if (evoItems.length) html += section('\uC9C4\uD654 \uB85C\uADF8', li(evoItems));
     }
 
     return html;
