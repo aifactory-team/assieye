@@ -1,0 +1,259 @@
+{
+  "title": "온톨로지 기반 AI 예측 도메인 정의서",
+  "version": "1.0",
+  "createdAt": "2026-03-21",
+  "description": "모든 주제(토픽)에 공통 적용되는 분석 온톨로지 프레임워크. 각 도메인은 독립적으로 분석되되, 도메인 간 관계를 통해 종합 예측을 도출한다.",
+
+  "coreDomains": {
+    "D1_event": {
+      "name": "사건 흐름 (Event Flow)",
+      "purpose": "현재 상황이 어떤 단계이며, 다음에 무엇이 예상되는가",
+      "components": {
+        "phase": "현재 단계 (단계 목록은 주제별로 정의)",
+        "phaseTransition": "다음 단계로의 전환 조건과 예상 시점",
+        "causalChain": "원인→중간사건→결과의 인과 관계 체인",
+        "timeline": "주요 이벤트의 시간순 배치"
+      },
+      "algorithms": [
+        {
+          "name": "이벤트 체인 확률 분석 (Event Chain Probability)",
+          "formula": "P(최종) = P(A) × P(B|A) × P(C|B)",
+          "firstUsed": "대전 3세대",
+          "description": "각 마일스톤의 조건부 확률을 연쇄하여 최종 이벤트 확률 산출"
+        }
+      ],
+      "examples": {
+        "disaster": ["발화", "확산", "최성기", "진압", "잔불정리", "수색/복구"],
+        "event": ["사전준비", "현장세팅", "인파집결", "공연진행", "공연종료", "해산/정리"]
+      }
+    },
+
+    "D2_spatial": {
+      "name": "공간 영향 (Spatial Impact)",
+      "purpose": "피해/영향 범위, 확산 가능성, 주변 지역 영향",
+      "components": {
+        "epicenter": "중심 좌표 (lat, lng)",
+        "impactZones": "영향권 동심원 (직접/간접/잠재)",
+        "geographicFactors": "지형, 건물 구조, 인접 시설",
+        "spreadPath": "확산 경로 (풍향, 이동 패턴 등)"
+      },
+      "algorithms": [
+        {
+          "name": "가우시안 플룸 모델 (Gaussian Plume Dispersion)",
+          "formula": "C(x,y,z) = (Q/2πσyσzu) × exp(-y²/2σy²) × ...",
+          "firstUsed": "대전 5세대",
+          "description": "대기 오염물질 확산 농도를 거리·풍속·안정도 기반 산출"
+        },
+        {
+          "name": "밀집도 구역 모델 (Crowd Density Zone Model)",
+          "formula": "ρ(zone) = N(zone) / A(zone) [인/m²]",
+          "firstUsed": "BTS 9세대",
+          "description": "구역별 인원/면적으로 밀집도 산출, Keith Still 기준 5인/m² 위험 임계"
+        }
+      ],
+      "examples": {
+        "disaster": "직접 200m / 간접 1km / 잠재 3km 동심원",
+        "event": "Core / Hot / Warm / Cold 4구역 분할"
+      }
+    },
+
+    "D3_resource": {
+      "name": "투입 자원 (Resource Deployment)",
+      "purpose": "현재 대응 체계의 적정성과 추가 필요 자원",
+      "components": {
+        "deployed": "현재 투입된 인력, 장비, 시설",
+        "adequacy": "투입-수요 갭 분석",
+        "fatigue": "인력 피로도, 교대 필요성",
+        "additionalNeeds": "추가 필요 자원 목록"
+      },
+      "algorithms": [
+        {
+          "name": "비용-편익 분석 (BCR, Benefit-Cost Ratio)",
+          "formula": "BCR = 피해방지 편익 / 투자 비용",
+          "firstUsed": "대전 24세대",
+          "description": "안전 투자의 경제적 타당성 정량 평가. BCR>1이면 투자 가치 있음"
+        }
+      ],
+      "examples": {
+        "disaster": "소방 장비 46대, 인력 115명, 로봇 2대",
+        "event": "경찰 6,700명 + 안전 8,200명 = 14,900명+"
+      }
+    },
+
+    "D4_casualty": {
+      "name": "인명 피해 (Casualty Analysis)",
+      "purpose": "현재 현황, 추이, 구조/위험 가능성",
+      "components": {
+        "current": "사망, 부상(중상/경상), 실종, 관련 인원",
+        "trend": "시간에 따른 피해 추이",
+        "goldenTime": "골든타임 분석, 생존 확률 곡선",
+        "longTerm": "PTSD, 장해, 직업 복귀 장기 예후"
+      },
+      "algorithms": [
+        {
+          "name": "지수 감쇠 모델 (Exponential Decay)",
+          "formula": "P(t) = e^(-λt)",
+          "firstUsed": "대전 2세대",
+          "description": "시간 경과에 따른 생존 확률 감소. λ는 재난 유형별 감쇠 상수"
+        },
+        {
+          "name": "ASET/RSET 분석",
+          "formula": "안전 판정 = ASET(대피 가능 시간) vs RSET(대피 필요 시간)",
+          "firstUsed": "대전 20세대",
+          "description": "ASET<RSET이면 대피 구조적 불가능. 안전 마진 = ASET - RSET"
+        },
+        {
+          "name": "N자형 감성 곡선 (N-Shape Sentiment Curve)",
+          "formula": "S(t) = baseline + Σ(phase_amplitude × phase_function(t))",
+          "firstUsed": "BTS 4세대",
+          "description": "대규모 이벤트 참가자의 시간대별 집단 감성 변화 모델링"
+        }
+      ],
+      "examples": {
+        "disaster": "사망 11명, 부상 59명, 생존확률 P(14h)=2%",
+        "event": "인명 0건, 저체온·탈수·밀림 위험 모니터링"
+      }
+    },
+
+    "D5_secondary": {
+      "name": "2차 피해/위험 (Secondary Hazards)",
+      "purpose": "파생 위험, 유해물질, 환경·사회적 영향",
+      "components": {
+        "hazardousMaterials": "유해물질 유형, 양, 반응 경로",
+        "structuralRisk": "구조물 붕괴, 추가 사고 위험",
+        "environmental": "대기, 토양, 수질 오염",
+        "social": "여론, 경제 파급, 법적 영향"
+      },
+      "algorithms": [
+        {
+          "name": "화학 반응 경로 분석 (Chemical Reaction Pathway)",
+          "formula": "반응물 → 생성물 + 에너지 (단계별 체인)",
+          "firstUsed": "대전 19세대",
+          "description": "화학물질의 단계별 반응 경로와 각 생성물의 독성·위험성 분석"
+        },
+        {
+          "name": "R(t) 위험 곡선 (Risk Trajectory Curve)",
+          "formula": "R(t) = Σ(w_i × KPI_i(t)) / Σ(w_i)",
+          "firstUsed": "BTS 17세대",
+          "description": "7개 KPI의 가중 평균으로 시간별 종합 위험도 0~10 산출"
+        }
+      ],
+      "examples": {
+        "disaster": "나트륨 101kg 3단계 반응, 건물 열수축 붕괴",
+        "event": "교통 마비, 시민 생활 차질, 여론 양극화"
+      }
+    }
+  },
+
+  "domainRelationships": {
+    "description": "5개 도메인은 독립적이지 않다. 다음과 같은 관계로 연결된다.",
+    "relationships": [
+      {
+        "from": "D1_event",
+        "to": "D4_casualty",
+        "type": "causes",
+        "description": "사건이 인명 피해를 유발한다"
+      },
+      {
+        "from": "D1_event",
+        "to": "D5_secondary",
+        "type": "triggers",
+        "description": "사건이 2차 피해를 촉발한다"
+      },
+      {
+        "from": "D4_casualty",
+        "to": "D3_resource",
+        "type": "demands",
+        "description": "인명 피해가 자원 투입을 요구한다"
+      },
+      {
+        "from": "D3_resource",
+        "to": "D1_event",
+        "type": "mitigates",
+        "description": "자원 투입이 사건 진행을 완화한다"
+      },
+      {
+        "from": "D5_secondary",
+        "to": "D2_spatial",
+        "type": "expands",
+        "description": "2차 피해가 공간 영향을 확대한다"
+      },
+      {
+        "from": "D2_spatial",
+        "to": "D4_casualty",
+        "type": "constrains",
+        "description": "공간 구조가 인명 피해 규모를 제약한다 (대피 가능성 등)"
+      },
+      {
+        "from": "D5_secondary",
+        "to": "D1_event",
+        "type": "feedback",
+        "description": "2차 피해가 사건을 악화시킬 수 있다 (악순환)"
+      }
+    ],
+    "diagram": "D1 ──causes──→ D4 ──demands──→ D3 ──mitigates──→ D1 (순환)\n       │ triggers              ↑ constrains\n       ↓                       │\n      D5 ──expands──→ D2 ──────┘\n       └──feedback──→ D1 (악순환 가능)"
+  },
+
+  "extensionDomains": {
+    "description": "기본 5개 도메인 외에 주제·세대에 따라 확장되는 분석 차원",
+    "domains": [
+      {
+        "id": "E1_legal",
+        "name": "법적 분석",
+        "description": "중대재해처벌법, 산재보험, 민사소송 등",
+        "firstUsed": "대전 18세대 (D5)",
+        "algorithms": ["법적 요건 대조 분석", "판례 기반 보상 추정"]
+      },
+      {
+        "id": "E2_international",
+        "name": "국제 비교",
+        "description": "글로벌 유사 사례와의 비교 분석",
+        "firstUsed": "대전 21세대 (D6)",
+        "algorithms": ["비교 사례 매트릭스", "패턴 추출"]
+      },
+      {
+        "id": "E3_policy",
+        "name": "정책 설계",
+        "description": "제도 개선 로드맵, 정책 시뮬레이션",
+        "firstUsed": "대전 27세대",
+        "algorithms": ["BCR 기반 정책 평가", "Monte Carlo 시뮬레이션"]
+      },
+      {
+        "id": "E4_network",
+        "name": "네트워크 영향",
+        "description": "참가자/피해자의 다계층 네트워크 분석",
+        "firstUsed": "BTS 3세대 (D9)",
+        "algorithms": ["5계층 네트워크 모델링"]
+      },
+      {
+        "id": "E5_realtime",
+        "name": "실시간 모니터링",
+        "description": "KPI 대시보드, CTP 추적, 실시간 검증",
+        "firstUsed": "BTS 11세대",
+        "algorithms": ["Logistic S-curve", "R(t) 위험 곡선", "7-KPI 대시보드"]
+      },
+      {
+        "id": "E6_meta",
+        "name": "메타 분석",
+        "description": "예측 시스템 자체의 성능·편향·진화 분석",
+        "firstUsed": "대전 7세대, BTS 7세대 (D12)",
+        "algorithms": ["적중률 통계", "편향 유형 분류", "SMS 성숙도 점수"]
+      }
+    ]
+  },
+
+  "applicationGuide": {
+    "newTopic": {
+      "step1": "5개 기본 도메인(D1~D5)으로 초기 프레임 구축 (1~3세대)",
+      "step2": "주제 특성에 맞는 확장 도메인(E1~E6) 선택·적용 (4세대~)",
+      "step3": "심화 전략(D1~D12)으로 각 도메인 깊이 분석 (프로토콜 기반)",
+      "step4": "자율 전략으로 주제 고유의 새 분석 차원 창안",
+      "step5": "종합(Synthesis) 단계에서 전 도메인 통합"
+    },
+    "domainPriority": {
+      "disaster": "D1(사건) → D4(인명) → D5(2차피해) → D3(자원) → D2(공간)",
+      "event": "D2(공간) → D4(인명위험) → D3(자원) → D1(사건흐름) → D5(2차위험)",
+      "social": "D1(사건) → D5(사회영향) → D4(피해) → D2(공간) → D3(자원)"
+    }
+  }
+}
