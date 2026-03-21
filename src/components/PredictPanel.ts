@@ -20,7 +20,7 @@ export class PredictPanel extends Panel {
   constructor() {
     super({
       id: 'predict',
-      title: '\uD83D\uDD2E \uC628\uD1A8\uB85C\uC9C0 \uAE30\uBC18 AI \uB9AC\uD3EC\uD2B8',
+      title: '\uC628\uD1A8\uB85C\uC9C0 \uAE30\uBC18 AI \uB9AC\uD3EC\uD2B8',
       className: 'predict-panel',
     });
     this.renderInitial();

@@ -15,7 +15,7 @@ export class TimelineChartPanel extends Panel {
   constructor() {
     super({
       id: 'timeline-chart',
-      title: '\uD83D\uDCC8 \uC2DC\uAC04\uB300\uBCC4 \uCD94\uC774',
+      title: '\uC2DC\uAC04\uB300\uBCC4 \uCD94\uC774',
       className: 'timeline-chart-panel',
     });
   }

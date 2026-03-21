@@ -1,34 +1,42 @@
 [
   {
-    "time": "D-7",
-    "situation": "BTS 광화문 콘서트 공식 발표. 티켓 예매 시작.",
+    "time": "06:00",
+    "situation": "광화문광장 무대 최종 점검. 사운드 체크 완료.",
     "casualties": "해당 없음",
-    "response": "서울시 교통 대책 수립 시작. 경찰 배치 계획.",
-    "outlook": "팬 대기열 형성 예상. 온라인 화제성 급상승.",
-    "eventMetrics": { "attendees": 0, "snsMentions": 500000, "police": 0, "mediaArticles": 50 }
+    "response": "경찰 1차 배치 500명. 교통 통제 준비.",
+    "outlook": "팬 사전 대기열 형성 시작.",
+    "eventMetrics": { "attendees": 500, "snsMentions": 800000, "police": 500, "mediaArticles": 80 }
   },
   {
-    "time": "D-3",
-    "situation": "티켓 전량 매진. 광화문 인근 숙소 예약 폭주.",
+    "time": "09:00",
+    "situation": "팬 대기열 광화문역~세종대로 1km. 굿즈 판매 시작.",
     "casualties": "해당 없음",
-    "response": "경찰 배치 계획 확정. 교통 통제 구간 고시.",
-    "outlook": "해외 팬 입국 시작. 공항 혼잡.",
-    "eventMetrics": { "attendees": 0, "snsMentions": 1200000, "police": 500, "mediaArticles": 120 }
+    "response": "경찰 2차 배치 1,500명. 세종대로 부분 통제.",
+    "outlook": "오전 중 3만명 운집 예상.",
+    "eventMetrics": { "attendees": 5000, "snsMentions": 1200000, "police": 1500, "mediaArticles": 120 }
   },
   {
-    "time": "D-1",
-    "situation": "광화문광장 무대 설치 완료. 리허설 진행.",
+    "time": "12:00",
+    "situation": "광화문 일대 인파 밀집. 지하철 5호선 혼잡도 180%.",
     "casualties": "해당 없음",
-    "response": "세종대로 교통 통제 시작. 경찰 3,000명 배치.",
-    "outlook": "콘서트 당일 10만명 운집 예상. 지하철 혼잡 대비.",
-    "eventMetrics": { "attendees": 5000, "snsMentions": 1800000, "police": 3000, "mediaArticles": 200 }
+    "response": "경찰 전원 3,000명 배치. 세종대로 전면 통제. 응급의료팀 가동.",
+    "outlook": "오후 5만명 이상 운집 전망.",
+    "eventMetrics": { "attendees": 30000, "snsMentions": 1800000, "police": 3000, "mediaArticles": 200 }
   },
   {
-    "time": "D-Day",
-    "situation": "BTS 광화문 콘서트 준비 중. 무대 설치 완료.",
+    "time": "15:00",
+    "situation": "개장 시작. 입장 대기열 2시간. SNS 실시간 트렌드 1위.",
     "casualties": "해당 없음",
-    "response": "서울시·종로구 교통 통제. 경찰 3,000명 배치. 응급의료팀 20개조.",
-    "outlook": "콘서트 당일 광화문 일대 대규모 인파.",
-    "eventMetrics": { "attendees": 15000, "snsMentions": 2450000, "police": 3000, "mediaArticles": 350 }
+    "response": "구역별 입장 제한 시행. 밀집도 모니터링 강화.",
+    "outlook": "공연 시작(18시) 전까지 8만명 도달 예상.",
+    "eventMetrics": { "attendees": 55000, "snsMentions": 2100000, "police": 3000, "mediaArticles": 280 }
+  },
+  {
+    "time": "18:00",
+    "situation": "BTS 광화문 콘서트 공연 시작. 10만명 운집.",
+    "casualties": "해당 없음",
+    "response": "전 구역 만석. 외곽 스크린 3개소 운영. 응급 환자 12건 처리.",
+    "outlook": "공연 2시간 진행 예정. 종료 후 분산 퇴장 유도.",
+    "eventMetrics": { "attendees": 100000, "snsMentions": 2450000, "police": 3000, "mediaArticles": 350 }
   }
 ]

@@ -46,19 +46,19 @@ export class Header {
   updateStats(stats: HeaderStats): void {
     const badges: HTMLElement[] = [];
     if (stats.casualties) {
-      badges.push(h('span', { className: 'header-stat header-stat-danger' }, `\uD83D\uDEA8 ${stats.casualties}`));
+      badges.push(h('span', { className: 'header-stat header-stat-danger' }, stats.casualties));
     }
     if (stats.missing) {
-      badges.push(h('span', { className: 'header-stat header-stat-warn' }, `\uD83D\uDD0D ${stats.missing}`));
+      badges.push(h('span', { className: 'header-stat header-stat-warn' }, stats.missing));
     }
     if (stats.progress) {
-      badges.push(h('span', { className: 'header-stat header-stat-info' }, `\uD83D\uDD25 ${stats.progress}`));
+      badges.push(h('span', { className: 'header-stat header-stat-info' }, `\uC9C4\uC555 ${stats.progress}`));
     }
     if (stats.newsCount != null) {
-      badges.push(h('span', { className: 'header-stat' }, `\uD83D\uDCF0 ${stats.newsCount}`));
+      badges.push(h('span', { className: 'header-stat' }, `\uB274\uC2A4 ${stats.newsCount}`));
     }
     if (stats.videoCount != null) {
-      badges.push(h('span', { className: 'header-stat' }, `\u25B6\uFE0F ${stats.videoCount}`));
+      badges.push(h('span', { className: 'header-stat' }, `\uC601\uC0C1 ${stats.videoCount}`));
     }
 
     this.statsEl.replaceChildren(...badges);

@@ -31,7 +31,7 @@ export class AgentNewsPanel extends Panel {
   constructor(title?: string) {
     super({
       id: 'agent-news',
-      title: title || '\uD83E\uDD16 \uC2E4\uC2DC\uAC04 \uD604\uC7A5 \uB274\uC2A4',
+      title: title || '\uC2E4\uC2DC\uAC04 \uD604\uC7A5 \uB274\uC2A4',
       showCount: true,
       infoTooltip: '\uC5D0\uC774\uC804\uD2B8\uAC00 \uC218\uC9D1\uD55C \uC2E4\uC2DC\uAC04 \uB274\uC2A4 \xB7 \uB3D9\uC601\uC0C1 \xB7 SNS (10\uCD08 \uAC04\uACA9)',
     });

@@ -20,7 +20,7 @@ export class SituationSummaryPanel extends Panel {
   constructor() {
     super({
       id: 'situation-summary',
-      title: '\uD83D\uDCCB \uC0C1\uD669 \uC694\uC57D',
+      title: '\uC0C1\uD669 \uC694\uC57D',
       className: 'situation-summary-panel',
     });
     this.loadTimeline();

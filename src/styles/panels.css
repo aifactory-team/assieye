@@ -1380,6 +1380,18 @@
 .tc-progress-bar { background:rgba(74,222,128,0.6); width:100%; min-width:8px; max-width:20px; border-radius:2px 2px 0 0; }
 .tc-time-label { font-size:7px; color:rgba(255,255,255,0.4); position:absolute; bottom:-12px; white-space:nowrap; }
 
+/* ── Sentiment Panel ──────────────────────────────────────────── */
+.sentiment-bar-wrap { padding: 4px 0; }
+.sentiment-bar-label { font-size: 10px; font-weight: 600; margin-bottom: 3px; }
+.sentiment-positive .sentiment-bar-label { color: #4ade80; }
+.sentiment-negative .sentiment-bar-label { color: #f87171; }
+.sentiment-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 3px; overflow: hidden; }
+.sentiment-bar-fill { height: 100%; border-radius: 3px; }
+.sentiment-bar-fill.sentiment-positive { background: #4ade80; }
+.sentiment-bar-fill.sentiment-negative { background: #f87171; }
+.sentiment-item { display: flex; gap: 6px; align-items: baseline; padding: 3px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 11px; }
+.sentiment-item .agent-news-source { font-size: 9px; }
+
 .tc-attendees { background: #9b59b6; }
 .tc-sns { background: #3498db; }
 .tc-dot.tc-attendees { background: #9b59b6; }

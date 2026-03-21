@@ -44,6 +44,8 @@ export const TOPIC_DAEJEON_FIRE: TopicConfig = {
       { type: 'platform-youtube' },
     ],
     right: [
+      { type: 'sentiment-positive' },
+      { type: 'sentiment-negative' },
       { type: 'platform-twitter' },
       { type: 'platform-instagram' },
       { type: 'platform-facebook' },

@@ -178,14 +178,14 @@
   "hotPaths": [
     {
       "path": "src/App.ts",
-      "accessCount": 211,
-      "lastAccessed": 1774077326300,
+      "accessCount": 217,
+      "lastAccessed": 1774087368964,
       "type": "file"
     },
     {
       "path": "src/styles/panels.css",
-      "accessCount": 71,
-      "lastAccessed": 1774077013092,
+      "accessCount": 74,
+      "lastAccessed": 1774087277897,
       "type": "file"
     },
     {
@@ -196,8 +196,8 @@
     },
     {
       "path": "src/config/topics/daejeon-fire.ts",
-      "accessCount": 56,
-      "lastAccessed": 1774076837232,
+      "accessCount": 58,
+      "lastAccessed": 1774087390461,
       "type": "file"
     },
     {
@@ -214,8 +214,8 @@
     },
     {
       "path": "",
-      "accessCount": 22,
-      "lastAccessed": 1774077837310,
+      "accessCount": 23,
+      "lastAccessed": 1774078488349,
       "type": "directory"
     },
     {
@@ -225,16 +225,16 @@
       "type": "file"
     },
     {
-      "path": "src/components/AgentNewsPanel.ts",
-      "accessCount": 19,
-      "lastAccessed": 1774003330778,
-      "type": "file"
+      "path": "src",
+      "accessCount": 20,
+      "lastAccessed": 1774082141487,
+      "type": "directory"
     },
     {
-      "path": "src",
-      "accessCount": 19,
-      "lastAccessed": 1774049777145,
-      "type": "directory"
+      "path": "src/components/AgentNewsPanel.ts",
+      "accessCount": 20,
+      "lastAccessed": 1774085708106,
+      "type": "file"
     },
     {
       "path": "src/types/index.ts",

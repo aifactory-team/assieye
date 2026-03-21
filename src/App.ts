@@ -27,6 +27,7 @@ import { SituationSummaryPanel } from '@/components/SituationSummaryPanel';
 import { FireStatsPanel } from '@/components/FireStatsPanel';
 import { TimelineChartPanel } from '@/components/TimelineChartPanel';
 import { MobileTabBar } from '@/components/MobileTabBar';
+import { SentimentPanel } from '@/components/SentimentPanel';
 import { LiveStreamPanel } from '@/components/LiveStreamPanel';
 import { PredictPanel } from '@/components/PredictPanel';
 import { StatusBar } from '@/components/StatusBar';
@@ -312,6 +313,12 @@ export class App {
         const p = new PredictPanel();
         this.predictPanel = p;
         return p;
+      }
+      case 'sentiment-positive': {
+        return new SentimentPanel('positive');
+      }
+      case 'sentiment-negative': {
+        return new SentimentPanel('negative');
       }
       case 'platform-news':
       case 'platform-youtube':
@@ -764,6 +771,10 @@ export class App {
       this.situationSummaryPanel?.update(data.summary);
       this.fireStatsPanel?.update(data.summary);
       this.predictPanel?.update(data.summary, data.items);
+      // Update sentiment panels
+      for (const p of this.activePanels) {
+        if (p instanceof SentimentPanel) (p as SentimentPanel).update(data.items);
+      }
       // Update live stream panel
       this.liveStreamPanel?.update(data.items);
       // Update status bar + header stats

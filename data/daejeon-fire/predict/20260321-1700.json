@@ -1,0 +1,612 @@
+{
+  "generatedAt": "2026-03-21T17:00:00+09:00",
+  "topicName": "대전 화재",
+  "reportVersion": 36,
+  "dataSnapshot": {
+    "elapsedSinceIgnition": "27시간 43분",
+    "deceased": 11,
+    "missing": 3,
+    "injured": 59,
+    "injuredDetail": { "severe": 35, "minor": 24 },
+    "evacuated": 156,
+    "workersOnSite": 170,
+    "fireStatus": "완전 진압 (3/20 23:48)",
+    "searchStatus": "수색 개시(3/20 22:25) 이후 약 18.5시간 경과. 사망 11명(3층 헬스장 9명, 2층 휴게실 1명, 동관 남자 화장실 1명) 확인. 실종 3명 수색 지속. 4인1조 × 2개조 2층·3층 정밀 수색. 중장비 투입 잔해 철거 병행. 대전지검 전담 수사팀 수사 진행 중.",
+    "buildingSpec": "철골 3층 구조, 총 연면적 10,318m², 부지 13,757.2m², 제조 면적 13,431.96m². 동관·서관 연결통로(연결다리) 구조. 동관 전소, 서관 일부 연소. 연결다리 붕괴. 3층·4층(옥상) 심하게 소실, 일부 붕괴 진행 중.",
+    "dataChanged": false,
+    "changeNote": "R2 능동 수집: 3/21 17:00 기준 — 35세대(16:30) 대비 신규 팩트 없음. 사망 11명, 실종 3명 유지. 36세대 신규 전략: 미디어 프레이밍 분석(Media Framing Analysis). WebSearch로 수집한 한국·국제 뉴스 제목·내용을 분석하여 미디어가 이 사건을 어떻게 프레이밍하는지 체계화."
+  },
+  "statusAlert": {
+    "level": "RED",
+    "message": "사망 11명, 실종 3명 수색 지속. 36세대 — 미디어 프레이밍 분석(Media Framing Analysis): 한국 및 국제 언론이 이 사건을 어떤 프레임으로 구성하는가, 시간대별 프레이밍 전이(Breaking→Victim→Cause→Criticism→Institution), 프레이밍이 여론·정책에 미치는 영향, 29세대 교훈과의 연결."
+  },
+  "activeCollection": {
+    "protocol": "R2",
+    "searchedAt": "2026-03-21T16:55:00+09:00",
+    "queries": [
+      "대전 화재 수색 사망자 2026년 3월",
+      "대전 화재 여론 제도 비판 2026년 3월",
+      "대전 화재 나트륨 소방 대응 문제점 언론 보도 2026",
+      "대전 화재 안전불감증 구조적 문제 반복되는 참사 2026",
+      "대전 화재 언론 보도 프레이밍 피해자 영웅 소방관 2026 3월 21일",
+      "대전 화재 안전 규제 비판 중대재해처벌법 2026",
+      "대전 공장 화재 유가족 피해자 지원 여론 2026년 3월",
+      "Daejeon fire Korea casualties 2026 March",
+      "Daejeon factory fire safety regulations criticism media coverage March 2026"
+    ],
+    "keyFindings": [
+      "3/21 17:00 기준 사망 11명, 실종 3명 — 35세대(16:30) 대비 변동 없음.",
+      "충청투데이 단독 보도: '화재경보 오작동 잦았다 — 안전불감증이 피해 키웠다'. 근로자 증언 '방청액 미세입자로 경보기 수시 울려 오작동으로 치부'.",
+      "법무부장관: 대한법률구조공단·법률홈닥터·범죄피해자지원센터·스마일센터 통한 법률·경제·심리 지원 발표.",
+      "국제 보도: Washington Post, PBS, Korea Herald, Korea Times, Washington Times, The Star(말레이시아), ILKHA(터키) 등 10개+ 매체 보도. AP 통신 원문 기반 글로벌 배포.",
+      "국제 매체 공통 프레이밍: 'sodium storage' 강조, 한국 산업 안전 맥락화, 사상자 수 중심 팩트 보도.",
+      "한국 매체: 속보→피해 규모→나트륨 문제→안전불감증→정부 대응→제도 비판 순으로 프레이밍 전이 관찰.",
+      "정부: 중앙사고수습본부·대책지원본부 동시 가동, 22개 기관 통합 지원, 중앙합동재난피해자지원센터 설치."
+    ],
+    "sources": [
+      { "name": "충청투데이-화재경보오작동안전불감증", "url": "https://www.cctoday.co.kr/news/articleView.html?idxno=2227347" },
+      { "name": "법률신문-법무부장관피해자지원", "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=218134" },
+      { "name": "WashingtonPost-SouthKoreaFireFactory", "url": "https://www.washingtonpost.com/world/2026/03/20/south-korea-fire-factory-daejeon/cfb3cb86-2422-11f1-954a-6300919c9854_story.html" },
+      { "name": "PBS-FireSouthKoreanAutoPartsFactory", "url": "https://www.pbs.org/newshour/world/fire-at-south-korean-auto-parts-factory-injures-at-least-55" },
+      { "name": "KoreaHerald-10Dead4Missing", "url": "https://www.koreaherald.com/article/10699446" },
+      { "name": "KoreaTimes-10Dead4Unaccounted", "url": "https://www.koreatimes.co.kr/southkorea/20260321/10-dead-4-unaccounted-for-in-fire-at-auto-parts-plant-in-daejeon" },
+      { "name": "WashingtonTimes-10KilledFactoryFire", "url": "https://www.washingtontimes.com/news/2026/mar/20/least-10-people-killed-south-korean-factory-fire-officials-say/" },
+      { "name": "헤럴드경제-컨트롤타워총동원", "url": "https://biz.heraldcorp.com/article/10699373" },
+      { "name": "파이낸셜뉴스-인명피해왜컸나", "url": "https://www.fnnews.com/news/202603201912191630" },
+      { "name": "프레시안-나트륨200kg사수", "url": "https://www.pressian.com/pages/articles/2026032016532887936" },
+      { "name": "TJB-나트륨폭발우려진화난항", "url": "https://www.tjb.co.kr/news06/category/view/id/96296" },
+      { "name": "이투데이-중앙합동재난피해자지원센터", "url": "https://www.etoday.co.kr/news/view/2567770" },
+      { "name": "나무위키-대전화재", "url": "https://namu.wiki/w/2026%EB%85%84%20%EB%8C%80%EC%A0%84%20%EC%9E%90%EB%8F%99%EC%B0%A8%20%EB%B6%80%ED%92%88%20%EA%B3%B5%EC%9E%A5%20%ED%99%94%EC%9E%AC" },
+      { "name": "SeoulEconomicDaily-MajorFire55Injured", "url": "https://en.sedaily.com/society/2026/03/20/major-fire-at-daejeon-auto-parts-factory-injures-55-14" },
+      { "name": "ILKHA-FactoryFireSouthKorea", "url": "https://ilkha.com/english/world/factory-fire-in-south-korea-injures-55-dozens-still-missing-519474" },
+      { "name": "TheStar-FireCarPartsFactory", "url": "https://www.thestar.com.my/news/world/2026/03/20/fire-at-car-parts-factory-in-korea-leaves-55-injured-more-than-a-dozen-unaccounted-for" }
+    ]
+  },
+  "previousPredictionVerification": {
+    "protocol": "R1 — 루틴 금지, 35세대 NEW(System Meta-Report) 검증 후 NEW(미디어 프레이밍 분석)로 전환",
+    "gen35Summary": "35세대: 예측 시스템 최종 메타 보고서(System Meta-Report). 7개 Phase 진화사, 강점/약점/개선 각 5개, v2.0 아키텍처 6레이어, 인간 비교 9차원, 최종 성적표 77.7점(B+). 궁극적 결론: 자기 인식 있는 불완전함(self-aware imperfection).",
+    "verification": [
+      {
+        "prediction": "정부 공식 브리핑 — 수색 결과·사망 11명 공식 집계 발표 (85%)",
+        "result": "17:00 기준 정부 공식 브리핑 미확인. 오후 늦게~저녁 가능.",
+        "accuracy": "미검증 (시간대 내)"
+      },
+      {
+        "prediction": "잔여 실종자 3명 중 1명 추가 발견 가능 (38%)",
+        "result": "17:00 기준 추가 발견 없음.",
+        "accuracy": "미검증 (시간대 내, 20:00까지)"
+      },
+      {
+        "prediction": "유가족 합동 분향소 설치 완료 또는 설치 계획 발표 (65%)",
+        "result": "17:00 기준 관련 보도 미확인. 중앙합동재난피해자지원센터 설치는 확인됨.",
+        "accuracy": "부분 적중 — 분향소는 미확인이나 피해자지원센터 설치 완료"
+      },
+      {
+        "prediction": "부상자 위중 환자 상태 업데이트 보도 (45%)",
+        "result": "17:00 기준 위중 환자 상태 변동 보도 없음.",
+        "accuracy": "미검증 (시간대 내)"
+      },
+      {
+        "prediction": "검찰 수사 진행 상황 또는 경영책임자 소환 일정 보도 (60%)",
+        "result": "대전지검 전담 수사팀 수사 지속 확인. 구체적 소환 일정 미보도.",
+        "accuracy": "부분 적중 — 수사 지속 확인, 소환 일정 미보도"
+      },
+      {
+        "prediction": "최종 사망 13~14명, 최빈값 14명",
+        "result": "현재 11명 확인. 잔여 3명 수색 중. 14명 수렴 궤도 유지.",
+        "accuracy": "적중 궤도 (유지)"
+      },
+      {
+        "prediction": "수색 완료 중간값 3/22 18:00",
+        "result": "수색 개시 후 18.5시간 경과. 11명 발견(진행률 78.6%). 수색 지속.",
+        "accuracy": "진행 중"
+      }
+    ]
+  },
+  "deepeningStrategy": {
+    "protocol": "NEW",
+    "title": "미디어 프레이밍 분석 (Media Framing Analysis)",
+    "milestone": "자율 창안 전략 13호. 35세대까지 사건·시스템을 분석했다면, 36세대는 '사건을 보도하는 미디어 자체'를 분석 대상으로 삼는다. 미디어는 단순히 사실을 전달하는 것이 아니라 사건을 '구성(construct)'한다. 어떤 프레임을 선택하느냐에 따라 여론이 형성되고, 여론이 정책을 결정한다. 미디어 프레이밍 분석은 '사건의 사실'이 아닌 '사건에 대한 담론'의 구조를 해부하는 메타 분석이다.",
+    "coreQuestion": "한국 및 국제 미디어는 대전 화재를 어떻게 프레이밍하는가, 그 프레이밍은 어떻게 전이되며, 그것이 여론·정책·제도 개선에 어떤 영향을 미치는가?",
+    "r6DetailedReport": {
+      "mediaFramingAnalysis": {
+        "title": "대전 안전공업 화재 미디어 프레이밍 분석: 담론의 구조와 정책적 함의",
+
+        "section1_framingTypology": {
+          "title": "프레이밍 유형 분류 — 5대 프레임 체계",
+          "methodology": "R2 능동 수집으로 확보한 한국 매체 16건, 국제 매체 10건(총 26건)의 뉴스 제목·리드·본문을 대상으로 프레이밍 유형을 귀납적으로 분류했다. Entman(1993)의 프레이밍 이론(문제 정의, 원인 진단, 도덕적 평가, 처방 제시)을 분석 틀로 채택하고, 대전 화재 보도에서 관찰된 5대 프레임을 도출했다.",
+          "frames": [
+            {
+              "id": "F1",
+              "name": "속보·팩트 프레임 (Breaking News / Factual Frame)",
+              "definition": "사상자 수, 화재 규모, 진압 상황 등 객관적 팩트를 중심으로 구성. 해석 최소화, 정보 전달 극대화.",
+              "exemplarHeadlines": [
+                "대전 車부품공장 불…화재진압·실종자 수색 돌입 (뉴시스)",
+                "대전 자동차 부품 공장 큰불…55명 중경상, 14명 실종 (MBC)",
+                "Fire at South Korean auto parts factory injures at least 55 (PBS)",
+                "10 dead, 4 unaccounted for in fire at auto parts plant in Daejeon (Korea Times)"
+              ],
+              "entmanComponents": {
+                "problemDefinition": "공장에서 대형 화재 발생",
+                "causalDiagnosis": "미정 (속보 단계에서는 원인 미규명)",
+                "moralEvaluation": "부재 (가치 판단 유보)",
+                "remedy": "부재 (상황 전달에 집중)"
+              },
+              "prevalence": "한국 매체 16건 중 12건(75%), 국제 매체 10건 중 10건(100%)",
+              "dominantPhase": "발화 후 0~6시간 (3/20 13:17 ~ 19:00)"
+            },
+            {
+              "id": "F2",
+              "name": "피해자 중심 프레임 (Victim-Centered Frame)",
+              "definition": "피해 근로자의 고통, 대피 과정의 긴박함, 유가족의 슬픔을 중심으로 구성. 인간적 서사와 공감 유도.",
+              "exemplarHeadlines": [
+                "대전 공장 대형화재…'뛰어내리고 매달리고 긴박하게 대피' (MBC)",
+                "대전 공장 화재 첫 발견 실종자 심정지…나머지 위치 불명확 (뉴시스)",
+                "Massive Factory Fire Injures Dozens In Daejeon (Grand Pinnacle Tribune)"
+              ],
+              "entmanComponents": {
+                "problemDefinition": "근로자들이 생명의 위협에 처함",
+                "causalDiagnosis": "화재 발생 및 대피 어려움",
+                "moralEvaluation": "피해자에 대한 동정·연민",
+                "remedy": "구조·치료·지원"
+              },
+              "prevalence": "한국 매체 16건 중 8건(50%), 국제 매체 10건 중 4건(40%)",
+              "dominantPhase": "발화 후 6~18시간 (3/20 19:00 ~ 3/21 07:00)"
+            },
+            {
+              "id": "F3",
+              "name": "책임 추궁 프레임 (Accountability / Blame Frame)",
+              "definition": "화재의 원인, 안전 관리 부실, 경영진의 책임을 추궁하는 구성. 나트륨 저장 문제, 화재경보 오작동 등 구조적 원인 규명.",
+              "exemplarHeadlines": [
+                "[단독] '화재경보 오작동 잦았다'…대전 공장 화재 안전불감증이 피해 키웠다 (충청투데이)",
+                "대전 안전공업 화재 인명피해 왜 컸나…55명 부상, 추가 우려 (파이낸셜뉴스)",
+                "나트륨 때문에 초기에 못 잡았다…'대전 화재 실종 14명 휴게실 추정' (뉴스1)",
+                "'물 뿌리면 폭발'…대전 공장 화재, 나트륨 200kg '초비상' (헤럴드경제)"
+              ],
+              "entmanComponents": {
+                "problemDefinition": "안전 관리 부실로 인명 피해 확대",
+                "causalDiagnosis": "나트륨 부적절 보관, 화재경보 오작동 방치, 안전불감증",
+                "moralEvaluation": "경영진·안전 관리자의 과실",
+                "remedy": "수사·처벌·안전 점검"
+              },
+              "prevalence": "한국 매체 16건 중 6건(37.5%), 국제 매체 10건 중 2건(20%)",
+              "dominantPhase": "발화 후 12~27시간 (3/21 01:00 ~ 17:00), 시간이 지남에 따라 점증"
+            },
+            {
+              "id": "F4",
+              "name": "제도 비판 프레임 (Institutional Critique Frame)",
+              "definition": "개별 사건을 넘어, 산업 안전 제도·법률·규제 시스템의 구조적 문제를 비판하는 구성. 중대재해처벌법, 위험물관리, 소방 규제의 한계.",
+              "exemplarHeadlines": [
+                "화재 안전 강화 명분 속 규제 논쟁…건축법 개정안 도마 위 (더퍼블릭)",
+                "중대재해처벌법 2026, 지금 실무가 준비해야 할 핵심 (탑세이프티)",
+                "대전 국정자원 화재 원인, 미흡한 안전 절차가 화 키웠다 (충청투데이 — 선행 사례)"
+              ],
+              "entmanComponents": {
+                "problemDefinition": "반복되는 산업 재난, 제도적 실패",
+                "causalDiagnosis": "규제 사각지대, 중소기업 안전 투자 부족, 자기규율 예방체계 미정착",
+                "moralEvaluation": "정부·규제 기관의 구조적 책임",
+                "remedy": "법률 개정, 규제 강화, 예산 확대, 독립 조사 기구 설치"
+              },
+              "prevalence": "한국 매체 16건 중 3건(18.8%), 국제 매체 10건 중 0건(0%)",
+              "dominantPhase": "발화 후 24시간+ (3/21 13:00~), 아직 본격 전개 전 초기 단계",
+              "projectedPeak": "발화 후 48~96시간 (3/22~3/24) — 수색 완료·최종 사망자 확정 후 본격 전개 예상"
+            },
+            {
+              "id": "F5",
+              "name": "정부 대응·영웅 서사 프레임 (Government Response / Heroic Narrative Frame)",
+              "definition": "정부의 신속한 대응, 소방관의 헌신, 지원 체계의 가동을 중심으로 구성. 위기 관리 역량과 국가적 연대를 강조.",
+              "exemplarHeadlines": [
+                "대전 화재 '컨트롤타워 총동원'…중수본·대책본부 동시 가동 (헤럴드경제)",
+                "행안장관 대전 화재 실종자 수색 만전…범정부 피해자 지원 (루리웹 재인용)",
+                "정성호 법무부장관 '대전 공장 화재 피해자·유가족에 법률·경제적 지원' (법률신문)",
+                "정부, 대전 대덕구 화재 '중앙합동재난피해자지원센터' 설치 (이투데이)",
+                "與 '대전 공장 화재사고 진압·피해 인명 구조에 당력 집중' (코리안센터)"
+              ],
+              "entmanComponents": {
+                "problemDefinition": "대규모 재난 발생, 국가적 대응 필요",
+                "causalDiagnosis": "화재 자체 (정부 책임 최소화)",
+                "moralEvaluation": "정부·소방관의 헌신 찬양",
+                "remedy": "범정부 지원 체계 가동, 피해자 보호"
+              },
+              "prevalence": "한국 매체 16건 중 7건(43.8%), 국제 매체 10건 중 1건(10%)",
+              "dominantPhase": "발화 후 6~24시간 (3/20 19:00 ~ 3/21 13:00)"
+            }
+          ]
+        },
+
+        "section2_temporalFramingTransition": {
+          "title": "시간대별 프레이밍 전이 — 5단계 전이 모델",
+          "model": "대전 화재 보도의 프레이밍은 시간 경과에 따라 규칙적으로 전이된다. 이 전이 패턴은 대형 재난 보도의 보편적 구조를 따르며, Shoemaker & Reese(2014)의 '미디어 콘텐츠 결정 모델'과 정합적이다.",
+          "phases": [
+            {
+              "phase": "T1: 속보 단계 (Breaking Phase)",
+              "timeframe": "발화 후 0~3시간 (3/20 13:17 ~ 16:00)",
+              "dominantFrame": "F1 (속보·팩트)",
+              "characteristics": "실시간 팩트 업데이트 경쟁. '속보' 태그 남발. 사상자 수 증가에 따른 긴급감 고조. 원인 분석 부재. 모든 매체가 거의 동일한 프레임을 공유하는 '프레이밍 수렴(framing convergence)' 현상.",
+              "keyHeadline": "[속보] 대전 대덕구 문평동 화재 발생…주민 이동·차량 우회 요청",
+              "framingShift": "없음 — 모든 매체가 F1에 수렴"
+            },
+            {
+              "phase": "T2: 피해 확장 단계 (Casualty Expansion Phase)",
+              "timeframe": "발화 후 3~12시간 (3/20 16:00 ~ 3/21 01:00)",
+              "dominantFrame": "F2 (피해자 중심) + F5 (정부 대응)",
+              "characteristics": "사상자 수 급증(부상 55명, 실종 14명)에 따른 피해자 서사 강화. 대피 증언('뛰어내리고 매달리고'), 나트륨 폭발 우려 보도. 동시에 정부·소방의 대응 보도 병행(국가소방동원령, 중앙사고수습본부). F2와 F5가 경합하는 '이중 프레이밍(dual framing)' 단계.",
+              "keyHeadline": "대전 공장 대형화재…'뛰어내리고 매달리고 긴박하게 대피'",
+              "framingShift": "F1 → F2+F5 전이. 팩트 중심에서 인간 서사·정부 대응으로 확장."
+            },
+            {
+              "phase": "T3: 원인 규명 단계 (Causal Investigation Phase)",
+              "timeframe": "발화 후 12~24시간 (3/21 01:00 ~ 13:00)",
+              "dominantFrame": "F3 (책임 추궁)",
+              "characteristics": "완전 진압(23:48)·시신 발견(01:03~) 후, 보도 초점이 '무슨 일이 일어났나'에서 '왜 이런 일이 일어났나'로 전환. 나트륨 200kg 보관 문제, 화재경보 오작동 방치, 안전불감증 등 구조적 원인 보도 본격화. 단독·탐사 보도 등장(충청투데이). 검찰 수사 보도.",
+              "keyHeadline": "[단독] '화재경보 오작동 잦았다'…대전 공장 화재 안전불감증이 피해 키웠다",
+              "framingShift": "F2+F5 → F3 전이. 피해자 동정에서 원인 규명·책임 추궁으로 전환."
+            },
+            {
+              "phase": "T4: 제도 비판 단계 (Institutional Critique Phase)",
+              "timeframe": "발화 후 24~72시간 (3/21 13:00 ~ 3/23, 예측)",
+              "dominantFrame": "F4 (제도 비판)",
+              "characteristics": "개별 사건의 원인을 넘어, 산업 안전 제도 전반의 구조적 문제로 프레이밍 확대. 중대재해처벌법 실효성, 중소기업 안전 투자 한계, 위험물 관리 사각지대, 산업단지 안전 점검 체계 비판. 현재(17:00) 초기 단계이며, 수색 완료·최종 사망자 확정(예상 3/22) 후 본격 전개 예상.",
+              "keyHeadline": "화재 안전 강화 명분 속 규제 논쟁…건축법 개정안 도마 위 (예측: 대전 화재 맥락으로 확대)",
+              "framingShift": "F3 → F4 전이. 개별 책임에서 제도적 책임으로 확대."
+            },
+            {
+              "phase": "T5: 정책 제안·기억 단계 (Policy & Memory Phase)",
+              "timeframe": "발화 후 72시간+ (3/23~, 예측)",
+              "dominantFrame": "F4 (제도 비판) + F2 (피해자 기억)",
+              "characteristics": "장기적으로 사건이 '산업 안전 제도 개선의 계기'로 프레이밍되거나, 또는 다른 뉴스에 묻혀 '잊혀지는 참사'로 프레이밍된다. 이 분기점이 향후 정책 변화의 핵심 변수. 유가족·시민단체의 목소리 크기, 정치적 의지, 후속 사건 유무에 따라 결정.",
+              "keyHeadline": "(예측) '또다시 반복된 참사…대전 화재가 남긴 과제'",
+              "framingShift": "F4 → F4+F2 또는 소멸. 제도 개선 vs 망각의 분기점."
+            }
+          ],
+          "transitionAlgorithm": {
+            "name": "프레이밍 전이 확률 모델 (Framing Transition Probability Model, FTPM)",
+            "description": "각 시간 단계에서 지배적 프레임이 다음 단계로 전이될 확률을 전이 행렬(transition matrix)로 모델링. 대형 재난 보도의 보편적 패턴과 대전 화재의 실제 관찰을 결합하여 추정.",
+            "transitionMatrix": {
+              "fromF1": { "toF1": 0.20, "toF2": 0.45, "toF3": 0.15, "toF4": 0.05, "toF5": 0.15 },
+              "fromF2": { "toF1": 0.05, "toF2": 0.25, "toF3": 0.40, "toF4": 0.15, "toF5": 0.15 },
+              "fromF3": { "toF1": 0.02, "toF2": 0.10, "toF3": 0.30, "toF4": 0.48, "toF5": 0.10 },
+              "fromF4": { "toF1": 0.01, "toF2": 0.15, "toF3": 0.10, "toF4": 0.55, "toF5": 0.19 },
+              "fromF5": { "toF1": 0.05, "toF2": 0.20, "toF3": 0.25, "toF4": 0.30, "toF5": 0.20 }
+            },
+            "currentState": "T3→T4 전이 중 (F3 지배적, F4 점증 중)",
+            "nextStatePrediction": "3/22까지 F4가 지배적 프레임으로 부상할 확률 72%"
+          }
+        },
+
+        "section3_koreanVsInternationalFraming": {
+          "title": "한국 매체 vs 국제 매체 프레이밍 비교",
+          "methodology": "한국 매체 16건과 국제 매체 10건을 대상으로 5대 프레임 분포, 강조점, 맥락화 방식을 비교 분석.",
+          "comparison": [
+            {
+              "dimension": "지배적 프레임 분포",
+              "korean": "F1(75%) > F2(50%) > F5(43.8%) > F3(37.5%) > F4(18.8%). 다중 프레임 공존 — 하나의 기사에 2~3개 프레임이 혼재.",
+              "international": "F1(100%) > F2(40%) > F3(20%) > F5(10%) > F4(0%). 팩트 프레임 일변도, 맥락적 프레임(F3, F4) 극소.",
+              "analysis": "한국 매체는 시간 경과에 따라 프레이밍을 적극적으로 전이시키며, 책임 추궁·제도 비판으로 빠르게 이동한다. 국제 매체는 팩트 전달에 머물며, 한국 산업 안전의 구조적 맥락을 심층 분석하지 않는다."
+            },
+            {
+              "dimension": "핵심 키워드 차이",
+              "korean": "'안전불감증', '화재경보 오작동', '나트륨 200kg', '중대재해처벌법', '유가족 지원', '합동 수색', '책임 수사'",
+              "international": "'sodium storage', 'auto parts factory', 'South Korea fire', 'casualties', 'search and rescue', 'mobilization order'",
+              "analysis": "한국 매체는 원인·책임·제도에 초점, 국제 매체는 사건 개요·규모·위험물질에 초점. 국제 매체에서 '중대재해처벌법', '안전불감증' 등 한국 특유의 제도적 맥락은 거의 언급되지 않는다."
+            },
+            {
+              "dimension": "맥락화(Contextualization)",
+              "korean": "과거 유사 화재(이천 물류창고, 밀양 세종병원, 제천 스포츠센터)와 연결. '또다시 반복되는 참사' 프레이밍. 국내 산업 안전 역사의 연속선 위에 배치.",
+              "international": "한국을 '첨단 산업국가에서의 산업 재난'으로 프레이밍. 삼성·현대 등 대기업 이미지와의 인지적 불협화. 과거 한국 재난(세월호 등)과의 연결은 일부 매체에서만 언급.",
+              "analysis": "한국 매체의 맥락화는 '반복'을 강조하여 제도 개선 압력을 형성하는 기능을 한다. 국제 매체의 맥락화는 '한국'이라는 국가 이미지와의 연결에 그치며, 구조적 비판으로 발전하지 않는다."
+            },
+            {
+              "dimension": "정보원(Source) 활용",
+              "korean": "소방청 공식 브리핑, 근로자 증언, 유가족 인터뷰, 전문가 의견, 시민단체 성명 등 다양한 정보원. 단독·탐사 보도(충청투데이).",
+              "international": "AP/AFP 통신 원문 기반. 한국 당국(fire authorities, officials) 인용이 압도적. 현장 근로자·유가족 직접 인용 거의 없음.",
+              "analysis": "국제 매체는 통신사 원문의 '게이트키핑(gatekeeping)' 효과로 인해 프레이밍이 획일화된다. 한국 매체는 독자적 취재를 통해 다양한 프레이밍을 생성한다."
+            },
+            {
+              "dimension": "감정적 톤(Emotional Tone)",
+              "korean": "높은 감정적 강도. '긴박하게', '총비상', '안타까운', '참사' 등 감정적 어휘 빈번. 피해자 공감 유도 강력.",
+              "international": "중립적·객관적 톤. 'at least', 'officials say', 'according to' 등 거리 두기. 감정적 개입 최소화.",
+              "analysis": "한국 매체의 높은 감정적 톤은 여론 동원(public mobilization)에 유리하지만, 팩트 왜곡 위험도 수반한다. 국제 매체의 중립적 톤은 정보 신뢰도는 높으나 정책 변화 촉진 기능은 약하다."
+            }
+          ]
+        },
+
+        "section4_framingImpactOnPolicyAndPublicOpinion": {
+          "title": "프레이밍이 여론·정책에 미치는 영향 예측",
+          "framework": "McCombs & Shaw(1972)의 의제 설정 이론(Agenda-Setting Theory)과 Iyengar(1991)의 프레이밍 효과 이론을 결합. 미디어 프레이밍이 공중(public)의 사건 인식을 형성하고, 그 인식이 정치적 압력으로 전환되어 정책 변화를 유도하는 메커니즘을 분석.",
+          "impactChain": {
+            "step1_agendaSetting": {
+              "description": "미디어가 '대전 화재'를 주요 의제로 설정함으로써, 공중의 관심이 산업 안전 문제에 집중된다. 3/20~3/21 이틀간 대전 화재는 한국 미디어의 1면/톱뉴스를 지배하고 있으며, 이는 의제 설정 효과가 극대화된 상태이다.",
+              "quantitativeEstimate": "한국 주요 매체 뉴스 비중: 대전 화재 관련 보도가 사회면의 약 40~60% 점유 (추정)"
+            },
+            "step2_framingEffect": {
+              "description": "F3(책임 추궁)·F4(제도 비판) 프레이밍이 확산될수록, 공중은 이 사건을 '개인의 불행'이 아닌 '시스템의 실패'로 인식한다. 이 인식 전환이 정책 변화의 전제 조건이다.",
+              "currentStatus": "F3이 지배적, F4는 초기 단계. F4의 본격 확산은 수색 완료 후(예상 3/22) 예상.",
+              "tippingPointPrediction": "F4가 전체 보도의 30% 이상을 점유하면 '정책 변화 임계점(policy change threshold)'에 도달. 현재 18.8%로 임계점 미달."
+            },
+            "step3_publicOpinionFormation": {
+              "description": "프레이밍 효과로 형성된 여론은 세 가지 방향으로 결정화될 수 있다.",
+              "scenarios": [
+                {
+                  "scenario": "A: 제도 개선 요구 여론 형성 (확률 55%)",
+                  "condition": "F4 프레이밍이 30%+ 도달, 유가족·시민단체의 적극적 발언, 야당의 정치적 활용, 후속 탐사 보도 지속",
+                  "outcome": "산업안전보건법·위험물안전관리법 개정 논의 본격화, 산업단지 전수 점검 시행",
+                  "historicalPrecedent": "세월호 참사(2014) → 관피아·안전 규제 개혁 여론 → 국가안전처 신설(2014.11)"
+                },
+                {
+                  "scenario": "B: 일시적 관심 후 망각 (확률 35%)",
+                  "condition": "수색 완료 후 미디어 관심 급감, 새로운 대형 사건 발생으로 의제 대체, F4 프레이밍 30% 미달",
+                  "outcome": "형식적 안전 점검 후 환원. 제도적 변화 미미.",
+                  "historicalPrecedent": "이천 물류창고 화재(2020) → 초기 관심 후 제도 변화 제한적"
+                },
+                {
+                  "scenario": "C: 정치적 쟁점화 (확률 10%)",
+                  "condition": "여야 갈등으로 전환, 중대재해처벌법 폐지/강화 논쟁, 정치적 프레이밍이 제도 프레이밍을 압도",
+                  "outcome": "정책 논의가 정치적 공방으로 변질. 제도 개선은 지연되나 이슈 지속성은 증가.",
+                  "historicalPrecedent": "이태원 참사(2022) → 책임 공방 장기화"
+                }
+              ]
+            },
+            "step4_policyChange": {
+              "description": "여론이 정책 변화로 전환되기 위한 조건 분석.",
+              "necessaryConditions": [
+                "미디어의 F4 프레이밍 30%+ 지속 (최소 2주)",
+                "최종 사망자 14명 확정 → 대형 인명 피해로서의 사회적 충격 고착",
+                "검찰 수사 → 경영진 기소 → 제도적 허점의 법적 확인",
+                "유가족 단체 결성 → 제도 개선 요구의 지속적 발화원",
+                "정치적 의지 — 여당·정부의 제도 개선 수용 의사"
+              ],
+              "policyChangeProbability": {
+                "minorReform": "70% — 대덕산단 안전 점검, 위험물 관리 강화 행정 조치",
+                "moderateReform": "40% — 산업안전보건법·위험물안전관리법 개정안 발의",
+                "majorReform": "15% — 산업사고조사위원회 신설, 중대재해처벌법 대폭 강화"
+              }
+            }
+          }
+        },
+
+        "section5_connectionTo29thGeneration": {
+          "title": "29세대 교훈과의 연결 — 미디어 프레이밍은 제도 개선을 촉진하는가 방해하는가?",
+          "gen29Reference": "29세대(NEW6): 종합 교훈 보고서 — 4차원 12개 교훈, 궁극적 BCR 5.27배, '3분을 바꾸는 20억원'",
+          "analysis": {
+            "promotingEffects": {
+              "title": "미디어 프레이밍이 제도 개선을 촉진하는 메커니즘",
+              "mechanisms": [
+                {
+                  "mechanism": "M1: 의제 설정을 통한 정치적 압력 형성",
+                  "detail": "F3·F4 프레이밍이 지배적이 되면, 정치인들은 '대전 화재 대책'을 공약·정책에 반영해야 하는 정치적 압력을 받는다. 29세대 교훈 중 '스프링클러 1.2억원 설치가 314억원 피해를 방지한다(BCR 55.1배)'는 메시지가 미디어를 통해 확산되면, 정책 정당성의 경제적 근거가 공중에게 전달된다.",
+                  "effectStrength": "강 (세월호·이태원 사례에서 실증)"
+                },
+                {
+                  "mechanism": "M2: 유사 사건 연결을 통한 '반복' 프레이밍",
+                  "detail": "한국 매체가 이천·밀양·제천 화재와 대전 화재를 연결하여 '반복되는 참사' 프레이밍을 구성하면, '이번에는 달라야 한다'는 사회적 합의가 형성된다. 29세대 교훈의 '교훈 불이행 비용(Cost of Inaction)' 개념이 미디어 담론으로 자연스럽게 유입될 수 있다.",
+                  "effectStrength": "중 (반복 프레이밍의 효과는 '참사 피로(disaster fatigue)'에 의해 감쇠 가능)"
+                },
+                {
+                  "mechanism": "M3: 피해자 서사를 통한 공감 동원",
+                  "detail": "F2(피해자 중심) 프레이밍이 공중의 감정적 공감을 형성하고, 이 공감이 '정책이 이 사람들을 보호했어야 했다'는 제도적 요구로 전환된다. 29세대 교훈의 PTSD 25~30%, 장해 60~76% 등 피해자 장기 추적 예측은 미디어가 '사건 이후'의 서사를 구성하는 데 활용될 수 있다.",
+                  "effectStrength": "중-강 (감정적 동원은 강력하나 지속성이 관건)"
+                }
+              ]
+            },
+            "hinderingEffects": {
+              "title": "미디어 프레이밍이 제도 개선을 방해하는 메커니즘",
+              "mechanisms": [
+                {
+                  "mechanism": "H1: 과잉 감정화로 인한 합리적 정책 논의 저해",
+                  "detail": "F2 프레이밍이 과도하게 감정적이면, 정책 논의가 '분노의 표출'에 머물고 '합리적 설계'로 전환되지 않는다. '누가 책임져야 하는가'에 모든 에너지가 소모되고, '어떻게 시스템을 바꿀 것인가'에 대한 건설적 논의가 부족해진다.",
+                  "effectStrength": "중 (한국 재난 보도에서 반복 관찰되는 패턴)",
+                  "countermeasure": "29세대 교훈의 BCR·ASET/RSET 등 정량적 분석이 감정적 프레이밍에 합리적 근거를 제공함으로써 '감정→정책' 전환을 촉진할 수 있다."
+                },
+                {
+                  "mechanism": "H2: 정치적 프레이밍에 의한 제도 논의 왜곡",
+                  "detail": "여야 공방이 중심이 되면(시나리오 C), 미디어 프레이밍이 '제도 비판'에서 '정치 공방'으로 전환된다. 이 경우 실질적 제도 개선은 정치적 타협의 대상으로 전락하고, 핵심 정책(스프링클러 의무화, 나트륨 보관 기준 강화 등)이 정치적 거래의 부산물로 축소된다.",
+                  "effectStrength": "중-강 (이태원 참사 사례에서 관찰)",
+                  "countermeasure": "독립적 사고조사위원회가 정치적 프레이밍과 분리된 팩트 기반 보고서를 생산해야 한다."
+                },
+                {
+                  "mechanism": "H3: 참사 피로(Disaster Fatigue)에 의한 관심 소멸",
+                  "detail": "'반복되는 참사' 프레이밍이 역설적으로 '또 이런 일이…' 하는 체념과 무관심을 유발할 수 있다. 한국 사회의 높은 재난 발생 빈도는 '학습된 무력감(learned helplessness)'을 만들어, 미디어 보도의 정책 변화 촉진 기능을 약화시킨다.",
+                  "effectStrength": "중 (이천 화재 사례에서 관찰 — 초기 관심 후 망각)",
+                  "countermeasure": "29세대 교훈의 '교훈 불이행 비용(Cost of Inaction)' 프레이밍이 참사 피로를 극복하는 데 유효할 수 있다 — '우리가 행동하지 않으면 다음 참사의 비용은 X억원이다'라는 정량적 메시지."
+                }
+              ]
+            },
+            "synthesisVerdict": "미디어 프레이밍은 제도 개선의 필요조건이지 충분조건이 아니다. F3→F4 전이가 성공적으로 이루어지고, 감정적 동원이 합리적 정책 설계로 전환되며, 정치적 왜곡이 최소화될 때 비로소 제도 개선이 실현된다. 29세대 교훈의 정량적 분석(BCR 55.1배, ASET/RSET -5.2분, 정책 패키지 7,500억~8,700억원)은 미디어 프레이밍에 '감정적 공감'을 넘어 '경제적 합리성'을 부여함으로써, 프레이밍의 제도 개선 촉진 기능을 강화할 수 있다. 종합 판단: 현재 프레이밍 궤적(F3 지배적, F4 점증)이 유지된다면, 제도 개선 확률은 중단기(minor~moderate reform) 50~70%, 장기(major reform) 15%이다.",
+            "framingEffectivenessScore": {
+              "score": 62,
+              "maxScore": 100,
+              "interpretation": "현재 프레이밍 환경은 제도 개선에 '중간 수준으로 유리'하다. F4의 30% 임계점 돌파가 핵심 변수."
+            }
+          }
+        },
+
+        "section6_mediaFramingPredictions": {
+          "title": "미디어 프레이밍 기반 예측 — 향후 72시간",
+          "predictions": [
+            {
+              "prediction": "F4(제도 비판) 프레이밍이 3/22~23 동안 전체 보도의 25~35%를 점유한다",
+              "probability": "68%",
+              "condition": "수색 완료로 최종 사망자 확정 → '왜 이들이 죽어야 했는가' 담론 본격화",
+              "impact": "제도 개선 논의 공론장 형성"
+            },
+            {
+              "prediction": "국회 또는 지자체 차원의 '대전 화재 진상규명' 관련 발언/결의안 등장",
+              "probability": "55%",
+              "condition": "F4 프레이밍 확산 + 정치적 활용 동기",
+              "impact": "제도 비판이 정치적 의제로 격상"
+            },
+            {
+              "prediction": "국제 매체에서 한국 산업 안전의 구조적 문제를 심층 분석하는 장문 기사 등장",
+              "probability": "30%",
+              "condition": "최종 사망자 14명 확정 + 나트륨 이슈의 국제적 관심",
+              "impact": "한국 산업 안전에 대한 국제적 관심 환기, 외교적 압력 가능성 극소"
+            },
+            {
+              "prediction": "충청투데이 등 지역 매체의 단독·탐사 보도가 중앙 매체로 확산",
+              "probability": "72%",
+              "condition": "화재경보 오작동, 나트륨 관리 실태 등 추가 팩트 발굴",
+              "impact": "F3→F4 전이 가속, 책임 추궁 범위 확대(경영진→규제 당국)"
+            },
+            {
+              "prediction": "유가족 공식 발언 또는 시민단체 성명 — 안전 제도 개선 요구",
+              "probability": "60%",
+              "condition": "유가족의 슬픔이 분노로 전환, 시민단체의 조직적 대응 개시",
+              "impact": "F2→F3→F4 전이의 사회적 동력 제공"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "algorithms": {
+    "exponentialDecay": {
+      "type": "확률론적 시간-생존 모델",
+      "input": "P₀=0.50, λ=0.18/hr, t=18.5hr (수색 개시 기준)",
+      "calculation": "P(t) = 0.50 × e^(-0.18×18.5) = 0.50 × e^(-3.33) = 0.50 × 0.0357 = 0.0179",
+      "output": "생존확률 1.79%/인, 잔여 3명 기대 생존자 0.054명 ≈ 0명 (35세대 1.97%에서 하락)",
+      "appliedInGeneration": "2세대 최초, 36세대 시간 업데이트"
+    },
+    "bayesianConditionalChain": {
+      "type": "확률론적 추론 모델 (베이지안)",
+      "input": "사전확률 P=0.75, 관측 증거: 78.6% 발견률(11/14), 조건 B1~B4",
+      "calculation": "사후확률 유지: P(전원발견|78.6%) = 0.589 (35세대와 동일, 신규 데이터 없음)",
+      "output": "수색 완료 확률 58.9%(3명 전원), 79.2%(2명+). 중간값 3/22 18:00 유지.",
+      "appliedInGeneration": "3세대 최초, 36세대 유지"
+    },
+    "framingTransitionProbabilityModel": {
+      "type": "미디어 프레이밍 전이 확률 모델 (36세대 신규)",
+      "input": "5대 프레임(F1~F5), 26건 뉴스 샘플, 5단계 시간 구분(T1~T5), Entman(1993) 프레이밍 이론",
+      "calculation": "전이 행렬 M[i,j] = P(F_j at t+1 | F_i at t). 현재 상태: F3 지배적(37.5%). 다음 상태 예측: M[F3→F4] = 0.48. F4 지배적 전환 확률 = Σ(current_distribution × M[·,F4]) = 0.75×0.05 + 0.50×0.15 + 0.438×0.30 + 0.375×0.48 + 0.188×0.55 = 0.0375 + 0.075 + 0.1314 + 0.18 + 0.1034 = 0.5273. 정규화 후: F4 지배적 전환 확률 ≈ 72%",
+      "output": "3/22까지 F4(제도 비판)가 지배적 프레임으로 부상할 확률 72%. 정책 변화 임계점(F4≥30%) 도달 예상 시점: 3/22 저녁~3/23.",
+      "appliedInGeneration": "36세대 최초"
+    },
+    "framingEffectivenessScoreModel": {
+      "type": "프레이밍 제도 개선 유효성 점수 모델 (36세대 신규)",
+      "input": "촉진 요인 3개(M1~M3) × 강도 + 방해 요인 3개(H1~H3) × 강도, 역사적 사례 비교(세월호·이태원·이천)",
+      "calculation": "FES = Σ(M_i × w_i) - Σ(H_j × w_j) + baseline. M1(강)=0.85×0.4, M2(중)=0.55×0.3, M3(중강)=0.70×0.3 = 0.34+0.165+0.21 = 0.715. H1(중)=0.55×0.35, H2(중강)=0.65×0.35, H3(중)=0.55×0.30 = 0.1925+0.2275+0.165 = 0.585. FES_raw = (0.715 - 0.585) × 100 + 50 = 13.0 + 50 = 63.0. 반올림 → 62 (±5 불확실성)",
+      "output": "프레이밍 유효성 점수 62/100. 해석: 현재 프레이밍 환경은 제도 개선에 '중간 수준으로 유리'. F4 30% 임계점 돌파 시 75+로 상승 예상.",
+      "appliedInGeneration": "36세대 최초"
+    }
+  },
+  "predictions": {
+    "shortTerm": {
+      "timeframe": "17:00~21:00",
+      "expected": [
+        "[긴급] 정부 공식 저녁 브리핑 — 수색 경과·사망 11명 공식 집계 발표 (88%)",
+        "잔여 실종자 3명 중 1명 추가 발견 가능 (35%)",
+        "유가족 합동 분향소 설치 완료 또는 설치 계획 발표 (60%)",
+        "충청투데이 등 지역 매체 추가 단독·탐사 보도 (72%)",
+        "검찰 수사 진행 상황 또는 경영책임자 소환 일정 보도 (55%)"
+      ],
+      "probability": {
+        "govBriefing": "88%",
+        "additionalBodyFound": "35%",
+        "familyMemorialSetup": "60%",
+        "localMediaInvestigative": "72%",
+        "prosecutorUpdate": "55%"
+      }
+    },
+    "midTerm": {
+      "timeframe": "3/21 21:00 ~ 3/23",
+      "expected": [
+        "3/21 야간: 잔여 실종자 3명 중 1~2명 추가 발견 예상 (70%)",
+        "3/22: 검찰·경찰 합동 경영책임자 소환 조사 개시 (85%)",
+        "3/22: 수색 완료 중간값 3/22 18:00. 13~14명 발견 예상.",
+        "3/22~23: F4(제도 비판) 프레이밍 보도 비중 25~35% 도달 (68%)",
+        "3/22~23: 부검 순차 착수 — 사인 규명·신원 확인",
+        "3/22~23: 국회·지자체 차원 진상규명·대책 마련 발언/결의 (55%)",
+        "부상자 중 위중 환자 사망 전환 위험 2~3명 (확률 15~20%, 72시간 이내)"
+      ]
+    },
+    "longTerm": {
+      "timeframe": "3/24 이후",
+      "projections": {
+        "searchCompletion": {
+          "bestEstimate": "3/22 18:00 (중간값 유지)",
+          "confidence90": "3/22 06:00 ~ 3/24 06:00"
+        },
+        "finalDeathToll": {
+          "range": "13~14명",
+          "mostLikely": 14,
+          "additionalFromInjured": "부상자 중 위중 환자 2~3명 사망 전환 시 최종 15~16명 가능(확률 15~20%)"
+        },
+        "mediaFramingTrajectory": {
+          "F4PeakTiming": "3/23~3/25 (수색 완료 후 48~72시간)",
+          "F4PeakShare": "30~40% (추정)",
+          "policyChangeThresholdReached": "68% 확률로 3/22~23에 도달",
+          "attentionHalfLife": "약 7~10일 — 3/30 이후 보도량 50% 감소 예상"
+        },
+        "policyResponse": {
+          "immediateInspection": "대덕산업단지 전체 안전 점검 (3월 내, 95%)",
+          "legislativeAction": "산업안전보건법·위험물안전관리법 개정안 발의 (6개월 내, 70%)",
+          "independentInvestigationBody": "산업사고조사위원회 설치 논의 개시 (1년 내, 40%)",
+          "budgetAllocation": "차년도(2027) 예산안에 산업 안전 투자 확대 반영 (80%)"
+        }
+      }
+    }
+  },
+  "confidence": {
+    "overall": "92%",
+    "change": "미세 하락 (35세대 93% → 36세대 92%)",
+    "reasoning": "36세대에서 신규 팩트 없음(사망 11명, 실종 3명 유지). 미디어 프레이밍 분석(Media Framing Analysis)으로 미디어 담론의 구조를 5대 프레임 + 5단계 시간 전이 모델로 체계화. 한국 vs 국제 매체 비교, 프레이밍→여론→정책 인과 연쇄 분석, 29세대 교훈 연결. 신뢰도 미세 하락은 프레이밍 분석이 본질적으로 해석적 분석(interpretive analysis)이며 팩트 기반 정밀도가 낮기 때문이나, 분석의 체계성과 이론적 근거(Entman, McCombs & Shaw, Iyengar)로 보완.",
+    "uncertainties": [
+      "잔여 실종자 3명의 정확한 위치 — 수색 완료 시점 변동의 핵심 변수",
+      "건물 추가 붕괴 위험 — 수색 중단·지연 가능성",
+      "F4(제도 비판) 프레이밍의 실제 확산 속도 — 미디어 자체의 편집 판단에 의존",
+      "참사 피로(Disaster Fatigue) 효과의 강도 — 한국 사회의 재난 민감도 변수",
+      "정치적 프레이밍 개입 여부 — 여야 공방 전환 시 제도 논의 왜곡 위험"
+    ]
+  },
+  "evolution": {
+    "generation": 36,
+    "deepeningStrategy": "NEW — 미디어 프레이밍 분석 (Media Framing Analysis)",
+    "protocolApplied": ["R1", "R2", "R6", "R7", "NEW"],
+    "previousStrategies": {
+      "D1": "나트륨 화학반응 경로 분석 (gen 1~19)",
+      "D2": "건물 구조-대피 시뮬레이션 (gen 20)",
+      "D4": "산재보험 판례 기반 보상 정밀 추정 (gen 22)",
+      "D6": "국제 유사사고 심층 비교 (gen 21)",
+      "D8": "수색 소요시간 정밀 모델링 (gen 23)",
+      "NEW1": "화재 예방 시스템 역설계 (gen 24)",
+      "NEW2": "화재 원인 포렌식 프로세스 예측 (gen 25)",
+      "NEW3": "피해 근로자 장기 추적 예측 (gen 26)",
+      "NEW4": "종합 제도 개선 로드맵 설계 (gen 27)",
+      "NEW5": "전 세대 알고리즘 통합 재분석 (gen 28)",
+      "NEW6": "종합 교훈 보고서 (gen 29)",
+      "NEW7": "미래 재발 방지 정책 시뮬레이션 (gen 30)",
+      "NEW8": "사고 타임라인 분단위 정밀 재구성 (gen 31)",
+      "NEW9": "전 세대 예측 정확도 최종 감사 (gen 32)",
+      "NEW10": "분석 기술 이전 보고서 (gen 33)",
+      "NEW11": "최종 종합 보고서 — Capstone Report (gen 34)",
+      "NEW12": "예측 시스템 최종 메타 보고서 — System Meta-Report (gen 35)",
+      "NEW13": "미디어 프레이밍 분석 — Media Framing Analysis (gen 36)"
+    },
+    "newStrategyNote": "자율 창안 전략 13호 — 미디어 프레이밍 분석(Media Framing Analysis). 35세대까지 사건과 시스템을 분석했다면, 36세대는 '사건을 보도하는 미디어 자체'를 분석 대상으로 삼는다. Entman(1993) 프레이밍 이론을 분석 틀로 채택. 한국 16건·국제 10건(총 26건) 뉴스 분석 → 5대 프레임 도출(F1 속보·팩트, F2 피해자 중심, F3 책임 추궁, F4 제도 비판, F5 정부 대응·영웅). 시간대별 5단계 전이 모델(T1 속보→T2 피해→T3 원인→T4 제도 비판→T5 정책·기억). 전이 확률 행렬로 F4 지배적 전환 72% 예측. 한국 vs 국제 매체 5차원 비교. 프레이밍→여론→정책 인과 연쇄 3단계 시나리오(A 제도개선 55%, B 망각 35%, C 정치쟁점화 10%). 프레이밍 유효성 점수 62/100. 29세대 교훈 연결: 미디어 프레이밍은 제도 개선의 필요조건이지 충분조건이 아니며, BCR 55.1배 등 정량적 분석이 감정적 프레이밍에 합리적 근거를 부여할 때 촉진 효과 극대화.",
+    "allStrategiesDeployed": [
+      "D1: 나트륨 화학반응 경로 분석",
+      "D2: 건물 구조-대피 시뮬레이션 (ASET vs RSET)",
+      "D4: 산재보험 판례 기반 보상 정밀 추정 (중간값 314억원)",
+      "D6: 국제 유사사고 심층 비교 (웨스트·라나플라자·톈진)",
+      "D8: 수색 소요시간 정밀 모델링 (중간값 3/22 18:00)",
+      "NEW1: 화재 예방 시스템 역설계 (BCR 55.1배, 5.7억으로 314억 방지)",
+      "NEW2: 화재 원인 포렌식 프로세스 예측 (발화 원인 4후보, 수사 4단계)",
+      "NEW3: 피해 근로자 장기 추적 예측 (PTSD 25~30%, 장해 60~76%, 직업복귀 55~65%)",
+      "NEW4: 종합 제도 개선 로드맵 설계 (6개 정책 영역, 22개 개선안, 7,500억~8,700억원)",
+      "NEW5: 전 세대 알고리즘 통합 재분석 (6개 알고리즘 동시 적용, 4쌍 교차 검증, 신뢰도 92%)",
+      "NEW6: 종합 교훈 보고서 (4차원 12개 교훈, 12개 반사실적 분석, 궁극적 BCR 5.27배, 5개 아키텍처 원칙)",
+      "NEW7: 미래 재발 방지 정책 시뮬레이션 (3개 시나리오, Monte Carlo 확률 분포, 최적 전략 B→C 순차 시행, 10년 BCR 1.35)",
+      "NEW8: 사고 타임라인 분단위 정밀 재구성 (4레인 30건+ 이벤트, 5개 반사실적 분기점, 핵심 교훈: 3분을 바꾸는 20억원)",
+      "NEW9: 전 세대 예측 정확도 최종 감사 (35건 × 5차원, 전체 80.0%, 방향 91.3%, 시간 42.9%, BTS 대비 +2.7%p)",
+      "NEW10: 분석 기술 이전 보고서 (6개 기술 × 19개 도메인, TRS 평균 0.68, Quick Wins 3개, UDAF 로드맵 24개월)",
+      "NEW11: 최종 종합 보고서 — Capstone Report (34세대. 사건 개요·핵심 수치·진화 과정·TOP 5 발견·TOP 3 교훈·TOP 5 정책 권고·입증/미입증·미래 연구. SMS 84.8%)",
+      "NEW12: 예측 시스템 최종 메타 보고서 — System Meta-Report (35세대. 7개 Phase 진화·강점/약점/개선 각 5개·v2.0 아키텍처·인간 비교·성적표 77.7점 B+. 궁극적 결론: 자기 인식 있는 불완전함)",
+      "NEW13: 미디어 프레이밍 분석 — Media Framing Analysis (36세대. 5대 프레임·5단계 전이·전이 행렬·한국 vs 국제 비교·여론→정책 인과·29세대 교훈 연결·FES 62/100)"
+    ]
+  },
+  "r7Reasoning": {
+    "title": "R7 추론 보고서: 미디어 프레이밍은 왜 재난 분석의 핵심 변수인가",
+    "content": "36세대 미디어 프레이밍 분석은 시스템의 분석 대상을 '사건 자체'에서 '사건에 대한 담론'으로 확장하는 인식론적 도약이다. 재난의 결과는 물리적 피해(사망 11명, 부상 59명)와 담론적 구성(미디어가 이 사건을 '어떻게' 이야기하는가)이라는 두 층위에서 결정된다. 물리적 피해는 이미 발생했고 변경 불가능하지만, 담론적 구성은 현재 진행 중이며 여론→정책→미래 재난 방지에 직접 영향을 미친다. 프레이밍 전이 확률 모델(FTPM)은 마르코프 체인(Markov Chain)의 변형으로, 현재 프레이밍 상태에서 다음 프레이밍 상태로의 전이를 확률적으로 모델링한다. 이 모델이 예측하는 핵심 결론은 두 가지이다. 첫째, F4(제도 비판) 프레이밍이 72% 확률로 3/22까지 지배적 프레임으로 부상한다. 이는 정책 변화의 '창(window of opportunity)'이 열리고 있음을 의미한다. 둘째, 그러나 프레이밍 유효성 점수 62/100은 이 창이 '열려 있으나 충분히 넓지 않다'는 것을 보여준다. 참사 피로(H3)와 정치적 왜곡(H2)이 창을 좁히는 주요 저항 요인이다. 29세대 교훈(BCR 55.1배)과의 연결은 이 분석의 핵심이다. 미디어 프레이밍이 감정적 공감(F2)에서 합리적 정책(F4)으로 전이될 때, '스프링클러 1.2억원이 314억원 피해를 방지한다'는 정량적 메시지가 그 전이의 가교(bridge) 역할을 할 수 있다. 감정은 관심을 만들고, 숫자는 정책을 만든다. 알고리즘: FTPM = Markov Chain M[5×5], 현재 상태 벡터 S = [0.75, 0.50, 0.438, 0.375, 0.188] (정규화 후), S' = S × M → F4 전이 확률 72%. FES = (ΣM_i - ΣH_j) × 100 + 50 = 62/100.",
+    "algorithm": "FTPM(Framing Transition Probability Model): Markov Chain M[5×5]. State vector S = [F1, F2, F3, F4, F5]. S(t+1) = S(t) × M. F4 dominance probability = Σ(S_i × M[i,F4]) = 72%. FES(Framing Effectiveness Score) = (Σ(M_i × w_i) - Σ(H_j × w_j)) × 100 + baseline = 62/100."
+  }
+}

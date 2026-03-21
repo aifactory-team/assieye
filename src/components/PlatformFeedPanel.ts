@@ -11,13 +11,13 @@ const SEVERITY_COLORS: Record<AgentNewsSeverity, { icon: string; cls: string }> 
 };
 
 const PLATFORM_CONFIG: Record<AgentNewsPlatform, { icon: string; title: string }> = {
-  news:      { icon: '\uD83D\uDCF0', title: '\uB274\uC2A4' },
-  youtube:   { icon: '\u25B6\uFE0F',  title: 'YouTube' },
-  twitter:   { icon: '\uD835\uDD4F',  title: 'X' },
-  instagram: { icon: '\uD83D\uDCF7', title: 'Instagram' },
-  facebook:  { icon: '\uD83D\uDC4D', title: 'Facebook' },
-  tiktok:    { icon: '\uD83C\uDFB5', title: 'TikTok' },
-  threads:   { icon: '\uD83E\uDDF5', title: 'Threads' },
+  news:      { icon: '', title: '\uB274\uC2A4' },
+  youtube:   { icon: '', title: 'YouTube' },
+  twitter:   { icon: '', title: 'X' },
+  instagram: { icon: '', title: 'Instagram' },
+  facebook:  { icon: '', title: 'Facebook' },
+  tiktok:    { icon: '', title: 'TikTok' },
+  threads:   { icon: '', title: 'Threads' },
 };
 
 export class PlatformFeedPanel extends Panel {

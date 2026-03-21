@@ -6,7 +6,7 @@ export class FireStatsPanel extends Panel {
   constructor() {
     super({
       id: 'fire-stats',
-      title: '\uD83D\uDCCA \uD1B5\uACC4',
+      title: '\uD1B5\uACC4',
       className: 'fire-stats-panel',
     });
   }
